@@ -9,18 +9,23 @@ import Sidebar from "../components/Sidebar";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
+  
+  const [isOpen, setIsOpen] = useState(true);
 
-  const [isSidebarOpen, setSidebarOpen] = useState(true)
-  console.log("setSidebarOpen:", setSidebarOpen);
+  const toggleSidebar = () => {
+    setIsOpen((prevIsOpen) => !prevIsOpen);
+  };
 
   return (
     <html lang="en">
       <body className={inter.className}>
         <div className="flex justify-between">
-        <Navbar onToggle={() => setSidebarOpen(!isSidebarOpen)} />
-        {isSidebarOpen && <Sidebar isSidebarOpen={isSidebarOpen}/>} 
-        </div> 
+        <Sidebar isOpen={isOpen}  />
+        <Navbar isOpen={isOpen} toggleSidebar={toggleSidebar} />
+        </div>
+        <div className="flex flex-col ml-64">
         {children}
+        </div>
       </body>
     </html>
   );
