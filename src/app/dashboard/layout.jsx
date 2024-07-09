@@ -1,15 +1,13 @@
-'use client'
+'use client';
 
-import { useState } from "react";
-import { Inter } from "next/font/google";
-import Navbar from "../components/Navbar";
-import Sidebar from "../components/Sidebar";
+import { useState } from 'react';
+import { Inter } from 'next/font/google';
+import Navbar from '../components/Navbar';
+import Sidebar from '../components/Sidebar';
 
+const inter = Inter({ subsets: ['latin'] });
 
-const inter = Inter({ subsets: ["latin"] });
-
-export default function RootLayout({ children }) {
-  
+export default function DashBoardLayout({ children }) {
   const [isOpen, setIsOpen] = useState(true);
 
   const toggleSidebar = () => {
@@ -19,12 +17,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="flex justify-between">
-        <Sidebar isOpen={isOpen}  />
-        <Navbar isOpen={isOpen} toggleSidebar={toggleSidebar} />
-        </div>
-        <div className="flex flex-col ml-64">
-        {children}
+        <div className="flex bg-blue-50 bg-opacity-100">
+          <Sidebar isOpen={isOpen} />
+          <div className="flex-1 flex flex-col">
+            <Navbar isOpen={isOpen} toggleSidebar={toggleSidebar} />
+            <main className={` ${ isOpen ? 'ml-0' : 'mr-16' } transition duration-600`}>
+              {children}
+            </main>
+          </div>
         </div>
       </body>
     </html>

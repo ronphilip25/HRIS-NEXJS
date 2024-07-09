@@ -10,7 +10,7 @@ export default function Navbar({ isOpen, toggleSidebar }) {
   
   return(
     <>
-    <nav class={`${isOpen ? 'w-[1657px]' : 'w-full'} transition-width duration-500 ease-in-out overflow-x-hidden  relative flex h-20 items-center justify-center bg-white border rounded-sm border-gray-200`}>
+    <nav class={`${isOpen ? 'w-[1657px]' : 'w-full'} w-full transition-width duration-500 ease-in-out overflow-x-hidden  relative flex h-20 items-center justify-center bg-white border rounded-sm border-gray-200`}>
       {/* Toggle button */}
       <div>
         <button onClick={toggleSidebar} class="flex items-center justify-center p-2 rounded-lg border-sky-200 border-2 ml-5 ">
