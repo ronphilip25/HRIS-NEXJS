@@ -21,7 +21,7 @@ export default function DashBoardLayout({ children }) {
           <Sidebar isOpen={isOpen} />
           <div className="flex-1 flex flex-col">
             <Navbar isOpen={isOpen} toggleSidebar={toggleSidebar} />
-            <main className={` ${ isOpen ? 'ml-0' : 'mr-16' } transition duration-600`}>
+            <main className={` ${ isOpen ? 'md:ml-12 ' : 'lg:mr-[95px] md:mr-[95px] md:ml-5' } mx-auto mt-3 container transition-all duration-700`}>
               {children}
             </main>
           </div>

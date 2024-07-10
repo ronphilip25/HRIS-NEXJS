@@ -2,11 +2,15 @@
 
 import React from 'react'
 import AttendanceChart from '../components/AttendanceChart';
+import Monthly from '../components/Monthly';
+import Approval from '../components/Approval';
+import Platform from '../components/Platform';
+import CompanyNews from '../components/CompanyNews';
 
 const Dashboard = () => {
   return (
     <>
-      <div className='container mx-auto mt-5'>
+
         <div className='grid grid-cols-4 gap-4'>
           <div class="flex items-center justify-center">
             <div class="rounded-lg bg-white w-full h-[119px] p-4 shadow-md">
@@ -71,24 +75,9 @@ const Dashboard = () => {
             </div>
           </div>
 
-          <div class="rounded-lg bg-white p-4 shadow-md row-span-2">
-            <div class="relative">
-              <div class="absolute right-0 top-0 cursor-pointer duration-200 ease-out hover:scale-125">
-                <button type="submit">
-                  {/* <!-- Set explicit width and height --> */}
-                  <svg width="104" height="40" viewBox="0 0 104 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="0.5" y="0.5" width="103" height="39" rx="11.5" stroke="#045CA4" />
-                    <path d="M59.017 25.5H56.3807L60.3977 13.8636H63.5682L67.5795 25.5H64.9432L62.0284 16.5227H61.9375L59.017 25.5ZM58.8523 20.9261H65.0795V22.8466H58.8523V20.9261ZM71.7443 25.642C71.0814 25.642 70.4811 25.4716 69.9432 25.1307C69.4091 24.786 68.9848 24.2803 68.6705 23.6136C68.3598 22.9432 68.2045 22.1212 68.2045 21.1477C68.2045 20.1477 68.3655 19.3163 68.6875 18.6534C69.0095 17.9867 69.4375 17.4886 69.9716 17.1591C70.5095 16.8258 71.0985 16.6591 71.7386 16.6591C72.2273 16.6591 72.6345 16.7424 72.9602 16.9091C73.2898 17.072 73.5549 17.2765 73.7557 17.5227C73.9602 17.7652 74.1155 18.0038 74.2216 18.2386H74.2955V13.8636H76.7102V25.5H74.3239V24.1023H74.2216C74.108 24.3447 73.947 24.5852 73.7386 24.8239C73.5341 25.0587 73.267 25.2538 72.9375 25.4091C72.6117 25.5644 72.214 25.642 71.7443 25.642ZM72.5114 23.7159C72.9015 23.7159 73.2311 23.6098 73.5 23.3977C73.7727 23.1818 73.9811 22.8807 74.125 22.4943C74.2727 22.108 74.3466 21.6553 74.3466 21.1364C74.3466 20.6174 74.2746 20.1667 74.1307 19.7841C73.9867 19.4015 73.7784 19.1061 73.5057 18.8977C73.233 18.6894 72.9015 18.5852 72.5114 18.5852C72.1136 18.5852 71.7784 18.6932 71.5057 18.9091C71.233 19.125 71.0265 19.4242 70.8864 19.8068C70.7462 20.1894 70.6761 20.6326 70.6761 21.1364C70.6761 21.6439 70.7462 22.0928 70.8864 22.483C71.0303 22.8693 71.2367 23.1723 71.5057 23.392C71.7784 23.608 72.1136 23.7159 72.5114 23.7159ZM81.9162 25.642C81.2533 25.642 80.6529 25.4716 80.1151 25.1307C79.581 24.786 79.1567 24.2803 78.8423 23.6136C78.5317 22.9432 78.3764 22.1212 78.3764 21.1477C78.3764 20.1477 78.5374 19.3163 78.8594 18.6534C79.1813 17.9867 79.6094 17.4886 80.1435 17.1591C80.6813 16.8258 81.2704 16.6591 81.9105 16.6591C82.3991 16.6591 82.8063 16.7424 83.1321 16.9091C83.4616 17.072 83.7268 17.2765 83.9276 17.5227C84.1321 17.7652 84.2874 18.0038 84.3935 18.2386H84.4673V13.8636H86.8821V25.5H84.4957V24.1023H84.3935C84.2798 24.3447 84.1188 24.5852 83.9105 24.8239C83.706 25.0587 83.4389 25.2538 83.1094 25.4091C82.7836 25.5644 82.3859 25.642 81.9162 25.642ZM82.6832 23.7159C83.0734 23.7159 83.4029 23.6098 83.6719 23.3977C83.9446 23.1818 84.1529 22.8807 84.2969 22.4943C84.4446 22.108 84.5185 21.6553 84.5185 21.1364C84.5185 20.6174 84.4465 20.1667 84.3026 19.7841C84.1586 19.4015 83.9503 19.1061 83.6776 18.8977C83.4048 18.6894 83.0734 18.5852 82.6832 18.5852C82.2855 18.5852 81.9503 18.6932 81.6776 18.9091C81.4048 19.125 81.1984 19.4242 81.0582 19.8068C80.9181 20.1894 80.848 20.6326 80.848 21.1364C80.848 21.6439 80.9181 22.0928 81.0582 22.483C81.2022 22.8693 81.4086 23.1723 81.6776 23.392C81.9503 23.608 82.2855 23.7159 82.6832 23.7159Z" fill="#045CA4" />
-                    <path d="M28 11V20M28 29V20M28 20H37M28 20H19" stroke="#045CA4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </button>
-              </div>
-              <div class="font-inter ml-2 mt-3 font-sans">
-                <h5 class="leading-44 text-2xl font-bold text-black">Company News</h5>
-              </div>
-              <div class="font-inter flex items-center justify-center font-sans text-base font-normal">No News</div>
-            </div>
-          </div>
+          {/* Company News */}
+
+          <CompanyNews />
 
           <div class="col-span-2">
             <div class="grid grid-cols-1">
@@ -101,37 +90,9 @@ const Dashboard = () => {
             </div>
           </div>
 
-          <div class="rounded-xl bg-white p-2 shadow-md col-span-1">
-            <div class="relative">
-              <div class="absolute right-0 top-0">
-              </div>
-              <div class="font-inter ml-2 mt-1 font-sans">
-                <h5 class="text-base font-bold text-black">Monthly Tardiness and Absences</h5>
-              </div>
-            </div>
-            {/* <div class="grid grid-cols-4 gap-3 font-sans font-inter text-xs font-bold text-gray-700 mt-3 ml-2 py-2">
-              <table class="col-span-4 border-separate border-spacing-y-[0.5rem] my-[-2rem] ">
-                <thead>
-                  <tr>
-                    <div>
-                      <th class="px-0 py-2 text-left border-b border-gray-700">Name</th>
-                      <th class="px-3 py-2 text-left border-b border-gray-700">Department</th>
-                      <th class="px-3 py-2 text-left border-b border-gray-700">Tardiness</th>
-                      <th class="px-3 py-2 text-left border-b border-gray-700">Absences</th>
-                    </div>
-                  </tr>
-                </thead>
-                <tbody class="font-sans text-xs font-normal font-inter">
-                  <tr>
-                    <td></td>
-                    <td class="px-4 text-center"></td>
-                    <td class="px-4 text-center"></td>
-                    <td class="px-4 text-center"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div> */}
-          </div>
+          {/* Monthly Tardinesss */}
+
+          <Monthly />
 
           <div class="grid gap-3">
             <div class="line p-4 bg-white rounded-lg text-lg font-normal flex justify-between cursor-pointer hover:scale-105 ease-out duration-200">Acceptance Pending
@@ -176,53 +137,14 @@ const Dashboard = () => {
             </div>
           </div>
 
-          <div class="rounded-xl bg-white p-2 shadow-md col-span-2">
-            <div class="relative">
-              <div class="absolute right-0 top-0">
-              </div>
-              <div class="ml-2 font-sans">
-                <h5 class="text-2xl font-bold text-gray-600">Needs Approval</h5>
-              </div>
-            </div>
-            {/* <div class="grid grid-cols-5 gap-3 font-sans font-inter text-base font-bold text-gray-700 mt-2 ml-2 py-1">
-              <table class="col-span-5 border-separate border-spacing-y-[0.5rem] my-[-2rem]">
-                <thead>
-                  <tr>
-                    <div>
-                      <th class="px-0 py-1 text-left border-b border-gray-700">Name</th>
-                      <th class="px-3 py-1 text-center border-b border-gray-700">Department</th>
-                      <th class="px-3 py-1 text-center border-b border-gray-700">Type</th>
-                      <th class="px-3 py-1 text-center border-b border-gray-700">RequestDate</th>
-                      <th class="px-3 py-1 text-center border-b border-gray-700">Action</th>
-                    </div>
-                  </tr>
-                </thead>
-                <tbody class="font-sans text-xs font-normal font-inter">
-                  <tr>
-                    <td></td>
-                    <td class="px-3 py-2 text-center"></td>
-                    <td class="px-3 py-2 text-center"></td>
-                    <td class="px-3 py-2 text-center"></td>
-                    <td class="text-blue-500 text-center"><a href="">Details</a></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div> */}
-          </div>
+          {/* Needs Approval */}
 
-          <div class="rounded-xl bg-white p-4 shadow-md col-span-1">
-            <div class="relative">
-              <div class="font-inter ml-2 mt-1 font-sans">
-                <h5 class="text-2xl font-bold text-black">Platform Notice</h5>
-              </div>
-              <div class="font-inter font-sans">
-                <div class=" text-base font-normal flex justify-center">No Notice</div>
-              </div>
-            </div>
-          </div>
+          <Approval />
+
+          {/* Platform Notice */}
+          <Platform />
 
         </div>
-      </div>
     </>
   )
 }
