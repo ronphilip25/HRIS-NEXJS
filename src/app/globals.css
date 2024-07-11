@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.labels {
+  @apply flex flex-col;
+}

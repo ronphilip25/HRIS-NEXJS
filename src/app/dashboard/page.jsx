@@ -81,11 +81,9 @@ const Dashboard = () => {
 
           <div class="col-span-2">
             <div class="grid grid-cols-1">
-              <div class="rounded-lg shadow-lg bg-white p-2">
+              <div class="rounded-lg shadow-lg bg-white p-4 h-[410px] w-full">
                 <h2 class="mb-4 text-lg font-bold">Attendance Overview</h2>
-                <div className='w-full h-full'>
                 <AttendanceChart />
-                </div>
               </div>
             </div>
           </div>
