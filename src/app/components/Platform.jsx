@@ -4,13 +4,13 @@ const CompanyNews = () => {
     return (
         <>
         
-            <div class="rounded-xl bg-white p-4 shadow-md col-span-1">
-                <div class="relative">
-                    <div class="font-inter ml-2 mt-1 font-sans">
-                        <h5 class="text-2xl font-bold text-black">Platform Notice</h5>
+            <div className="rounded-xl bg-white p-4 shadow-md col-span-1">
+                <div className="relative">
+                    <div className="font-inter ml-2 mt-1 font-sans">
+                        <h5 className="text-2xl font-bold text-black">Platform Notice</h5>
                     </div>
-                    <div class="font-inter font-sans">
-                        <div class=" text-base font-normal flex justify-center">No Notice</div>
+                    <div className="font-inter font-sans">
+                        <div className=" text-base font-normal flex justify-center">No Notice</div>
                     </div>
                 </div>
             </div>

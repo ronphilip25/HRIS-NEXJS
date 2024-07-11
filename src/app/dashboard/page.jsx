@@ -11,12 +11,12 @@ const Dashboard = () => {
   return (
     <>
 
-        <div className='grid grid-cols-4 gap-4'>
-          <div class="flex items-center justify-center">
-            <div class="rounded-lg bg-white w-full h-[119px] p-4 shadow-md">
-              <div class="relative">
-                <div class="absolute right-0 top-0">
-                  <svg class="mr-2 mt-2" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div className='lg:grid lg:grid-cols-4 lg:gap-4 md:grid md:grid-cols-2 md:gap-2 grid-cols-1 gap-4'>
+          <div className="flex items-center justify-center">
+            <div className="rounded-lg bg-white lg:px-auto lg:h-[119px] lg:p-4 shadow-md md:w-full md:h-[119px] md:px-auto md:p-4">
+              <div className="relative">
+                <div className="absolute right-0 top-0">
+                  <svg className="mr-2 mt-2" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="70" height="70" rx="12" fill="#D0E9FE" />
                     <g clip-path="url(#clip0_36_168)">
                       <path d="M30.0002 19.0937C27.8689 19.55 26.1689 20.95 25.3689 22.9125C24.6564 24.6625 24.7377 26.5875 25.6064 28.2625C26.4439 29.8937 27.8502 31.0125 29.6877 31.5125C30.1439 31.6312 30.3689 31.6562 31.2502 31.6562C32.4064 31.6562 32.9002 31.5562 33.8314 31.1562C34.8252 30.725 35.9002 29.8375 36.5002 28.9437C38.1752 26.4562 37.9127 23.1375 35.8752 20.975C34.9439 19.9875 33.8439 19.3812 32.4877 19.1C31.8939 18.975 30.5689 18.975 30.0002 19.0937Z" fill="#045CA4" />
@@ -26,18 +26,18 @@ const Dashboard = () => {
                   </svg>
                 </div>
               </div>
-              <h2 class="text-md ml-2 mt-2 font-normal">Attended</h2>
-              <div class="font-inter ml-2 font-sans">
-                <h3 class="leading-44 text-4xl font-bold text-gray-700">25</h3>
+              <h2 className="text-md ml-2 mt-2 font-normal">Attended</h2>
+              <div className="font-inter ml-2 font-sans">
+                <h3 className="leading-44 text-4xl font-bold text-gray-700">25</h3>
               </div>
             </div>
           </div>
 
-          <div class="flex items-center justify-center">
-            <div class="rounded-lg bg-white w-full h-[119px] p-4 shadow-md">
-              <div class="relative">
-                <div class="absolute right-0 top-0">
-                  <svg class="mr-2 mt-2" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div className="flex items-center justify-center">
+            <div className="rounded-lg bg-white lg:px-auto lg:h-[119px] lg:p-4 shadow-md md:w-full md:h-[119px] md:px-auto md:p-4">
+              <div className="relative">
+                <div className="absolute right-0 top-0">
+                  <svg className="mr-2 mt-2" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="70" height="70" rx="12" fill="#F0E1F1" />
                     <g clip-path="url(#clip0_36_182)">
                       <path d="M30.0002 19.0937C27.8689 19.55 26.1689 20.95 25.3689 22.9125C24.6564 24.6625 24.7377 26.5875 25.6064 28.2625C26.4439 29.8937 27.8502 31.0125 29.6877 31.5125C30.1439 31.6312 30.3689 31.6562 31.2502 31.6562C32.4064 31.6562 32.9002 31.5562 33.8314 31.1562C34.8252 30.725 35.9002 29.8375 36.5002 28.9437C38.1752 26.4562 37.9127 23.1375 35.8752 20.975C34.9439 19.9875 33.8439 19.3812 32.4877 19.1C31.8939 18.975 30.5689 18.975 30.0002 19.0937Z" fill="#AC5BB3" />
@@ -47,18 +47,18 @@ const Dashboard = () => {
                   </svg>
                 </div>
               </div>
-              <h2 class="text-md ml-2 mt-2 font-normal">On Leave</h2>
-              <div class="font-inter ml-2 font-sans">
-                <h3 class="leading-44 text-4xl font-bold text-gray-700">03</h3>
+              <h2 className="text-md ml-2 mt-2 font-normal">On Leave</h2>
+              <div className="font-inter ml-2 font-sans">
+                <h3 className="leading-44 text-4xl font-bold text-gray-700">03</h3>
               </div>
             </div>
           </div>
 
-          <div class="flex items-center justify-center">
-            <div class="rounded-lg bg-white w-full h-[119px] p-4 shadow-md">
-              <div class="relative">
-                <div class="absolute right-0 top-0">
-                  <svg class="mr-2 mt-2" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div className="flex items-center justify-center">
+            <div className="rounded-lg bg-white lg:px-auto lg:h-[119px] lg:p-4 shadow-md md:w-full md:h-[119px] md:px-auto md:p-4">
+              <div className="relative">
+                <div className="absolute right-0 top-0">
+                  <svg className="mr-2 mt-2" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="70" height="70" rx="12" fill="#FAD2D2" />
                     <g clip-path="url(#clip0_36_194)">
                       <path d="M30.0002 19.0937C27.8689 19.55 26.1689 20.95 25.3689 22.9125C24.6564 24.6625 24.7377 26.5875 25.6064 28.2625C26.4439 29.8937 27.8502 31.0125 29.6877 31.5125C30.1439 31.6312 30.3689 31.6562 31.2502 31.6562C32.4064 31.6562 32.9002 31.5562 33.8314 31.1562C34.8252 30.725 35.9002 29.8375 36.5002 28.9437C38.1752 26.4562 37.9127 23.1375 35.8752 20.975C34.9439 19.9875 33.8439 19.3812 32.4877 19.1C31.8939 18.975 30.5689 18.975 30.0002 19.0937Z" fill="#E94545" />
@@ -68,9 +68,9 @@ const Dashboard = () => {
                   </svg>
                 </div>
               </div>
-              <h2 class="text-md ml-2 mt-2 font-normal">Absent</h2>
-              <div class="font-inter ml-2 font-sans">
-                <h3 class="leading-44 text-4xl font-bold text-gray-700">01</h3>
+              <h2 className="text-md ml-2 mt-2 font-normal">Absent</h2>
+              <div className="font-inter ml-2 font-sans">
+                <h3 className="leading-44 text-4xl font-bold text-gray-700">01</h3>
               </div>
             </div>
           </div>
@@ -79,10 +79,10 @@ const Dashboard = () => {
 
           <CompanyNews />
 
-          <div class="col-span-2">
-            <div class="grid grid-cols-1">
-              <div class="rounded-lg shadow-lg bg-white p-4 h-[410px] w-full">
-                <h2 class="mb-4 text-lg font-bold">Attendance Overview</h2>
+          <div className="col-span-2">
+            <div className="grid grid-cols-1">
+              <div className="rounded-lg shadow-lg bg-white p-4 lg:h-[410px] lg:w-full">
+                <h2 className="mb-4 text-lg font-bold">Attendance Overview</h2>
                 <AttendanceChart />
               </div>
             </div>
@@ -92,42 +92,42 @@ const Dashboard = () => {
 
           <Monthly />
 
-          <div class="grid gap-3">
-            <div class="line p-4 bg-white rounded-lg text-lg font-normal flex justify-between cursor-pointer hover:scale-105 ease-out duration-200">Acceptance Pending
-              <div class="flex items-center justify-center">
-                <svg class=" mr-4" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div className="grid gap-3">
+            <div className="line p-4 bg-white rounded-lg text-lg font-normal flex justify-between cursor-pointer hover:scale-105 ease-out duration-200">Acceptance Pending
+              <div className="flex items-center justify-center">
+                <svg className=" mr-4" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="13" cy="13" r="13" fill="#FAD2D2" />
                   <path d="M13.9716 9.27273V18H12.9148V10.3807H12.8636L10.733 11.7955V10.7216L12.9148 9.27273H13.9716Z" fill="#E94545" />
                 </svg>
-                <button class="hover:scale-125 ease-out duration-150">
+                <button className="hover:scale-125 ease-out duration-150">
                   <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.600254 0.658517C0.295613 0.96325 0.124475 1.3765 0.124475 1.80739C0.124475 2.23828 0.295613 2.65153 0.600254 2.95627L8.644 11L0.600254 19.0438C0.304247 19.3502 0.140456 19.7607 0.144158 20.1868C0.147861 20.6129 0.31876 21.0204 0.620049 21.3217C0.921336 21.623 1.32891 21.7939 1.75498 21.7976C2.18105 21.8013 2.59152 21.6375 2.898 21.3415L12.0906 12.1489C12.3953 11.8442 12.5664 11.4309 12.5664 11C12.5664 10.5691 12.3953 10.1559 12.0906 9.85114L2.898 0.658517C2.59327 0.353877 2.18002 0.182739 1.74913 0.182739C1.31824 0.182739 0.904986 0.353877 0.600254 0.658517Z" fill="#333333" />
                   </svg>
                 </button>
               </div>
             </div>
-            <div class="line p-4 bg-white rounded-lg text-lg font-normal flex justify-between cursor-pointer hover:scale-105 ease-out duration-200">Incomplete Profile
-              <div class="flex items-center justify-center">
-                <svg class=" mr-4" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div className="line p-4 bg-white rounded-lg text-lg font-normal flex justify-between cursor-pointer hover:scale-105 ease-out duration-200">Incomplete Profile
+              <div className="flex items-center justify-center">
+                <svg className=" mr-4" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="13" cy="13" r="13" fill="#FAD2D2" />
                   <path d="M13.6307 18.1193C13.1307 18.1193 12.6804 18.0199 12.2798 17.821C11.8793 17.6222 11.5582 17.3494 11.3168 17.0028C11.0753 16.6562 10.9432 16.2614 10.9205 15.8182H11.9432C11.983 16.2131 12.1619 16.5398 12.4801 16.7983C12.8011 17.054 13.1847 17.1818 13.6307 17.1818C13.9886 17.1818 14.3068 17.098 14.5852 16.9304C14.8665 16.7628 15.0866 16.5327 15.2457 16.2401C15.4077 15.9446 15.4886 15.6108 15.4886 15.2386C15.4886 14.858 15.4048 14.5185 15.2372 14.2202C15.0724 13.919 14.8452 13.6818 14.5554 13.5085C14.2656 13.3352 13.9347 13.2472 13.5625 13.2443C13.2955 13.2415 13.0213 13.2827 12.7401 13.3679C12.4588 13.4503 12.2273 13.5568 12.0455 13.6875L11.0568 13.5682L11.5852 9.27273H16.1193V10.2102H12.4716L12.1648 12.7841H12.2159C12.3949 12.642 12.6193 12.5241 12.8892 12.4304C13.1591 12.3366 13.4403 12.2898 13.733 12.2898C14.267 12.2898 14.7429 12.4176 15.1605 12.6733C15.581 12.9261 15.9105 13.2727 16.1491 13.7131C16.3906 14.1534 16.5114 14.6562 16.5114 15.2216C16.5114 15.7784 16.3864 16.2756 16.1364 16.7131C15.8892 17.1477 15.5483 17.4915 15.1136 17.7443C14.679 17.9943 14.1847 18.1193 13.6307 18.1193Z" fill="#E94545" />
                 </svg>
-                <button class="hover:scale-125 ease-out duration-150">
+                <button className="hover:scale-125 ease-out duration-150">
                   <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.600254 0.658517C0.295613 0.96325 0.124475 1.3765 0.124475 1.80739C0.124475 2.23828 0.295613 2.65153 0.600254 2.95627L8.644 11L0.600254 19.0438C0.304247 19.3502 0.140456 19.7607 0.144158 20.1868C0.147861 20.6129 0.31876 21.0204 0.620049 21.3217C0.921336 21.623 1.32891 21.7939 1.75498 21.7976C2.18105 21.8013 2.59152 21.6375 2.898 21.3415L12.0906 12.1489C12.3953 11.8442 12.5664 11.4309 12.5664 11C12.5664 10.5691 12.3953 10.1559 12.0906 9.85114L2.898 0.658517C2.59327 0.353877 2.18002 0.182739 1.74913 0.182739C1.31824 0.182739 0.904986 0.353877 0.600254 0.658517Z" fill="#333333" />
                   </svg>
                 </button>
               </div>
             </div>
-            <div class="line p-4 bg-white rounded-lg text-lg font-normal flex justify-between cursor-pointer hover:scale-105 ease-out duration-200">Probationary Employees
-              <button class="hover:scale-125 ease-out duration-150">
+            <div className="line p-4 bg-white rounded-lg text-lg font-normal flex justify-between cursor-pointer hover:scale-105 ease-out duration-200">Probationary Employees
+              <button className="hover:scale-125 ease-out duration-150">
                 <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0.600254 0.658517C0.295613 0.96325 0.124475 1.3765 0.124475 1.80739C0.124475 2.23828 0.295613 2.65153 0.600254 2.95627L8.644 11L0.600254 19.0438C0.304247 19.3502 0.140456 19.7607 0.144158 20.1868C0.147861 20.6129 0.31876 21.0204 0.620049 21.3217C0.921336 21.623 1.32891 21.7939 1.75498 21.7976C2.18105 21.8013 2.59152 21.6375 2.898 21.3415L12.0906 12.1489C12.3953 11.8442 12.5664 11.4309 12.5664 11C12.5664 10.5691 12.3953 10.1559 12.0906 9.85114L2.898 0.658517C2.59327 0.353877 2.18002 0.182739 1.74913 0.182739C1.31824 0.182739 0.904986 0.353877 0.600254 0.658517Z" fill="#333333" />
                 </svg>
               </button>
             </div>
-            <div class="line p-4 bg-white rounded-lg text-lg font-normal flex justify-between cursor-pointer hover:scale-105 ease-out duration-200">Need to renew contract info
-              <button class="hover:scale-125 ease-out duration-150">
+            <div className="line p-4 bg-white rounded-lg text-lg font-normal flex justify-between cursor-pointer hover:scale-105 ease-out duration-200">Need to renew contract info
+              <button className="hover:scale-125 ease-out duration-150">
                 <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0.600254 0.658517C0.295613 0.96325 0.124475 1.3765 0.124475 1.80739C0.124475 2.23828 0.295613 2.65153 0.600254 2.95627L8.644 11L0.600254 19.0438C0.304247 19.3502 0.140456 19.7607 0.144158 20.1868C0.147861 20.6129 0.31876 21.0204 0.620049 21.3217C0.921336 21.623 1.32891 21.7939 1.75498 21.7976C2.18105 21.8013 2.59152 21.6375 2.898 21.3415L12.0906 12.1489C12.3953 11.8442 12.5664 11.4309 12.5664 11C12.5664 10.5691 12.3953 10.1559 12.0906 9.85114L2.898 0.658517C2.59327 0.353877 2.18002 0.182739 1.74913 0.182739C1.31824 0.182739 0.904986 0.353877 0.600254 0.658517Z" fill="#333333" />
                 </svg>
