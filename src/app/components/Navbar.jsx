@@ -21,7 +21,7 @@ export default function Navbar({ isOpen, toggleSidebar }) {
         <h1 className="text-lg font-semibold text-gray-900"><span id="navbarText">Dashboard</span></h1>
         <span id="subtext"></span>
         <div className="flex items-center justify-end">
-          <Image src={User} className="mr-2 h-12 w-12 rounded-full bg-gray-100 " alt="Profile Icon" />
+          <Image src={User} priority={true} className="mr-2 h-12 w-12 rounded-full bg-gray-100 " alt="Profile Icon" />
           <button className="mt-1 flex items-center justify-between">
             <div className="text-left">
               <div className="flex items-center justify-end">
