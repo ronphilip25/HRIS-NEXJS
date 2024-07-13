@@ -10,10 +10,9 @@ import CompanyNews from '../components/CompanyNews';
 const Dashboard = () => {
   return (
     <>
-
-        <div className='lg:grid lg:grid-cols-4 lg:gap-4 md:grid md:grid-cols-2 md:gap-2 grid-cols-1 gap-4'>
+        <div className='lg:grid lg:grid-cols-4 lg:gap-4 md:grid md:grid-cols-2 md:gap-2 gap-4 md:flex-shrink-0 flex flex-col mx-4 lg:mx-auto'>
           <div className="flex items-center justify-center">
-            <div className="rounded-lg bg-white lg:px-auto lg:h-[119px] lg:p-4 shadow-md md:w-full md:h-[119px] md:px-auto md:p-4">
+            <div className="rounded-lg bg-white lg:px-auto lg:h-[119px] lg:p-4 shadow-md md:w-full md:h-[119px] md:flex-shrink-0 md:px-auto md:p-4 px-1 h-[90px] w-full">
               <div className="relative">
                 <div className="absolute right-0 top-0">
                   <svg className="mr-2 mt-2" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -34,7 +33,7 @@ const Dashboard = () => {
           </div>
 
           <div className="flex items-center justify-center">
-            <div className="rounded-lg bg-white lg:px-auto lg:h-[119px] lg:p-4 shadow-md md:w-full md:h-[119px] md:px-auto md:p-4">
+            <div className="rounded-lg bg-white lg:px-auto lg:h-[119px] lg:p-4 shadow-md md:w-full md:h-[119px] md:flex-shrink-0 md:px-auto md:p-4 px-1 h-[90px] w-full">
               <div className="relative">
                 <div className="absolute right-0 top-0">
                   <svg className="mr-2 mt-2" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -55,7 +54,7 @@ const Dashboard = () => {
           </div>
 
           <div className="flex items-center justify-center">
-            <div className="rounded-lg bg-white lg:px-auto lg:h-[119px] lg:p-4 shadow-md md:w-full md:h-[119px] md:px-auto md:p-4">
+            <div className="rounded-lg bg-white lg:px-auto lg:h-[119px] lg:p-4 shadow-md md:w-full md:h-[119px] md:flex-shrink-0 md:px-auto md:p-4 px-1 h-[90px] w-full">
               <div className="relative">
                 <div className="absolute right-0 top-0">
                   <svg className="mr-2 mt-2" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -80,8 +79,8 @@ const Dashboard = () => {
           <CompanyNews />
 
           <div className="lg:col-span-2 md:col-span-1">
-            <div className="grid grid-cols-1">
-              <div className="rounded-lg shadow-lg bg-white p-4 lg:h-[410px] lg:w-full">
+            <div className="grid grid-cols-1 md:flex-shrink-0">
+              <div className="rounded-lg shadow-lg bg-white p-4 lg:h-[410px] lg:w-full ">
                 <h2 className="lg:mb-4 lg:text-lg lg:font-bold md:text-base md:font-bold md:mb-1">Attendance Overview</h2>
                 <AttendanceChart />
               </div>
@@ -92,7 +91,7 @@ const Dashboard = () => {
 
           <Monthly />
 
-          <div className="grid lg:gap-3 md:mt-1 md:gap-1">
+          <div className="lg:gap-3 md:mt-1 md:gap-1 md:flex-shrink-0 flex flex-col gap-1 ">
             <div className="line p-4 bg-white rounded-lg text-lg font-normal flex justify-between">Acceptance Pending
               <div className="flex items-center justify-center">
                 <svg className=" mr-4" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -119,7 +118,7 @@ const Dashboard = () => {
                 </button>
               </div>
             </div>
-            <div className='lg:block  md:hidden'>
+            <div className='lg:block md:hidden hidden'>
             <div className="line mb-3 p-4 bg-white rounded-lg text-lg font-normal flex justify-between">Probationary Employees
               <button className="hover:scale-125 ease-out duration-150">
                 <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -139,7 +138,7 @@ const Dashboard = () => {
 
           {/* probationary mobile */}
 
-          <div className='lg:hidden mt-1 md:block'>
+          <div className='lg:hidden mt-1 md:block md:flex-shrink-0 flex flex-col '>
           <div className="line mb-1 p-4 bg-white rounded-lg text-lg font-normal flex justify-between">Probationary Employees
               <button className="hover:scale-125 ease-out duration-150">
                 <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">

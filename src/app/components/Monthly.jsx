@@ -7,7 +7,7 @@ const Monthly = () => {
                 <div className="relative">
                     <div className="absolute right-0 top-0"></div>
                     <div className="font-inter ml-2 mt-1 font-sans">
-                        <h5 className="lg:text-base md:text-base font-bold text-black">Monthly Tardiness and Absences</h5>
+                        <h5 className="lg:text-base md:text-base font-bold text-black text-xs">Monthly Tardiness and Absences</h5>
                     </div>
                 </div>
                 <div className="grid grid-cols-4 gap-3 font-sans font-inter text-xs font-bold text-gray-700 mt-3 ml-2 py-2">

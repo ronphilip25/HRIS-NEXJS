@@ -22,7 +22,7 @@ const Sidebar = ({ isOpen }) => {
   }
   return (
     <>
-      <div className={`flex flex-col h-screen bg-white text-black border  ${isOpen ? 'lg:w-[286px] md:w-[250px] w-[200px] ' : 'lg:w-44 md:w-34 md:h- w-36'}  transition-all duration-500 shadow-lg`}>
+      <div className={`flex flex-col h-screen bg-white text-black border   ${isOpen ? 'lg:w-[286px] md:w-[250px] w-[200px] lg:block md:block hidden' : 'lg:w-44 md:w-34 md:h- w-36 '}  transition-all duration-500 shadow-lg`}>
         <div className="flex items-center justify-center p-4 bg-white">
           <Image src={Side} priority={true} alt="Logo" className={` ${isOpen ? 'lg:h-[64px] lg:w-[157px] object-contain object-center md:h-[62px] md:w-[140px]' : 'hidden'}`} />
           <Image src={Logo} priority={true} alt="Logo" className={` ${isOpen ? ' hidden' : 'h-12 w-12 lg:h-16 lg:w-16 md:h-16 md:w-16'}`} /> {/* Add your logo image here */}
@@ -109,6 +109,16 @@ const Sidebar = ({ isOpen }) => {
           </div>
         </nav>
       </div>
+
+
+      {/* mobile sidebar */}
+
+            {/* <div className={`${ isOpen ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''}`}>
+              <div className={`${ isOpen ? ' fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-gradient-to-r from-slate-300 to-gray-100 p-10 ease-in duration-500' : 'fixed left-[-100%] top-0 p-10 ease-in duration-500' }`}>
+                
+              </div>
+            </div> */}
+
     </>
 
   )
