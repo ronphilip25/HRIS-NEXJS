@@ -29,13 +29,13 @@ const Sidebar = ({ isOpen }) => {
         </div>
         <nav className={` ${isOpen ? 'flex flex-col mt-3' : 'justify-center items-center lg:text-4xl md:text-4xl text-4xl'} flex flex-col mt-2`}>
           <a href="#" className={`flex items-center space-x-3 p-3 rounded-l-xl hover:bg-sky-100 ${isOpen ? 'justify-start ml-10' : ''}`}>
-            <MdOutlineDashboard className='text-3xl hover:text-sky-100' />
+            <MdOutlineDashboard className={`${isOpen ? 'text-3xl' : 'text-4xl'}`}/>
             {isOpen && <span>Dashboard</span>}
           </a>
           <div className="flex flex-col mt-2">
             <button onClick={() => toggleSection('attendance')} className={`flex items-center justify-between p-3 rounded-l-xl hover:bg-sky-100 ${isOpen ? 'justify-start ml-10' : 'justify-center'}`}>
               <div className="flex items-center space-x-3">
-                <LuClock4 className='text-3xl hover:text-sky-100' />
+                <LuClock4 className={`${isOpen ? 'text-3xl' : 'text-4xl'}`}/>
                 {isOpen && <span>Attendance</span>}
               </div>
               {isOpen && (expandedSections['attendance'] ? <FaChevronUp /> : <FaChevronDown />)}
@@ -50,7 +50,7 @@ const Sidebar = ({ isOpen }) => {
           <div className="flex flex-col mt-2">
             <button onClick={() => toggleSection('leaves')} className={`flex items-center justify-between p-3 rounded-l-xl hover:bg-sky-100 ${isOpen ? 'justify-start ml-10' : 'justify-center'}`}>
               <div className="flex items-center space-x-3">
-                <LuCalendarClock className='text-3xl hover:text-sky-100' />
+                <LuCalendarClock className={`${isOpen ? 'text-3xl' : 'text-4xl'}`}/>
                 {isOpen && <span>Leaves</span>}
               </div>
               {isOpen && (expandedSections['leaves'] ? <FaChevronUp /> : <FaChevronDown />)}
@@ -65,7 +65,7 @@ const Sidebar = ({ isOpen }) => {
           <div className="flex flex-col mt-2">
             <button onClick={() => toggleSection('team')} className={`flex items-center justify-between p-3 rounded-l-xl hover:bg-sky-100 ${isOpen ? 'justify-start ml-10' : 'justify-center'}`}>
               <div className="flex items-center space-x-3">
-                <RiTeamLine className='text-3xl hover:text-sky-100' />
+                <RiTeamLine className={`${isOpen ? 'text-3xl' : 'text-4xl'}`}/>
                 {isOpen && <span>Team</span>}
               </div>
               {isOpen && (expandedSections['team'] ? <FaChevronUp /> : <FaChevronDown />)}
@@ -80,7 +80,7 @@ const Sidebar = ({ isOpen }) => {
           <div className="flex flex-col mt-2">
             <button onClick={() => toggleSection('filing')} className={`flex items-center justify-between p-3 rounded-l-xl hover:bg-sky-100 ${isOpen ? 'justify-start ml-10' : 'justify-center'}`}>
               <div className="flex items-center space-x-3">
-                <FaRegFile className='text-3xl hover:text-sky-100' />
+                <FaRegFile className={`${isOpen ? 'text-3xl' : 'text-4xl'}`}/>
                 {isOpen && <span>Filing</span>}
               </div>
               {isOpen && (expandedSections['filing'] ? <FaChevronUp /> : <FaChevronDown />)}
@@ -95,7 +95,7 @@ const Sidebar = ({ isOpen }) => {
           <div className="flex flex-col mt-2">
             <button onClick={() => toggleSection('settings')} className={`flex items-center justify-between p-3 rounded-l-xl hover:bg-sky-100  ${isOpen ? 'justify-start ml-10' : 'justify-center'}`}>
               <div className="flex items-center space-x-3">
-                <IoSettingsOutline className='text-3xl hover:text-sky-100' />
+                <IoSettingsOutline className={`${isOpen ? 'text-3xl' : 'text-4xl'}`} />
                 {isOpen && <span>Settings</span>}
               </div>
               {isOpen && (expandedSections['settings'] ? <FaChevronUp /> : <FaChevronDown />)}
