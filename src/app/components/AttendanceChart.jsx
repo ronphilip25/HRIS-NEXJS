@@ -148,7 +148,7 @@ const AttendanceChart = () => {
   return (
     <div>
       <div>
-      <button className={`  p-1 md:text-xs px-3 lg:text-sm font-normal border-2 border-r-0 rounded-l-md ${timePeriod === '12months' ? 'text-black' : 'text-blue-200'}`} onClick={() => setTimePeriod('12months')}>12 Months</button>
+      <button className={`p-1 md:text-xs px-3 lg:text-sm font-normal border-2 border-r-0 rounded-l-md ${timePeriod === '12months' ? 'text-black' : 'text-blue-200'}`} onClick={() => setTimePeriod('12months')}>12 Months</button>
         <button className={`p-1 md:text-xs px-3 lg:text-sm font-normal border-2 border-r-0 ${timePeriod === '30days' ? 'text-black' : 'text-blue-200'}`} onClick={() => setTimePeriod('30days')}>30 Days</button>
         <button className={`p-1 md:text-xs px-3 lg:text-sm font-normal border-2 border-r-0 ${timePeriod === '7days' ? 'text-black' : 'text-blue-200'}`} onClick={() => setTimePeriod('7days')}>7 Days</button>
         <button className={`p-1 md:text-xs px-3 lg:text-sm font-normal border-2 rounded-r-md ${timePeriod === '24hrs' ? 'text-black' : 'text-blue-200'}`} onClick={() => setTimePeriod('24hrs')}>24 Hours</button>
