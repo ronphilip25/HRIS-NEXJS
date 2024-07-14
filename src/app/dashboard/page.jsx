@@ -6,10 +6,12 @@ import Monthly from '../components/Monthly';
 import Approval from '../components/Approval';
 import Platform from '../components/Platform';
 import CompanyNews from '../components/CompanyNews';
+import MainLayout from '../components/Layout/MainLayout';
 
 const Dashboard = () => {
   return (
     <>
+        <MainLayout>
         <div className='lg:grid lg:grid-cols-4 lg:gap-4 md:grid md:grid-cols-2 md:gap-2 gap-4 md:flex-shrink-0 flex flex-col mx-4 lg:mx-auto'>
           <div className="flex items-center justify-center">
             <div className="rounded-lg bg-white lg:px-auto lg:h-[119px] lg:p-4 shadow-md md:w-full md:h-[119px] md:flex-shrink-0 md:px-auto md:p-4 px-1 h-[90px] w-full">
@@ -163,6 +165,7 @@ const Dashboard = () => {
           <Platform />
 
         </div>
+        </MainLayout>
     </>
   )
 }

@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Logo from './assets/logo.png'
 
-export default function Home() {
+
+export default function Index() {
   return (
     <main className="bg-blue-100 bg-opacity-50 min-h-screen">
       <div className="container mx-auto md:max-w-4xl lg:max-w-6xl">
@@ -29,7 +29,7 @@ export default function Home() {
               <div className="flex flex-col items-center justify-center">
                 <div className="flex flex-col items-center justify-center mt-24 pb-12 lg:pb-0 md:pb-0 ">
                   <div className="mb-5">
-                    <Image src={Logo} priority={true} alt="Logo" className="w-16 h-16 motion-safe:animate-bounce" />
+                    <Image src="/assets/logo.png" width={100} height={100} priority={true} alt="Logo" className="w-16 h-16 motion-safe:animate-bounce" />
                   </div>
                   <div className="font-sans font-inter mt-0 md:mt-2">
                     <h5 className=" font-bold text-wrap md:text-lg text-lg lg:text-xl md:text-nowrap text-gray-600">Human Resource Information System</h5>
