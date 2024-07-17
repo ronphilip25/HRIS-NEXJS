@@ -57,8 +57,9 @@ const Sidebar = ({ isOpen }) => {
             </button>
             {expandedSections['leaves'] && isOpen && (
               <div className="ml-24 flex flex-col space-y-2">
-                <a href="#" className="p-2 rounded-md hover:bg-gray-100">Submenu 1</a>
-                <a href="#" className="p-2 rounded-md hover:bg-gray-100">Submenu 2</a>
+                <a href="/leaves/usage" className="p-2 rounded-md hover:bg-gray-100">Leave Usage History</a>
+                <a href="/leaves/manual" className="p-2 rounded-md hover:bg-gray-100">Manual Grant</a>
+                <a href="/leaves/setting" className="p-2 rounded-md hover:bg-gray-100">Leave Setting</a>
               </div>
             )}
           </div>
