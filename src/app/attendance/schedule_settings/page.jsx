@@ -1,10 +1,10 @@
 import React from 'react'
-import MainLayout from '../../components/Layout/MainLayout'
+import MainLayout from '../../Layout/MainLayout'
 
 const page = () => {
     return (
         <>
-            <MainLayout>
+            <MainLayout pageTitle="Schedule Settings">
                 <div className="">
                     <div className="flex flex-col rounded-xl shadow-lg bg-white w-auto h-[106px] py-7 px-8">
                         <div className="text-normal font-bold font-sans font-inter text-blue-500 relative right-5 bottom-3">

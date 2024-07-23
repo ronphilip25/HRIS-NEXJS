@@ -1,11 +1,10 @@
 import React from 'react'
-import MainLayout from '../../components/Layout/MainLayout'
+import MainLayout from '../../Layout/MainLayout'
 
 const page = () => {
     return (
         <>
-
-            <MainLayout>
+            <MainLayout pageTitle="Manual">
                 <div className="flex flex-col">
                     <div className="flex items-center justify-end">
                         <button className="h-[47px] w-[156px] rounded-lg bg-blue-600 text-base font-bold text-white shadow-lg">Adjust in Bulk</button>

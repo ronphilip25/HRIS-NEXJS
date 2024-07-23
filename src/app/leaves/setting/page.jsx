@@ -1,11 +1,11 @@
 import React from 'react'
-import MainLayout from '../../components/Layout/MainLayout'
+import MainLayout from '../../Layout/MainLayout'
 
 const page = () => {
     return (
         <>
 
-            <MainLayout>
+            <MainLayout pageTitle="Leave Settings">
                 <div className="flex flex-col">
                     <div className="h-[106px] rounded-lg bg-white shadow-lg">
                         <div className="mt-6 flex items-center justify-between px-4">

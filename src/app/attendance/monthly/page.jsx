@@ -1,11 +1,11 @@
-import MainLayout from '../../components/Layout/MainLayout';
+import MainLayout from '../../Layout/MainLayout';
 import AttendanceWidget from '../../components/AttendanceWidget';
 import React from 'react'
 
 const page = () => {
   return (
     <>
-      <MainLayout>
+      <MainLayout pageTitle="Monthly">
         <div className='grid grid-cols-4 gap-4'>
           <AttendanceWidget />
 

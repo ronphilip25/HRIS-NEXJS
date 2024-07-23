@@ -1,11 +1,11 @@
-import MainLayout from '../../components/Layout/MainLayout';
+import MainLayout from '../../Layout/MainLayout';
 import AttendanceWidget from '../../components/AttendanceWidget';
 import Image from 'next/image'
 import React from 'react'
 
 const page = () => {
     return (
-        <MainLayout>
+        <MainLayout pageTitle="Daily">
             <div className='grid grid-cols-4 gap-4 '>
                 <AttendanceWidget />
                 <div className="col-start-1 rounded-lg bg-white p-2 col-span-3 shadow-md h-[720px]">
