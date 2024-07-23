@@ -19,7 +19,7 @@ const Dashboard = () => {
     // Simulate an async operation (e.g., fetching data)
     setTimeout(() => {
       setIsLoading(false);
-    }, 200);
+    }, 1000);
   }, []);
 
   return (
