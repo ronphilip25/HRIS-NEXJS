@@ -11,7 +11,7 @@ import { IoSettingsOutline } from "react-icons/io5";
 
 const Sidebar = ({ isOpen }) => {
   const [expandedSections, setExpandedSections] = useState(true)
-  
+
 
   const toggleSection = (section) => {
     setExpandedSections((prevSections) => ({
@@ -28,68 +28,68 @@ const Sidebar = ({ isOpen }) => {
         </div>
         <nav className={` ${isOpen ? 'flex flex-col mt-3' : 'justify-center items-center lg:text-4xl md:text-4xl text-4xl'} flex flex-col mt-2`}>
           <a href="/dashboard" className={`flex items-center space-x-3 p-3 rounded-l-xl hover:bg-sky-100 ${isOpen ? 'justify-start ml-10' : ''}`}>
-            <MdOutlineDashboard className={`${isOpen ? 'text-3xl' : 'text-4xl'}`}/>
+            <MdOutlineDashboard className={`${isOpen ? 'text-3xl' : 'text-4xl'}`} />
             {isOpen && <span>Dashboard</span>}
           </a>
           <div className="flex flex-col mt-2">
             <button onClick={() => toggleSection('attendance')} className={`flex items-center justify-between p-3 rounded-l-xl hover:bg-sky-100 ${isOpen ? 'justify-start ml-10' : 'justify-center'}`}>
               <div className="flex items-center space-x-3">
-                <LuClock4 className={`${isOpen ? 'text-3xl' : 'text-4xl'}`}/>
+                <LuClock4 className={`${isOpen ? 'text-3xl' : 'text-4xl'}`} />
                 {isOpen && <span>Attendance</span>}
               </div>
               {isOpen && (expandedSections['attendance'] ? <FaChevronUp /> : <FaChevronDown />)}
             </button>
             {expandedSections['attendance'] && isOpen && (
               <div className="ml-24 flex flex-col space-y-2">
-                <a href="/attendance/daily" className="p-2 rounded-md hover:bg-gray-100">Daily</a>
-                <a href="/attendance/monthly" className="p-2 rounded-md hover:bg-gray-100">Weekly/Monthly</a>
-                <a href="/attendance/schedule_settings" className="p-2 rounded-md hover:bg-gray-100">Schedule Settings</a>
+                <a href="/attendance/daily" className="p-2 rounded-md hover:bg-gray-100 text-sm">Daily</a>
+                <a href="/attendance/monthly" className="p-2 rounded-md hover:bg-gray-100 text-sm">Weekly/Monthly</a>
+                <a href="/attendance/schedule_settings" className="p-2 rounded-md hover:bg-gray-100 text-sm">Schedule Settings</a>
               </div>
             )}
           </div>
           <div className="flex flex-col mt-2">
             <button onClick={() => toggleSection('leaves')} className={`flex items-center justify-between p-3 rounded-l-xl hover:bg-sky-100 ${isOpen ? 'justify-start ml-10' : 'justify-center'}`}>
               <div className="flex items-center space-x-3">
-                <LuCalendarClock className={`${isOpen ? 'text-3xl' : 'text-4xl'}`}/>
+                <LuCalendarClock className={`${isOpen ? 'text-3xl' : 'text-4xl'}`} />
                 {isOpen && <span>Leaves</span>}
               </div>
               {isOpen && (expandedSections['leaves'] ? <FaChevronUp /> : <FaChevronDown />)}
             </button>
             {expandedSections['leaves'] && isOpen && (
               <div className="ml-24 flex flex-col space-y-2">
-                <a href="/leaves/usage" className="p-2 rounded-md hover:bg-gray-100">Leave Usage History</a>
-                <a href="/leaves/manual" className="p-2 rounded-md hover:bg-gray-100">Manual Grant</a>
-                <a href="/leaves/setting" className="p-2 rounded-md hover:bg-gray-100">Leave Setting</a>
+                <a href="/leaves/usage" className="p-2 rounded-md hover:bg-gray-100 text-sm">Leave Usage History</a>
+                <a href="/leaves/manual" className="p-2 rounded-md hover:bg-gray-100 text-sm">Manual Grant</a>
+                <a href="/leaves/setting" className="p-2 rounded-md hover:bg-gray-100 text-sm">Leave Setting</a>
               </div>
             )}
           </div>
           <div className="flex flex-col mt-2">
             <button onClick={() => toggleSection('team')} className={`flex items-center justify-between p-3 rounded-l-xl hover:bg-sky-100 ${isOpen ? 'justify-start ml-10' : 'justify-center'}`}>
               <div className="flex items-center space-x-3">
-                <RiTeamLine className={`${isOpen ? 'text-3xl' : 'text-4xl'}`}/>
+                <RiTeamLine className={`${isOpen ? 'text-3xl' : 'text-4xl'}`} />
                 {isOpen && <span>Team</span>}
               </div>
               {isOpen && (expandedSections['team'] ? <FaChevronUp /> : <FaChevronDown />)}
             </button>
             {expandedSections['team'] && isOpen && (
               <div className="ml-24 flex flex-col space-y-2">
-                <a href="#" className="p-2 rounded-md hover:bg-gray-100">Submenu 1</a>
-                <a href="#" className="p-2 rounded-md hover:bg-gray-100">Submenu 2</a>
+                <a href="#" className="p-2 rounded-md hover:bg-gray-100 text-sm">Employees</a>
+                <a href="#" className="p-2 rounded-md hover:bg-gray-100 text-sm">Organization</a>
               </div>
             )}
           </div>
           <div className="flex flex-col mt-2">
             <button onClick={() => toggleSection('filing')} className={`flex items-center justify-between p-3 rounded-l-xl hover:bg-sky-100 ${isOpen ? 'justify-start ml-10' : 'justify-center'}`}>
               <div className="flex items-center space-x-3">
-                <FaRegFile className={`${isOpen ? 'text-3xl' : 'text-4xl'}`}/>
+                <FaRegFile className={`${isOpen ? 'text-3xl' : 'text-4xl'}`} />
                 {isOpen && <span>Filing</span>}
               </div>
               {isOpen && (expandedSections['filing'] ? <FaChevronUp /> : <FaChevronDown />)}
             </button>
             {expandedSections['filing'] && isOpen && (
               <div className="ml-24 flex flex-col space-y-2">
-                <a href="#" className="p-2 rounded-md hover:bg-gray-100">Submenu 1</a>
-                <a href="#" className="p-2 rounded-md hover:bg-gray-100">Submenu 2</a>
+                <a href="#" className="p-2 rounded-md hover:bg-gray-100 text-sm">Approval Management</a>
+                <a href="#" className="p-2 rounded-md hover:bg-gray-100 text-sm">Filing Settings</a>
               </div>
             )}
           </div>
@@ -103,8 +103,8 @@ const Sidebar = ({ isOpen }) => {
             </button>
             {expandedSections['settings'] && isOpen && (
               <div className="ml-24 flex flex-col space-y-2">
-                <a href="#" className="p-2 rounded-md hover:bg-gray-100">Submenu 1</a>
-                <a href="#" className="p-2 rounded-md hover:bg-gray-100">Submenu 2</a>
+                <a href="#" className="p-2 rounded-md hover:bg-gray-100 text-sm">Company Settings</a>
+                <a href="#" className="p-2 rounded-md hover:bg-gray-100 text-sm">Admin Settings</a>
               </div>
             )}
           </div>
@@ -112,7 +112,8 @@ const Sidebar = ({ isOpen }) => {
       </div>
 
 
-      {/* mobile sidebar */}
+
+      {/* Mobile */}
 
 
     </>

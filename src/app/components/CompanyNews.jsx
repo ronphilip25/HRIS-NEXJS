@@ -11,8 +11,8 @@ const CompanyNews = () => {
                             Add
                         </button>
                     </div>
-                    <div className="font-inter ml-2 lg:mt-3 md:mt-1 font-sans text-base">
-                        <h5 className="lg:text-2xl font-bold text-black md:text-base">Company News</h5>
+                    <div className="font-inter ml-2 lg:mt-3 md:mt-1 font-sans text-base overflow-hidden">
+                        <h5 className="lg:text-2xl font-bold text-black md:text-base ">Company News</h5>
                     </div>
                     <div className="font-inter flex items-center justify-center font-sans lg:text-base font-normal md:text-sm md:mt-5">No News</div>
                 </div>
