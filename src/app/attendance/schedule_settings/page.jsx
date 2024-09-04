@@ -4,10 +4,10 @@ import MainLayout from '../../Layout/MainLayout'
 const page = () => {
     return (
         <>
-            <MainLayout 
-            pageTitle="Schedule Settings | Next.js"
-            description="Welcome to my Next.js app. Learn about the latest trends."
-            keywords="Next.js, React, SEO"
+            <MainLayout
+                pageTitle="Schedule Settings | Next.js"
+                description="Welcome to my Next.js app. Learn about the latest trends."
+                keywords="Next.js, React, SEO"
             >
                 <div className="">
                     <div className="flex flex-col rounded-xl shadow-lg bg-white w-auto h-[106px] py-7 px-8">
@@ -37,11 +37,11 @@ const page = () => {
                         <div className="flex justify-between text-center font-normal font-sans font-inter text-base pt-8">
                             <div className="ml-5">
                                 <button className="h-[55px] w-[92px] rounded-lg border border-gray-400 hover:border-2 hover:border-blue-600 hover:font-bold hover:text-blue-600 focus:border-2 focus:border-blue-600 focus:font-bold focus:text-blue-600 active:border-blue-600"
-                                   >Yes</button>
+                                >Yes</button>
                                 <button className="h-[55px] w-[92px] rounded-lg border border-gray-400 hover:border-2 hover:border-blue-600 hover:font-bold hover:text-blue-600 focus:border-2 focus:border-blue-600 focus:font-bold focus:text-blue-600 active:border-blue-600 ml-2"
-                                    >No</button>
+                                >No</button>
                             </div>
-                            <button 
+                            <button
                                 className="rounded-lg text-white bg-sky-800 w-[103px] h-[55px] mr-5 font-bold text-base font-sans font-inter hover:scale-105 ease-in duration-200">
                                 <span>Save</span>
                             </button>
@@ -68,7 +68,7 @@ const page = () => {
                                 </div>
                                 {/* <!-- end dropdown --> */}
                                 <div className="flex justify-end mt-9">
-                                    <button 
+                                    <button
                                         className="rounded-lg text-white bg-sky-800 w-[103px] h-[55px] font-bold text-base font-sans font-inter hover:scale-105 ease-in duration-200">
                                         <span>Save</span>
                                     </button>
@@ -87,9 +87,9 @@ const page = () => {
                             <div className="flex justify-between text-center font-normal font-sans font-inter text-base pt-14">
                                 <div className="ml-5">
                                     <button className="h-[55px] w-[92px] rounded-lg border border-gray-400 hover:border-2 hover:border-blue-600 hover:font-bold hover:text-blue-600 focus:border-2 focus:border-blue-600 focus:font-bold focus:text-blue-600 active:border-blue-600"
-                                        >Yes</button>
+                                    >Yes</button>
                                     <button className="h-[55px] w-[92px] rounded-lg border border-gray-400 hover:border-2 hover:border-blue-600 hover:font-bold hover:text-blue-600 focus:border-2 focus:border-blue-600 focus:font-bold focus:text-blue-600 active:border-blue-600 ml-2"
-                                        >No</button>
+                                    >No</button>
                                 </div>
                                 <button id="outerSaveBtn1"
                                     className="rounded-lg text-white bg-sky-800 w-[103px] h-[55px] mr-5 font-bold text-base font-sans font-inter hover:scale-105 ease-in duration-200">

@@ -68,6 +68,7 @@ export default function Index() {
                       </div>
                       <div className="font-sans font-inter mt-4">
                         <p className="text-xs text-wrap md:text-xs lg:text-sm text-gray-600">Enter your email and password to access your account</p>
+                        <p className="text-xs text-wrap md:text-xs lg:text-sm text-center text-orange-400">*Enter dummy credentials</p>
                       </div>
                       <form className="w-full" onSubmit={handleSubmit}>
                         <div className="mb-4 lg:mt-8 md:mt-8 mt-5">
