@@ -18,6 +18,12 @@ export default function Navbar({ isOpen, toggleSidebar }) {
 
   const toggleNav = () => {
     setNav(!nav)
+
+    if (!nav) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
   }
 
   const [expandedSections, setExpandedSections] = useState(true)
@@ -65,101 +71,101 @@ export default function Navbar({ isOpen, toggleSidebar }) {
 
       {/* Mobile Sidebar */}
 
-      <div className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''}>
-      <div className={nav ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-white shadow-md p-10 ease-in duration-500 overflow-y-auto' : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'}>
-        <div className='flex w-full items-center justify-between'>
-          <div>
-            <Image src="/assets/sidelogo.png" width={75} height={60} className="mr-2 h-16 w-full" alt="Profile Icon" />
+      <div className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70 z-40' : ''}>
+        <div className={nav ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-white shadow-md p-10 ease-in duration-500 overflow-y-auto z-50' : 'fixed left-[-100%] top-0 p-10 ease-in duration-500 z-50'}>
+          <div className='flex w-full items-center justify-between'>
+            <div>
+              <Image src="/assets/sidelogo.png" width={75} height={60} className="mr-2 h-16 w-full" alt="Profile Icon" />
+            </div>
+            <div onClick={toggleNav} className="flex">
+              <button><SlClose className='text-sky-200 text-4xl' /></button>
+            </div>
           </div>
-          <div onClick={toggleNav} className="flex">
-            <button><SlClose className='text-sky-200 text-4xl' /></button>
-          </div>
+          <nav className='flex flex-col mt-2'>
+            <a href="/dashboard" className='flex items-center space-x-3 p-3 rounded-l-xl hover:bg-sky-100'>
+              <MdOutlineDashboard className='text-4xl' />
+              <span>Dashboard</span>
+            </a>
+            <div className="flex flex-col mt-2">
+              <button onClick={() => toggleSection('attendance')} className='flex items-center justify-between p-3 rounded-l-xl hover:bg-sky-100'>
+                <div className="flex items-center space-x-3">
+                  <LuClock4 className='text-4xl' />
+                  <span>Attendance</span>
+                </div>
+                {isOpen && (expandedSections.attendance ? <FaChevronUp /> : <FaChevronDown />)}
+              </button>
+              {expandedSections.attendance && (
+                <div className="ml-10 flex flex-col space-y-2">
+                  <a href="/attendance/daily" className="p-2 rounded-md hover:bg-gray-100 text-sm">Daily</a>
+                  <a href="/attendance/monthly" className="p-2 rounded-md hover:bg-gray-100 text-sm">Weekly/Monthly</a>
+                  <a href="/attendance/schedule_settings" className="p-2 rounded-md hover:bg-gray-100 text-sm">Schedule Settings</a>
+                </div>
+              )}
+            </div>
+            <div className="flex flex-col mt-2">
+              <button onClick={() => toggleSection('leaves')} className='flex items-center justify-between p-3 rounded-l-xl hover:bg-sky-100'>
+                <div className="flex items-center space-x-3">
+                  <LuCalendarClock className='text-4xl' />
+                  <span>Leaves</span>
+                </div>
+                {isOpen && (expandedSections.leaves ? <FaChevronUp /> : <FaChevronDown />)}
+              </button>
+              {expandedSections.leaves && (
+                <div className="ml-10 flex flex-col space-y-2">
+                  <a href="/leaves/usage" className="p-2 rounded-md hover:bg-gray-100 text-sm">Leave Usage History</a>
+                  <a href="/leaves/manual" className="p-2 rounded-md hover:bg-gray-100 text-sm">Manual Grant</a>
+                  <a href="/leaves/setting" className="p-2 rounded-md hover:bg-gray-100 text-sm">Leave Setting</a>
+                </div>
+              )}
+            </div>
+            <div className="flex flex-col mt-2">
+              <button onClick={() => toggleSection('team')} className='flex items-center justify-between p-3 rounded-l-xl hover:bg-sky-100'>
+                <div className="flex items-center space-x-3">
+                  <RiTeamLine className='text-4xl' />
+                  <span>Team</span>
+                </div>
+                {isOpen && (expandedSections.team ? <FaChevronUp /> : <FaChevronDown />)}
+              </button>
+              {expandedSections.team && (
+                <div className="ml-10 flex flex-col space-y-2">
+                  <a href="#" className="p-2 rounded-md hover:bg-gray-100 text-sm">Employees</a>
+                  <a href="#" className="p-2 rounded-md hover:bg-gray-100 text-sm">Organization</a>
+                </div>
+              )}
+            </div>
+            <div className="flex flex-col mt-2">
+              <button onClick={() => toggleSection('filing')} className='flex items-center justify-between p-3 rounded-l-xl hover:bg-sky-100'>
+                <div className="flex items-center space-x-3">
+                  <FaRegFile className='text-4xl' />
+                  <span>Filing</span>
+                </div>
+                {isOpen && (expandedSections.filing ? <FaChevronUp /> : <FaChevronDown />)}
+              </button>
+              {expandedSections.filing && (
+                <div className="ml-10 flex flex-col space-y-2">
+                  <a href="#" className="p-2 rounded-md hover:bg-gray-100 text-sm">Approval Management</a>
+                  <a href="#" className="p-2 rounded-md hover:bg-gray-100 text-sm">Filing Settings</a>
+                </div>
+              )}
+            </div>
+            <div className="flex flex-col mt-2">
+              <button onClick={() => toggleSection('settings')} className='flex items-center justify-between p-3 rounded-l-xl hover:bg-sky-100'>
+                <div className="flex items-center space-x-3">
+                  <IoSettingsOutline className='text-4xl' />
+                  <span>Settings</span>
+                </div>
+                {isOpen && (expandedSections.settings ? <FaChevronUp /> : <FaChevronDown />)}
+              </button>
+              {expandedSections.settings && (
+                <div className="ml-10 flex flex-col space-y-2">
+                  <a href="#" className="p-2 rounded-md hover:bg-gray-100 text-sm">Company Settings</a>
+                  <a href="#" className="p-2 rounded-md hover:bg-gray-100 text-sm">Admin Settings</a>
+                </div>
+              )}
+            </div>
+          </nav>
         </div>
-        <nav className='flex flex-col mt-2'>
-          <a href="/dashboard" className='flex items-center space-x-3 p-3 rounded-l-xl hover:bg-sky-100'>
-            <MdOutlineDashboard className='text-4xl' />
-            <span>Dashboard</span>
-          </a>
-          <div className="flex flex-col mt-2">
-            <button onClick={() => toggleSection('attendance')} className='flex items-center justify-between p-3 rounded-l-xl hover:bg-sky-100'>
-              <div className="flex items-center space-x-3">
-                <LuClock4 className='text-4xl' />
-                <span>Attendance</span>
-              </div>
-              {isOpen && (expandedSections.attendance ? <FaChevronUp /> : <FaChevronDown />)}
-            </button>
-            {expandedSections.attendance && (
-              <div className="ml-10 flex flex-col space-y-2">
-                <a href="/attendance/daily" className="p-2 rounded-md hover:bg-gray-100 text-sm">Daily</a>
-                <a href="/attendance/monthly" className="p-2 rounded-md hover:bg-gray-100 text-sm">Weekly/Monthly</a>
-                <a href="/attendance/schedule_settings" className="p-2 rounded-md hover:bg-gray-100 text-sm">Schedule Settings</a>
-              </div>
-            )}
-          </div>
-          <div className="flex flex-col mt-2">
-            <button onClick={() => toggleSection('leaves')} className='flex items-center justify-between p-3 rounded-l-xl hover:bg-sky-100'>
-              <div className="flex items-center space-x-3">
-                <LuCalendarClock className='text-4xl' />
-                <span>Leaves</span>
-              </div>
-              {isOpen && (expandedSections.leaves ? <FaChevronUp /> : <FaChevronDown />)}
-            </button>
-            {expandedSections.leaves && (
-              <div className="ml-10 flex flex-col space-y-2">
-                <a href="/leaves/usage" className="p-2 rounded-md hover:bg-gray-100 text-sm">Leave Usage History</a>
-                <a href="/leaves/manual" className="p-2 rounded-md hover:bg-gray-100 text-sm">Manual Grant</a>
-                <a href="/leaves/setting" className="p-2 rounded-md hover:bg-gray-100 text-sm">Leave Setting</a>
-              </div>
-            )}
-          </div>
-          <div className="flex flex-col mt-2">
-            <button onClick={() => toggleSection('team')} className='flex items-center justify-between p-3 rounded-l-xl hover:bg-sky-100'>
-              <div className="flex items-center space-x-3">
-                <RiTeamLine className='text-4xl' />
-                <span>Team</span>
-              </div>
-              {isOpen && (expandedSections.team ? <FaChevronUp /> : <FaChevronDown />)}
-            </button>
-            {expandedSections.team && (
-              <div className="ml-10 flex flex-col space-y-2">
-                <a href="#" className="p-2 rounded-md hover:bg-gray-100 text-sm">Employees</a>
-                <a href="#" className="p-2 rounded-md hover:bg-gray-100 text-sm">Organization</a>
-              </div>
-            )}
-          </div>
-          <div className="flex flex-col mt-2">
-            <button onClick={() => toggleSection('filing')} className='flex items-center justify-between p-3 rounded-l-xl hover:bg-sky-100'>
-              <div className="flex items-center space-x-3">
-                <FaRegFile className='text-4xl' />
-                <span>Filing</span>
-              </div>
-              {isOpen && (expandedSections.filing ? <FaChevronUp /> : <FaChevronDown />)}
-            </button>
-            {expandedSections.filing && (
-              <div className="ml-10 flex flex-col space-y-2">
-                <a href="#" className="p-2 rounded-md hover:bg-gray-100 text-sm">Approval Management</a>
-                <a href="#" className="p-2 rounded-md hover:bg-gray-100 text-sm">Filing Settings</a>
-              </div>
-            )}
-          </div>
-          <div className="flex flex-col mt-2">
-            <button onClick={() => toggleSection('settings')} className='flex items-center justify-between p-3 rounded-l-xl hover:bg-sky-100'>
-              <div className="flex items-center space-x-3">
-                <IoSettingsOutline className='text-4xl' />
-                <span>Settings</span>
-              </div>
-              {isOpen && (expandedSections.settings ? <FaChevronUp /> : <FaChevronDown />)}
-            </button>
-            {expandedSections.settings && (
-              <div className="ml-10 flex flex-col space-y-2">
-                <a href="#" className="p-2 rounded-md hover:bg-gray-100 text-sm">Company Settings</a>
-                <a href="#" className="p-2 rounded-md hover:bg-gray-100 text-sm">Admin Settings</a>
-              </div>
-            )}
-          </div>
-        </nav>
       </div>
-    </div>
 
     </>
   )

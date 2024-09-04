@@ -5,7 +5,11 @@ import React from 'react'
 const page = () => {
   return (
     <>
-      <MainLayout pageTitle="Monthly">
+      <MainLayout 
+      pageTitle="Monthly | Next.js"
+      description="Welcome to my Next.js app. Learn about the latest trends."
+      keywords="Next.js, React, SEO"
+      >
         <div className='grid grid-cols-4 gap-4'>
           <AttendanceWidget />
 
