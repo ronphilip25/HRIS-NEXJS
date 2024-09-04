@@ -21,7 +21,7 @@ const Sidebar = ({ isOpen }) => {
   }
   return (
     <>
-      <div className={`flex flex-col h-screen  bg-white text-black border ${isOpen ? 'lg:w-[286px] md:w-[250px] w-[200px] lg:block md:hidden hidden' : 'lg:w-44 md:w-34 md:h- w-36 lg:block md:block hidden'}  transition-all duration-500 shadow-lg`}>
+      <div className={`flex flex-col h-screen  bg-white text-black border ${isOpen ? 'lg:w-[286px] md:w-[250px] w-[200px] lg:block md:block hidden' : 'lg:w-44 md:w-34 w-36 lg:block md:block hidden'}  transition-all duration-500 shadow-lg`}>
         <div className="flex items-center justify-center p-4 bg-white">
           <Image src="/assets/sidelogo.png" width={200} height={100} priority={true} alt="Logo" className={` ${isOpen ? 'lg:h-[64px] lg:w-[157px] object-contain object-center md:h-[62px] md:w-[140px]' : 'hidden'}`} />
           <Image src="/assets/logo.png" width={200} height={100} priority={true} alt="Logo" className={` ${isOpen ? ' hidden' : 'h-12 w-12 lg:h-16 lg:w-16 md:h-16 md:w-16'}`} /> {/* Add your logo image here */}
