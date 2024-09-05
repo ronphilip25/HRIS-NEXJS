@@ -11,7 +11,7 @@ const Approval = () => {
                     </div>
                 </div>
                 <div className="grid grid-cols-5 font-sans font-inter text-xs font-bold text-gray-700 mt-3 ml-2 py-2 overflow-x-auto overflow-y-visible lg:h-[20vh] md:h-[24vh] h-[35vh]">
-                    <table className="col-span-5 border-separate border-spacing-y-[1rem] my-[-2rem]">
+                    <table className="col-span-5 border-separate border-spacing-y-[1.5rem] my-[-2rem]">
                         <thead>
                         <tr>
                                 <th className="px-0 py-1  border-b border-gray-700">Name</th>
