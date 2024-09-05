@@ -3,8 +3,7 @@ import React from 'react'
 const CompanyNews = () => {
     return (
         <>
-        
-            <div className="rounded-lg bg-white lg:p-4 p-2 pt-3 shadow-md lg:row-span-2 md:row-span-1">
+            <div className="rounded-lg bg-white lg:p-4 p-2 pt-3 shadow-md lg:row-span-2 md:row-span-1 overflow-x-auto overflow-y-auto lg:h-full md:h-[15vh] h-[35vh]">
                 <div className="relative">
                     <div className="absolute right-0 top-0 cursor-pointer">
                         <button className='border border-blue-400 rounded-lg text-base font-sans font-bold w-24 h-10 text-blue-400 px-3 py-1 lg:w-24 lg:h-10 md:w-24'>

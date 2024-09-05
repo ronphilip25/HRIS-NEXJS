@@ -5,18 +5,19 @@ import React from 'react'
 const page = () => {
   return (
     <>
-      <MainLayout 
-      pageTitle="Monthly | Next.js"
-      description="Welcome to my Next.js app. Learn about the latest trends."
-      keywords="Next.js, React, SEO"
+      <MainLayout
+        pageTitle="Monthly | Next.js"
+        description="Welcome to my Next.js app. Learn about the latest trends."
+        keywords="Next.js, React, SEO"
       >
         <div className='grid grid-cols-4 gap-4'>
+
           <AttendanceWidget />
 
-          <div class=" col-start-4 rounded-md cursor-pointer">
-            <div class="flex items-center justify-end">
-              <div class="text-white text-xs font-sans font-inter font-bold">
-                <div class="flex justify-center w-36 h-11 border mt-14 bg-blue-700 text-white rounded-lg">
+          <div className=" col-start-4 rounded-md cursor-pointer">
+            <div className="flex items-center justify-end">
+              <div className="text-white text-xs font-sans font-inter font-bold">
+                <div className="flex justify-center w-36 h-11 border mt-14 bg-blue-700 text-white rounded-lg">
                   <button>
                     Download Excel
                   </button>
@@ -25,10 +26,9 @@ const page = () => {
             </div>
           </div>
 
-
-          <div class="rounded-lg bg-white p-4 shadow-md col-span-4 h-[715px] mt-1 pb-2">
-            <div class="flex justify-between items-center mt-3 ml-3">
-              <h5 class="leading-44 text-2xl font-bold text-gray-700">Attendance</h5>
+          <div className="rounded-lg bg-white p-4 shadow-md col-span-4 h-[715px] mt-1 pb-2">
+            <div className="flex justify-between items-center mt-3 ml-3">
+              <h5 className="leading-44 text-2xl font-bold text-gray-700">Attendance</h5>
             </div>
 
             {/* {% include '_components/_attendance[components]/thresholdtab.html' %} */}

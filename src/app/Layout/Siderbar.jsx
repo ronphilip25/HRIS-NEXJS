@@ -12,6 +12,19 @@ import { IoSettingsOutline } from "react-icons/io5";
 const Sidebar = ({ isOpen }) => {
   const [expandedSections, setExpandedSections] = useState(true)
 
+  const [nav, setNav] = useState(false)
+
+  const toggleNav = () => {
+    setNav(!nav)
+
+    if (!nav) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+  }
+
+
 
   const toggleSection = (section) => {
     setExpandedSections((prevSections) => ({
@@ -110,14 +123,6 @@ const Sidebar = ({ isOpen }) => {
           </div>
         </nav>
       </div>
-
-
-
-      {/* Mobile */}
-
-            
-            
-      
 
 
     </>

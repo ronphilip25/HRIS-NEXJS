@@ -5,7 +5,11 @@ const page = () => {
     return (
         <>
 
-            <MainLayout>
+            <MainLayout
+                pageTitle="Leave Usage Settings | Next.js"
+                description="Welcome to my Next.js app. Learn about the latest trends."
+                keywords="Next.js, React, SEO"
+            >
                 <div className="flex-col-2 flex gap-6">
                     <div className="h-[822px] w-[378px] rounded-lg bg-white shadow-md">
                         <h6 className="p-5 mt-3 font-sans text-xl font-bold text-gray-700">

@@ -6,7 +6,7 @@ const index = () => {
   return (
     <div>
       <MainLayout pageTitle="Home">
-       
+
       </MainLayout>
     </div>
   )

@@ -15,8 +15,6 @@ const MainLayout = ({ pageTitle, description, keywords, children }) => {
     setIsOpen((prevIsOpen) => !prevIsOpen);
   };
 
-
-
   return (
     <div>
       <header>
@@ -31,7 +29,7 @@ const MainLayout = ({ pageTitle, description, keywords, children }) => {
         <Sidebar isOpen={isOpen} />
         <div className="flex-1 flex flex-col">
           <Navbar isOpen={isOpen} toggleSidebar={toggleSidebar} />
-          <main className={` ${isOpen ? 'md:ml-12' : 'lg:mr-[95px] md:mr-[95px] md:ml-5'} mx-auto mt-3 container transition-all duration-700`}>
+          <main className={` ${isOpen ? 'lg:mx-12 md:mx-1 ml-auto' : 'lg:mr-[95px] md:mr-[95px] md:ml-5'} mx-auto mt-3 container transition-all duration-700`}>
             {children}
           </main>
         </div>

@@ -5,7 +5,11 @@ const page = () => {
     return (
         <>
 
-            <MainLayout pageTitle="Leave Settings">
+            <MainLayout
+                pageTitle="Leave Settings | Next.js"
+                description="Welcome to my Next.js app. Learn about the latest trends."
+                keywords="Next.js, React, SEO"
+            >
                 <div className="flex flex-col">
                     <div className="h-[106px] rounded-lg bg-white shadow-lg">
                         <div className="mt-6 flex items-center justify-between px-4">
@@ -17,7 +21,7 @@ const page = () => {
                             <div className="flex items-center justify-between">
                                 <div className="relative inline-block text-left">
                                     <div>
-                                        <button  type="button" className="mr-4 inline-flex h-[34px] w-[264px] justify-between rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm focus:border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                        <button type="button" className="mr-4 inline-flex h-[34px] w-[264px] justify-between rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm focus:border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-500">
                                             1 Day(s)
                                             {/* <!-- Heroicon name: solid/chevron-down --> */}
                                             <svg className="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">

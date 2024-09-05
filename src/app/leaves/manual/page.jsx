@@ -4,7 +4,11 @@ import MainLayout from '../../Layout/MainLayout'
 const page = () => {
     return (
         <>
-            <MainLayout pageTitle="Manual">
+            <MainLayout
+                pageTitle="Manual Grant | Next.js"
+                description="Welcome to my Next.js app. Learn about the latest trends."
+                keywords="Next.js, React, SEO"
+            >
                 <div className="flex flex-col">
                     <div className="flex items-center justify-end">
                         <button className="h-[47px] w-[156px] rounded-lg bg-blue-600 text-base font-bold text-white shadow-lg">Adjust in Bulk</button>

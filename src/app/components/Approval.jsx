@@ -7,14 +7,14 @@ const Approval = () => {
                 <div className="relative">
                     <div className="absolute right-0 top-0"></div>
                     <div className="ml-2 font-sans">
-                        <h5 className="lg:text-2xl font-bold text-gray-600 md:text-base text-xs">Needs Approval</h5>
+                        <h5 className="lg:text-2xl font-bold text-black md:text-base text-xs">Needs Approval</h5>
                     </div>
                 </div>
-                <div className="grid grid-cols-5 gap-3 font-sans font-inter font-bold text-gray-700 mt-2 ml-2 py-1 md:text-xs md:mt-5 text-xs pt-4">
-                    <table className="col-span-5 border-separate border-spacing-y-[0.5rem] my-[-2rem]">
+                <div className="grid grid-cols-5 font-sans font-inter text-xs font-bold text-gray-700 mt-3 ml-2 py-2 overflow-x-auto overflow-y-visible lg:h-[20vh] md:h-[24vh] h-[35vh]">
+                    <table className="col-span-5 border-separate border-spacing-y-[1rem] my-[-2rem]">
                         <thead>
-                            <tr>
-                                <th className="px-0 py-1 text-left border-b border-gray-700">Name</th>
+                        <tr>
+                                <th className="px-0 py-1  border-b border-gray-700">Name</th>
                                 <th className="px-3 py-1 text-center border-b border-gray-700">Department</th>
                                 <th className="px-3 py-1 text-center border-b border-gray-700">Type</th>
                                 <th className="px-3 py-1 text-center border-b border-gray-700">Request Date</th>
@@ -23,11 +23,194 @@ const Approval = () => {
                         </thead>
                         <tbody className="font-sans text-xs font-normal font-inter">
                             <tr>
-                                <td className="px-0 py-2 text-left"></td>
-                                <td className="px-3 py-2 text-center"></td>
-                                <td className="px-3 py-2 text-center"></td>
-                                <td className="px-3 py-2 text-center"></td>
-                                <td className="text-blue-500 text-center"><a href="#">Details</a></td>
+                                <td className="px-0 py-2 text-center">addas</td>
+                                <td className="px-4 text-center">dasdas</td>
+                                <td className="px-4 text-center">dada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                            </tr>
+                            <tr>
+                                <td className="px-0 py-2 text-center">addas</td>
+                                <td className="px-4 text-center">dasdas</td>
+                                <td className="px-4 text-center">dada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                            </tr>
+                        </tbody>
+                        <tbody className="font-sans text-xs font-normal font-inter">
+                            <tr>
+                                <td className="px-0 py-2 text-center">addas</td>
+                                <td className="px-4 text-center">dasdas</td>
+                                <td className="px-4 text-center">dada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                            </tr>
+                            <tr>
+                                <td className="px-0 py-2 text-center">addas</td>
+                                <td className="px-4 text-center">dasdas</td>
+                                <td className="px-4 text-center">dada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                            </tr>
+                        </tbody>
+                        <tbody className="font-sans text-xs font-normal font-inter">
+                            <tr>
+                                <td className="px-0 py-2 text-center">addas</td>
+                                <td className="px-4 text-center">dasdas</td>
+                                <td className="px-4 text-center">dada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                            </tr>
+                            <tr>
+                                <td className="px-0 py-2 text-center">addas</td>
+                                <td className="px-4 text-center">dasdas</td>
+                                <td className="px-4 text-center">dada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                            </tr>
+                        </tbody>
+                        <tbody className="font-sans text-xs font-normal font-inter">
+                            <tr>
+                                <td className="px-0 py-2 text-center">addas</td>
+                                <td className="px-4 text-center">dasdas</td>
+                                <td className="px-4 text-center">dada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                            </tr>
+                            <tr>
+                                <td className="px-0 py-2 text-center">addas</td>
+                                <td className="px-4 text-center">dasdas</td>
+                                <td className="px-4 text-center">dada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                            </tr>
+                        </tbody>
+                        <tbody className="font-sans text-xs font-normal font-inter">
+                            <tr>
+                                <td className="px-0 py-2 text-center">addas</td>
+                                <td className="px-4 text-center">dasdas</td>
+                                <td className="px-4 text-center">dada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                            </tr>
+                            <tr>
+                                <td className="px-0 py-2 text-center">addas</td>
+                                <td className="px-4 text-center">dasdas</td>
+                                <td className="px-4 text-center">dada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                            </tr>
+                        </tbody>
+                        <tbody className="font-sans text-xs font-normal font-inter">
+                            <tr>
+                                <td className="px-0 py-2 text-center">addas</td>
+                                <td className="px-4 text-center">dasdas</td>
+                                <td className="px-4 text-center">dada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                            </tr>
+                            <tr>
+                                <td className="px-0 py-2 text-center">addas</td>
+                                <td className="px-4 text-center">dasdas</td>
+                                <td className="px-4 text-center">dada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                            </tr>
+                        </tbody>
+                        <tbody className="font-sans text-xs font-normal font-inter">
+                            <tr>
+                                <td className="px-0 py-2 text-center">addas</td>
+                                <td className="px-4 text-center">dasdas</td>
+                                <td className="px-4 text-center">dada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                            </tr>
+                            <tr>
+                                <td className="px-0 py-2 text-center">addas</td>
+                                <td className="px-4 text-center">dasdas</td>
+                                <td className="px-4 text-center">dada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                            </tr>
+                        </tbody>
+                        <tbody className="font-sans text-xs font-normal font-inter">
+                            <tr>
+                                <td className="px-0 py-2 text-center">addas</td>
+                                <td className="px-4 text-center">dasdas</td>
+                                <td className="px-4 text-center">dada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                            </tr>
+                            <tr>
+                                <td className="px-0 py-2 text-center">addas</td>
+                                <td className="px-4 text-center">dasdas</td>
+                                <td className="px-4 text-center">dada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                            </tr>
+                        </tbody>
+                        <tbody className="font-sans text-xs font-normal font-inter">
+                            <tr>
+                                <td className="px-0 py-2 text-center">addas</td>
+                                <td className="px-4 text-center">dasdas</td>
+                                <td className="px-4 text-center">dada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                            </tr>
+                            <tr>
+                                <td className="px-0 py-2 text-center">addas</td>
+                                <td className="px-4 text-center">dasdas</td>
+                                <td className="px-4 text-center">dada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                            </tr>
+                        </tbody>
+                        <tbody className="font-sans text-xs font-normal font-inter">
+                            <tr>
+                                <td className="px-0 py-2 text-center">addas</td>
+                                <td className="px-4 text-center">dasdas</td>
+                                <td className="px-4 text-center">dada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                            </tr>
+                            <tr>
+                                <td className="px-0 py-2 text-center">addas</td>
+                                <td className="px-4 text-center">dasdas</td>
+                                <td className="px-4 text-center">dada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                            </tr>
+                        </tbody>
+                        <tbody className="font-sans text-xs font-normal font-inter">
+                            <tr>
+                                <td className="px-0 py-2 text-center">addas</td>
+                                <td className="px-4 text-center">dasdas</td>
+                                <td className="px-4 text-center">dada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                            </tr>
+                            <tr>
+                                <td className="px-0 py-2 text-center">addas</td>
+                                <td className="px-4 text-center">dasdas</td>
+                                <td className="px-4 text-center">dada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                            </tr>
+                        </tbody>
+                        <tbody className="font-sans text-xs font-normal font-inter">
+                            <tr>
+                                <td className="px-0 py-2 text-center">addas</td>
+                                <td className="px-4 text-center">dasdas</td>
+                                <td className="px-4 text-center">dada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                            </tr>
+                            <tr>
+                                <td className="px-0 py-2 text-center">addas</td>
+                                <td className="px-4 text-center">dasdas</td>
+                                <td className="px-4 text-center">dada</td>
+                                <td className="px-4 text-center">ssdsada</td>
+                                <td className="px-4 text-center">ssdsada</td>
                             </tr>
                         </tbody>
                     </table>
