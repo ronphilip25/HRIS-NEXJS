@@ -9,7 +9,7 @@ const AttendanceWidget = () => {
                     <div className="relative font-inter font-sans">
                         <div className="rounded-lg border border-gray-600 w-full mt-4">
                             <div
-                                className="font-sans font-inter lg:text-base font-bold text-gray-700 lg:py-[7px] md:text-xs md:py-[1px] md:p-2 flex justify-center mr-4"
+                                className="font-sans font-inter lg:text-base font-bold text-gray-700 lg:py-[7px] md:text-xs md:py-[1px] py-[8px] md:p-2 flex justify-center mr-4"
                             >
                                 <div className="mr-4 lg:block md:hidden">
                                     <svg
@@ -42,7 +42,7 @@ const AttendanceWidget = () => {
                 <div className="rounded-lg shadow-md bg-white w-full lg:h-[119px] p-2">
                     <h2 className="text-md ml-2 mt-2 font-normal">Department</h2>
                     <div className="relative inline-block w-full mt-4">
-                        <button type="button" className=" flex item-start justify-between py-[7px] lg:text-base md:text-xs w-full rounded-md bg-white text-base font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-700" id="menu-button" aria-expanded="false" aria-haspopup="true">
+                        <button type="button" className=" flex item-start justify-between py-[8px] lg:text-base md:text-xs w-full rounded-lg bg-white text-base font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-700" id="menu-button" aria-expanded="false" aria-haspopup="true">
                             <div className="flex ml-2">
                                 All Departments
                             </div>
@@ -75,7 +75,7 @@ const AttendanceWidget = () => {
                         <input
                             type="text"
                             placeholder="Search Employees"
-                            className="px-4 py-[7px] rounded-md w-full border border-gray-700"
+                            className="px-4 py-[8px] rounded-md w-full border border-gray-700"
                         />
                     </div>
                 </div>

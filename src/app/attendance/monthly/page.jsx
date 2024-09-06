@@ -58,7 +58,7 @@ const page = () => {
                   <tr>
                     <td className="inline-flex relative">
                       <img
-                        src="/images/employee1.png"
+                        src="/assets/employee1.png"
                         className="rounded-full border border-b h-12 w-12"
                         alt="profile"
                       />

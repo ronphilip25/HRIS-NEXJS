@@ -59,7 +59,7 @@ export default function Index() {
                     <div className="flex flex-col items-center justify-center mt-24 pb-12 lg:pb-0 md:pb-0 ">
                       <div className="mb-5">
                         {/* Conditional rendering of Image component */}
-                        { (
+                        {(
                           <Image src="/assets/logo.png" width={100} height={100} alt="Logo" className="w-16 h-16 motion-safe:animate-bounce" />
                         )}
                       </div>
