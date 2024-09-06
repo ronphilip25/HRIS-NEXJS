@@ -126,7 +126,8 @@ export default function Navbar({ isOpen, toggleSidebar }) {
         <div className={nav ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-white shadow-md p-10 ease-in duration-500 overflow-y-auto z-50' : 'fixed left-[-100%] top-0 p-10 ease-in duration-500 z-50'}>
           <div className='flex w-full items-center justify-between'>
             <div>
-              <Image src="/assets/sidelogo.png" width={75} height={60} className="mr-2 h-16 w-full" alt="Profile Icon" />
+              {/* <Image src="/assets/hrislgo.png" width={75} height={60} className="mr-2 h-16 w-full" alt="Profile Icon" /> */}
+              <h1 className="text-lg font-semibold text-gray-900"><span id="navbarText">Human Resource Info System</span></h1>
             </div>
             <div onClick={toggleNav} className="flex">
               <button aria-label="Open settings" ><SlClose className='text-sky-200 text-4xl' /></button>
