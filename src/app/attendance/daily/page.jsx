@@ -7,13 +7,13 @@ const page = () => {
 
     // table dummy data
     const tableData = [
-        { date: "9/6/24", day: "Friday", time: "8:00 AM - 5:00 PM", break: "1:00 PM - 3:00 PM", totalHours: "10:00", overtime: "0:00", notes: "Kupal" },
-        { date: "9/6/24", day: "Friday", time: "8:00 AM - 5:00 PM", break: "1:00 PM - 3:00 PM", totalHours: "10:00", overtime: "0:00", notes: "Kupal" },
-        { date: "9/6/24", day: "Friday", time: "8:00 AM - 5:00 PM", break: "1:00 PM - 3:00 PM", totalHours: "10:00", overtime: "0:00", notes: "Kupal" },
-        { date: "9/6/24", day: "Friday", time: "8:00 AM - 5:00 PM", break: "1:00 PM - 3:00 PM", totalHours: "10:00", overtime: "0:00", notes: "Kupal" },
-        { date: "9/6/24", day: "Friday", time: "8:00 AM - 5:00 PM", break: "1:00 PM - 3:00 PM", totalHours: "10:00", overtime: "0:00", notes: "Kupal" },
-        { date: "9/6/24", day: "Friday", time: "8:00 AM - 5:00 PM", break: "1:00 PM - 3:00 PM", totalHours: "10:00", overtime: "0:00", notes: "Kupal" },
-        { date: "9/6/24", day: "Friday", time: "8:00 AM - 5:00 PM", break: "1:00 PM - 3:00 PM", totalHours: "10:00", overtime: "0:00", notes: "Kupal" },
+        { date: "9/6/24", day: "Friday", time: "8:00 AM - 5:00 PM", break: "1:00 PM - 3:00 PM", totalHours: "10:00", overtime: "0:00", notes: "Late" },
+        { date: "9/6/24", day: "Friday", time: "8:00 AM - 5:00 PM", break: "1:00 PM - 3:00 PM", totalHours: "10:00", overtime: "0:00", notes: "Late" },
+        { date: "9/6/24", day: "Friday", time: "8:00 AM - 5:00 PM", break: "1:00 PM - 3:00 PM", totalHours: "10:00", overtime: "0:00", notes: "Late" },
+        { date: "9/6/24", day: "Friday", time: "8:00 AM - 5:00 PM", break: "1:00 PM - 3:00 PM", totalHours: "10:00", overtime: "0:00", notes: "Late" },
+        { date: "9/6/24", day: "Friday", time: "8:00 AM - 5:00 PM", break: "1:00 PM - 3:00 PM", totalHours: "10:00", overtime: "0:00", notes: "Late" },
+        { date: "9/6/24", day: "Friday", time: "8:00 AM - 5:00 PM", break: "1:00 PM - 3:00 PM", totalHours: "10:00", overtime: "0:00", notes: "Late" },
+        { date: "9/6/24", day: "Friday", time: "8:00 AM - 5:00 PM", break: "1:00 PM - 3:00 PM", totalHours: "10:00", overtime: "0:00", notes: "Late" },
 
 
     ];
