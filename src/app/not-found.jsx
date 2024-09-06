@@ -16,11 +16,12 @@ export default function NotFound() {
                     </div>
                     <div className="mt-8">
                         <Image
-                            src="/assets/404_not_found.png"
-                            width={500}
-                            height={500}
-                            alt="Funny Cat"
-                            className="mx-auto rounded-lg "
+                            src={'/assets/laughing-cat.gif'}
+                            layout={'responsive'}
+                            height={175}
+                            width={175}
+                            alt={`A cute animal!`}
+                            unoptimized={true}
                         />
                     </div>
                 </div>
