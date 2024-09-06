@@ -5,6 +5,15 @@ const Approval = () => {
     const data = [
         { name: 'John Doe', department: 'IT Department', type: 'Late', requestDate: '2023-05-01' },
         { name: 'John Smith', department: 'HR Department', type: 'Late', requestDate: '2023-05-01' },
+        { name: 'John Smith', department: 'HR Department', type: 'Late', requestDate: '2023-05-01' },
+        { name: 'John Smith', department: 'HR Department', type: 'Late', requestDate: '2023-05-01' },
+        { name: 'John Smith', department: 'HR Department', type: 'Late', requestDate: '2023-05-01' },
+        { name: 'John Smith', department: 'HR Department', type: 'Late', requestDate: '2023-05-01' },
+        { name: 'John Smith', department: 'HR Department', type: 'Late', requestDate: '2023-05-01' },
+        { name: 'John Smith', department: 'HR Department', type: 'Late', requestDate: '2023-05-01' },
+        { name: 'John Smith', department: 'HR Department', type: 'Late', requestDate: '2023-05-01' },
+        { name: 'John Smith', department: 'HR Department', type: 'Late', requestDate: '2023-05-01' },
+        { name: 'John Smith', department: 'HR Department', type: 'Late', requestDate: '2023-05-01' },
     ];
 
     return (
@@ -18,8 +27,8 @@ const Approval = () => {
                 </div>
 
                 <div className="grid grid-cols-5 font-sans font-inter text-xs font-bold text-gray-700 mt-1 ml-2 py-2">
-                    <div className="col-span-5 overflow-y-auto lg:h-[18vh] md:h-[24vh] h-[35vh]">
-                        <table className="w-full table-fixed"> {/* Ensure table layout consistency */}
+                    <div className="col-span-5">
+                        <table className="w-full table-fixed"> {/* Ensure both thead and tbody are in the same table */}
                             <thead>
                                 <tr>
                                     <th className="w-1/5 px-4 py-1 text-center border-b border-gray-700">Name</th>
@@ -29,6 +38,11 @@ const Approval = () => {
                                     <th className="w-1/5 px-4 py-1 text-center border-b border-gray-700">Action</th>
                                 </tr>
                             </thead>
+                        </table>
+                    </div>
+
+                    <div className="col-span-5 overflow-y-auto lg:h-[18vh] md:h-[24vh] h-[35vh]">
+                        <table className="mx-auto w-full table-fixed"> {/* Added table-fixed class for equal width columns */}
                             <tbody className="font-sans text-xs font-normal font-inter">
                                 {data.length > 0 && data.map((item, index) => (
                                     <tr key={index}>
@@ -45,6 +59,7 @@ const Approval = () => {
                         </table>
                     </div>
                 </div>
+
             </div>
         </>
     );

@@ -2,8 +2,21 @@ import React from 'react';
 
 const Monthly = () => {
 
+    // Dummy data
     const data = [
         { name: 'John Doe', department: 'IT Department', tardiness: 10, absent: 5 },
+        { name: 'Jane Smith', department: 'HR Department', tardiness: 8, absent: 3 },
+        { name: 'Jane Smith', department: 'HR Department', tardiness: 8, absent: 3 },
+        { name: 'Jane Smith', department: 'HR Department', tardiness: 8, absent: 3 },
+        { name: 'Jane Smith', department: 'HR Department', tardiness: 8, absent: 3 },
+        { name: 'Jane Smith', department: 'HR Department', tardiness: 8, absent: 3 },
+        { name: 'Jane Smith', department: 'HR Department', tardiness: 8, absent: 3 },
+        { name: 'Jane Smith', department: 'HR Department', tardiness: 8, absent: 3 },
+        { name: 'Jane Smith', department: 'HR Department', tardiness: 8, absent: 3 },
+        { name: 'Jane Smith', department: 'HR Department', tardiness: 8, absent: 3 },
+        { name: 'Jane Smith', department: 'HR Department', tardiness: 8, absent: 3 },
+        { name: 'Jane Smith', department: 'HR Department', tardiness: 8, absent: 3 },
+        { name: 'Jane Smith', department: 'HR Department', tardiness: 8, absent: 3 },
         { name: 'Jane Smith', department: 'HR Department', tardiness: 8, absent: 3 },
     ];
 
@@ -32,24 +45,19 @@ const Monthly = () => {
                     <div className="col-span-4 overflow-y-auto overflow-x-auto lg:h-[32vh] md:h-[20vh] h-[35vh]">
                         <table className="w-full table-fixed">
                             <tbody className="font-sans text-xs font-normal font-inter">
-                                <tr>
-                                    <td className="lg:py-1 lg:pl-2 text-start break-words lg:w-1/4 w-1/4">{data[0].name}</td>
-                                    <td className="lg:py-1 break-words lg:w-2/4 w-2/4">{data[0].department}</td>
-                                    <td className="lg:py-1 text-center break-words lg:w-1/4 w-1/4">{data[0].tardiness}</td>
-                                    <td className="lg:py-1 text-center break-words lg:w-1/4 w-1/4">{data[0].absent}</td>
-                                </tr>
-                                <tr>
-                                    <td className="lg:py-1 lg:pl-2 text-start break-words lg:w-1/4 w-1/4">{data[1].name}</td>
-                                    <td className="lg:py-1 break-words lg:w-2/4 w-2/4">{data[1].department}</td>
-                                    <td className="lg:py-1 text-center break-words lg:w-1/4 w-1/4">{data[1].tardiness}</td>
-                                    <td className="lg:py-1 text-center break-words lg:w-1/4 w-1/4">{data[1].absent}</td>
-                                </tr>
+                                {data.length > 0 && data.map((data, index) => (
+                                    <tr key={index}>
+                                        <td className="lg:py-1 lg:pl-2 text-start break-words lg:w-1/4 w-1/4">{data.name}</td>
+                                        <td className="lg:py-1 break-words lg:w-2/4 w-2/4">{data.department}</td>
+                                        <td className="lg:py-1 text-center break-words lg:w-1/4 w-1/4">{data.tardiness}</td>
+                                        <td className="lg:py-1 text-center break-words lg:w-1/4 w-1/4">{data.absent}</td>
+                                    </tr>
+                                ))}
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
-
         </>
     );
 }

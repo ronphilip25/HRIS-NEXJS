@@ -10,7 +10,6 @@ const index = () => {
         description="Welcome to my Next.js app. Learn about the latest trends."
         keywords="Human Resource Info System, Vercel, Nextjs, React"
       >
-
       </MainLayout>
     </div>
   )

@@ -157,7 +157,7 @@ const page = () => {
                                                     </div>
                                                 </td>
                                                 <td className="py-3">
-                                                    <div className="text-sm font-bold font-sans font-inter">Patricia Kim Rosauro</div>
+                                                    <div className="text-sm font-bold font-sans font-inter">John Doe</div>
                                                 </td>
                                                 <td className="py-3">
                                                     <div className="text-sm font-normal font-sans font-inter">IT Department</div>

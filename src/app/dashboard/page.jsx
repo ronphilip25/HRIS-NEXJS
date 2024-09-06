@@ -174,14 +174,10 @@ const Dashboard = () => {
                 </button>
               </div>
             </div>
-
             {/* Needs Approval */}
-
             <Approval />
-
             {/* Platform Notice */}
             <Platform />
-
           </div>
         }
       </MainLayout>
