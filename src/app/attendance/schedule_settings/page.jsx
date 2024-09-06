@@ -36,12 +36,13 @@ const page = () => {
                         </div>
                         <div className="flex justify-between text-center font-normal font-sans font-inter text-base pt-8">
                             <div className="ml-5">
-                                <button className="h-[55px] w-[92px] rounded-lg border border-gray-400 hover:border-2 hover:border-blue-600 hover:font-bold hover:text-blue-600 focus:border-2 focus:border-blue-600 focus:font-bold focus:text-blue-600 active:border-blue-600"
+                                <button aria-label="Open settings" className="h-[55px] w-[92px] rounded-lg border border-gray-400 hover:border-2 hover:border-blue-600 hover:font-bold hover:text-blue-600 focus:border-2 focus:border-blue-600 focus:font-bold focus:text-blue-600 active:border-blue-600"
                                 >Yes</button>
-                                <button className="h-[55px] w-[92px] rounded-lg border border-gray-400 hover:border-2 hover:border-blue-600 hover:font-bold hover:text-blue-600 focus:border-2 focus:border-blue-600 focus:font-bold focus:text-blue-600 active:border-blue-600 ml-2"
+                                <button aria-label="Open settings" className="h-[55px] w-[92px] rounded-lg border border-gray-400 hover:border-2 hover:border-blue-600 hover:font-bold hover:text-blue-600 focus:border-2 focus:border-blue-600 focus:font-bold focus:text-blue-600 active:border-blue-600 ml-2"
                                 >No</button>
                             </div>
                             <button
+                                aria-label="Open settings"
                                 className="rounded-lg text-white bg-sky-800 w-[103px] h-[55px] mr-5 font-bold text-base font-sans font-inter hover:scale-105 ease-in duration-200">
                                 <span>Save</span>
                             </button>
@@ -69,6 +70,7 @@ const page = () => {
                                 {/* <!-- end dropdown --> */}
                                 <div className="flex justify-end mt-9">
                                     <button
+                                        aria-label="Open settings"
                                         className="rounded-lg text-white bg-sky-800 w-[103px] h-[55px] font-bold text-base font-sans font-inter hover:scale-105 ease-in duration-200">
                                         <span>Save</span>
                                     </button>
@@ -86,12 +88,12 @@ const page = () => {
                             </div>
                             <div className="flex justify-between text-center font-normal font-sans font-inter text-base pt-14">
                                 <div className="ml-5">
-                                    <button className="h-[55px] w-[92px] rounded-lg border border-gray-400 hover:border-2 hover:border-blue-600 hover:font-bold hover:text-blue-600 focus:border-2 focus:border-blue-600 focus:font-bold focus:text-blue-600 active:border-blue-600"
+                                    <button aria-label="Open settings" className="h-[55px] w-[92px] rounded-lg border border-gray-400 hover:border-2 hover:border-blue-600 hover:font-bold hover:text-blue-600 focus:border-2 focus:border-blue-600 focus:font-bold focus:text-blue-600 active:border-blue-600"
                                     >Yes</button>
-                                    <button className="h-[55px] w-[92px] rounded-lg border border-gray-400 hover:border-2 hover:border-blue-600 hover:font-bold hover:text-blue-600 focus:border-2 focus:border-blue-600 focus:font-bold focus:text-blue-600 active:border-blue-600 ml-2"
+                                    <button aria-label="Open settings" className="h-[55px] w-[92px] rounded-lg border border-gray-400 hover:border-2 hover:border-blue-600 hover:font-bold hover:text-blue-600 focus:border-2 focus:border-blue-600 focus:font-bold focus:text-blue-600 active:border-blue-600 ml-2"
                                     >No</button>
                                 </div>
-                                <button id="outerSaveBtn1"
+                                <button aria-label="Open settings" id="outerSaveBtn1"
                                     className="rounded-lg text-white bg-sky-800 w-[103px] h-[55px] mr-5 font-bold text-base font-sans font-inter hover:scale-105 ease-in duration-200">
                                     <span>Save</span>
                                 </button>
@@ -118,7 +120,7 @@ const page = () => {
                                     </div>
                                     {/* <!-- end dropdown --> */}
                                     <div className="flex justify-end mt-9">
-                                        <button id="innerSaveBtn1"
+                                        <button aria-label="Open settings" id="innerSaveBtn1"
                                             className="rounded-lg text-white bg-sky-800 w-[103px] h-[55px] font-bold text-base font-sans font-inter hover:scale-105 ease-in duration-200">
                                             <span>Save</span>
                                         </button>
@@ -135,7 +137,7 @@ const page = () => {
                             <span>Other work schedule settings</span>
                         </div>
                         <div className="flex justify-end text-center font-normal font-sans font-inter text-base pt-14">
-                            <button id="openModal" className="rounded-lg text-white bg-sky-800 w-[103px] h-[55px] mr-5 font-bold text-base font-sans font-inter hover:scale-105 ease-in duration-200">
+                            <button aria-label="Open settings" id="openModal" className="rounded-lg text-white bg-sky-800 w-[103px] h-[55px] mr-5 font-bold text-base font-sans font-inter hover:scale-105 ease-in duration-200">
                                 <span>Add</span>
                             </button>
                         </div>
@@ -153,7 +155,7 @@ const page = () => {
                         <div className="flex items-center justify-between text-gray-700 text-base font-sans font-inter font-bold ml-5 pt-5">
                             <span>Work Schedule 1</span>
                             <div className="text-center font-normal font-sans font-inter text-base">
-                                <button className="rounded-md text-blue-600 border border-blue-600 w-[110px] h-[36px] mr-5 text-base font-sans font-inter hover:scale-105 ease-in duration-200">
+                                <button aria-label="Open settings" className="rounded-md text-blue-600 border border-blue-600 w-[110px] h-[36px] mr-5 text-base font-sans font-inter hover:scale-105 ease-in duration-200">
                                     <span>Details</span>
                                 </button>
                             </div>
@@ -163,7 +165,7 @@ const page = () => {
                         <div className="flex items-center justify-between text-gray-700 text-base font-sans font-inter font-bold ml-5 pt-5">
                             <span>Work Schedule 2</span>
                             <div className="text-center font-normal font-sans font-inter text-base">
-                                <button className="rounded-md text-blue-600 border border-blue-600 w-[110px] h-[36px] mr-5 text-base font-sans font-inter hover:scale-105 ease-in duration-200">
+                                <button aria-label="Open settings" className="rounded-md text-blue-600 border border-blue-600 w-[110px] h-[36px] mr-5 text-base font-sans font-inter hover:scale-105 ease-in duration-200">
                                     <span>Details</span>
                                 </button>
                             </div>
@@ -173,7 +175,7 @@ const page = () => {
                         <div className="flex items-center justify-between text-gray-700 text-base font-sans font-inter font-bold ml-5 pt-5">
                             <span>Work Schedule 3</span>
                             <div className="text-center font-normal font-sans font-inter text-base">
-                                <button className="rounded-md text-blue-600 border border-blue-600 w-[110px] h-[36px] mr-5 text-base font-sans font-inter hover:scale-105 ease-in duration-200">
+                                <button aria-label="Open settings" className="rounded-md text-blue-600 border border-blue-600 w-[110px] h-[36px] mr-5 text-base font-sans font-inter hover:scale-105 ease-in duration-200">
                                     <span>Details</span>
                                 </button>
                             </div>
@@ -181,8 +183,6 @@ const page = () => {
                     </div>
                     {/* <!-- End col-start-3 --> */}
                 </div>
-
-
             </MainLayout>
         </>
     )

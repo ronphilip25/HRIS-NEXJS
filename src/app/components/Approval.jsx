@@ -1,6 +1,12 @@
 import React from 'react';
 
 const Approval = () => {
+
+    const data = [
+        { name: 'John Doe', department: 'IT Department', type: 'Late', requestDate: '2023-05-01' },
+        { name: 'John Smith', department: 'HR Department', type: 'Late', requestDate: '2023-05-01' },
+    ];
+
     return (
         <>
             <div className="rounded-xl bg-white p-2 shadow-md col-span-2 lg:col-span-2 lg:col-start-2 lg:row-start-3 md:col-span-1 md:py-4 md:row-start-4 ">
@@ -12,8 +18,8 @@ const Approval = () => {
                 </div>
 
                 <div className="grid grid-cols-5 font-sans font-inter text-xs font-bold text-gray-700 mt-1 ml-2 py-2">
-                    <div className="col-span-5">
-                        <table className="w-full"> {/* Ensure both thead and tbody are in the same table */}
+                    <div className="col-span-5 overflow-y-auto lg:h-[18vh] md:h-[24vh] h-[35vh]">
+                        <table className="w-full table-fixed"> {/* Ensure table layout consistency */}
                             <thead>
                                 <tr>
                                     <th className="w-1/5 px-4 py-1 text-center border-b border-gray-700">Name</th>
@@ -23,143 +29,22 @@ const Approval = () => {
                                     <th className="w-1/5 px-4 py-1 text-center border-b border-gray-700">Action</th>
                                 </tr>
                             </thead>
-                        </table>
-                    </div>
-
-                    <div className="col-span-5 overflow-y-auto lg:h-[18vh] md:h-[24vh] h-[35vh]">
-                        <table className="w-full table-fixed"> {/* Added table-fixed class for equal width columns */}
                             <tbody className="font-sans text-xs font-normal font-inter">
-                                <tr>
-                                    <td className="px-4 py-2 text-center">John</td>
-                                    <td className="px-4 text-center">Finance</td>
-                                    <td className="px-4 text-center">Permanent</td>
-                                    <td className="px-4 text-center">01/12/2024</td>
-                                    <td className="px-4 text-center"><a href="/" className='text-blue-700'>Details</a></td>
-                                </tr>
-                                <tr>
-                                    <td className="px-4 py-2 text-center">John</td>
-                                    <td className="px-4 text-center">Finance</td>
-                                    <td className="px-4 text-center">Permanent</td>
-                                    <td className="px-4 text-center">01/12/2024</td>
-                                    <td className="px-4 text-center"><a href="/" className='text-blue-700'>Details</a></td>
-                                </tr>
-                                <tr>
-                                    <td className="px-4 py-2 text-center">John</td>
-                                    <td className="px-4 text-center">Finance</td>
-                                    <td className="px-4 text-center">Permanent</td>
-                                    <td className="px-4 text-center">01/12/2024</td>
-                                    <td className="px-4 text-center"><a href="/" className='text-blue-700'>Details</a></td>
-                                </tr>
-                                <tr>
-                                    <td className="px-4 py-2 text-center">John</td>
-                                    <td className="px-4 text-center">Finance</td>
-                                    <td className="px-4 text-center">Permanent</td>
-                                    <td className="px-4 text-center">01/12/2024</td>
-                                    <td className="px-4 text-center"><a href="/" className='text-blue-700'>Details</a></td>
-                                </tr>
-                                <tr>
-                                    <td className="px-4 py-2 text-center">John</td>
-                                    <td className="px-4 text-center">Finance</td>
-                                    <td className="px-4 text-center">Permanent</td>
-                                    <td className="px-4 text-center">01/12/2024</td>
-                                    <td className="px-4 text-center"><a href="/" className='text-blue-700'>Details</a></td>
-                                </tr>
-                                <tr>
-                                    <td className="px-4 py-2 text-center">John</td>
-                                    <td className="px-4 text-center">Finance</td>
-                                    <td className="px-4 text-center">Permanent</td>
-                                    <td className="px-4 text-center">01/12/2024</td>
-                                    <td className="px-4 text-center"><a href="/" className='text-blue-700'>Details</a></td>
-                                </tr>
-                                <tr>
-                                    <td className="px-4 py-2 text-center">John</td>
-                                    <td className="px-4 text-center">Finance</td>
-                                    <td className="px-4 text-center">Permanent</td>
-                                    <td className="px-4 text-center">01/12/2024</td>
-                                    <td className="px-4 text-center"><a href="/" className='text-blue-700'>Details</a></td>
-                                </tr>
-                                <tr>
-                                    <td className="px-4 py-2 text-center">John</td>
-                                    <td className="px-4 text-center">Finance</td>
-                                    <td className="px-4 text-center">Permanent</td>
-                                    <td className="px-4 text-center">01/12/2024</td>
-                                    <td className="px-4 text-center"><a href="/" className='text-blue-700'>Details</a></td>
-                                </tr>
-                                <tr>
-                                    <td className="px-4 py-2 text-center">John</td>
-                                    <td className="px-4 text-center">Finance</td>
-                                    <td className="px-4 text-center">Permanent</td>
-                                    <td className="px-4 text-center">01/12/2024</td>
-                                    <td className="px-4 text-center"><a href="/" className='text-blue-700'>Details</a></td>
-                                </tr>
-                                <tr>
-                                    <td className="px-4 py-2 text-center">John</td>
-                                    <td className="px-4 text-center">Finance</td>
-                                    <td className="px-4 text-center">Permanent</td>
-                                    <td className="px-4 text-center">01/12/2024</td>
-                                    <td className="px-4 text-center"><a href="/" className='text-blue-700'>Details</a></td>
-                                </tr>
-                                <tr>
-                                    <td className="px-4 py-2 text-center">John</td>
-                                    <td className="px-4 text-center">Finance</td>
-                                    <td className="px-4 text-center">Permanent</td>
-                                    <td className="px-4 text-center">01/12/2024</td>
-                                    <td className="px-4 text-center"><a href="/" className='text-blue-700'>Details</a></td>
-                                </tr>
-                                <tr>
-                                    <td className="px-4 py-2 text-center">John</td>
-                                    <td className="px-4 text-center">Finance</td>
-                                    <td className="px-4 text-center">Permanent</td>
-                                    <td className="px-4 text-center">01/12/2024</td>
-                                    <td className="px-4 text-center"><a href="/" className='text-blue-700'>Details</a></td>
-                                </tr>
-                                <tr>
-                                    <td className="px-4 py-2 text-center">John</td>
-                                    <td className="px-4 text-center">Finance</td>
-                                    <td className="px-4 text-center">Permanent</td>
-                                    <td className="px-4 text-center">01/12/2024</td>
-                                    <td className="px-4 text-center"><a href="/" className='text-blue-700'>Details</a></td>
-                                </tr>
-                                <tr>
-                                    <td className="px-4 py-2 text-center">John</td>
-                                    <td className="px-4 text-center">Finance</td>
-                                    <td className="px-4 text-center">Permanent</td>
-                                    <td className="px-4 text-center">01/12/2024</td>
-                                    <td className="px-4 text-center"><a href="/" className='text-blue-700'>Details</a></td>
-                                </tr>
-                                <tr>
-                                    <td className="px-4 py-2 text-center">John</td>
-                                    <td className="px-4 text-center">Finance</td>
-                                    <td className="px-4 text-center">Permanent</td>
-                                    <td className="px-4 text-center">01/12/2024</td>
-                                    <td className="px-4 text-center"><a href="/" className='text-blue-700'>Details</a></td>
-                                </tr>
-                                <tr>
-                                    <td className="px-4 py-2 text-center">John</td>
-                                    <td className="px-4 text-center">Finance</td>
-                                    <td className="px-4 text-center">Permanent</td>
-                                    <td className="px-4 text-center">01/12/2024</td>
-                                    <td className="px-4 text-center"><a href="/" className='text-blue-700'>Details</a></td>
-                                </tr>
-                                <tr>
-                                    <td className="px-4 py-2 text-center">John</td>
-                                    <td className="px-4 text-center">Finance</td>
-                                    <td className="px-4 text-center">Permanent</td>
-                                    <td className="px-4 text-center">01/12/2024</td>
-                                    <td className="px-4 text-center"><a href="/" className='text-blue-700'>Details</a></td>
-                                </tr>
-                                <tr>
-                                    <td className="px-4 py-2 text-center">John</td>
-                                    <td className="px-4 text-center">Finance</td>
-                                    <td className="px-4 text-center">Permanent</td>
-                                    <td className="px-4 text-center">01/12/2024</td>
-                                    <td className="px-4 text-center"><a href="/" className='text-blue-700'>Details</a></td>
-                                </tr>
+                                {data.length > 0 && data.map((item, index) => (
+                                    <tr key={index}>
+                                        <td className="px-4 py-2 text-center">{item.name || 'N/A'}</td>
+                                        <td className="px-4 text-center">{item.department || 'N/A'}</td>
+                                        <td className="px-4 text-center">{item.type || 'N/A'}</td>
+                                        <td className="px-4 text-center">{item.requestDate || 'N/A'}</td>
+                                        <td className="px-4 text-center">
+                                            <a href="/" className="text-blue-700" aria-label={`View details for ${item.name}`}>Details</a>
+                                        </td>
+                                    </tr>
+                                ))}
                             </tbody>
                         </table>
                     </div>
                 </div>
-
             </div>
         </>
     );

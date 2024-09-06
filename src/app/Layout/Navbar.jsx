@@ -46,12 +46,12 @@ export default function Navbar({ isOpen, toggleSidebar }) {
       <nav className={`${isOpen ? 'w-[1657px]' : 'w-full'} w-full transition-width duration-500 ease-in-out relative flex h-20 items-center justify-center bg-white border rounded-sm border-gray-200`}>
         {/* Toggle button */}
         <div>
-          <button onClick={toggleSidebar} className="lg:flex md:flex items-center justify-center p-2 rounded-lg border-sky-200 border-2 ml-5 hidden ">
+          <button aria-label="Open sidebar" onClick={toggleSidebar} className="lg:flex md:flex items-center justify-center p-2 rounded-lg border-sky-200 border-2 ml-5 hidden ">
             {isOpen ? <ChevronsLeft className='text-sky-200 text-6xl' /> : <ChevronsRight className='text-sky-200 text-6xl' />}
           </button>
         </div>
         <div>
-          <button onClick={toggleNav} className="flex items-center justify-center p-2 rounded-lg border-sky-200 border-2 ml-5 md:hidden sm:flex ">
+          <button aria-label="Open settings" onClick={toggleNav} className="flex items-center justify-center p-2 rounded-lg border-sky-200 border-2 ml-5 md:hidden sm:flex ">
             {nav ? <ChevronsLeft className='text-sky-200 text-6xl' /> : <ChevronsRight className='text-sky-200 text-6xl' />}
           </button>
         </div>
@@ -68,6 +68,7 @@ export default function Navbar({ isOpen, toggleSidebar }) {
               alt="Profile Icon"
             />
             <button
+              aria-label="Open settings"
               className="mt-1 flex items-center justify-between"
               onClick={toggleDropdown}
             >
@@ -128,7 +129,7 @@ export default function Navbar({ isOpen, toggleSidebar }) {
               <Image src="/assets/sidelogo.png" width={75} height={60} className="mr-2 h-16 w-full" alt="Profile Icon" />
             </div>
             <div onClick={toggleNav} className="flex">
-              <button><SlClose className='text-sky-200 text-4xl' /></button>
+              <button aria-label="Open settings" ><SlClose className='text-sky-200 text-4xl' /></button>
             </div>
           </div>
           <nav className='flex flex-col mt-2'>
@@ -137,7 +138,7 @@ export default function Navbar({ isOpen, toggleSidebar }) {
               <span>Dashboard</span>
             </a>
             <div className="flex flex-col mt-2">
-              <button onClick={() => toggleSection('attendance')} className='flex items-center justify-between p-3 rounded-l-xl hover:bg-sky-100'>
+              <button aria-label="Open settings" onClick={() => toggleSection('attendance')} className='flex items-center justify-between p-3 rounded-l-xl hover:bg-sky-100'>
                 <div className="flex items-center space-x-3">
                   <LuClock4 className='text-4xl' />
                   <span>Attendance</span>
@@ -153,7 +154,7 @@ export default function Navbar({ isOpen, toggleSidebar }) {
               )}
             </div>
             <div className="flex flex-col mt-2">
-              <button onClick={() => toggleSection('leaves')} className='flex items-center justify-between p-3 rounded-l-xl hover:bg-sky-100'>
+              <button aria-label="Open settings" onClick={() => toggleSection('leaves')} className='flex items-center justify-between p-3 rounded-l-xl hover:bg-sky-100'>
                 <div className="flex items-center space-x-3">
                   <LuCalendarClock className='text-4xl' />
                   <span>Leaves</span>
@@ -169,7 +170,7 @@ export default function Navbar({ isOpen, toggleSidebar }) {
               )}
             </div>
             <div className="flex flex-col mt-2">
-              <button onClick={() => toggleSection('team')} className='flex items-center justify-between p-3 rounded-l-xl hover:bg-sky-100'>
+              <button aria-label="Open settings" onClick={() => toggleSection('team')} className='flex items-center justify-between p-3 rounded-l-xl hover:bg-sky-100'>
                 <div className="flex items-center space-x-3">
                   <RiTeamLine className='text-4xl' />
                   <span>Team</span>
@@ -184,7 +185,7 @@ export default function Navbar({ isOpen, toggleSidebar }) {
               )}
             </div>
             <div className="flex flex-col mt-2">
-              <button onClick={() => toggleSection('filing')} className='flex items-center justify-between p-3 rounded-l-xl hover:bg-sky-100'>
+              <button aria-label="Open settings" onClick={() => toggleSection('filing')} className='flex items-center justify-between p-3 rounded-l-xl hover:bg-sky-100'>
                 <div className="flex items-center space-x-3">
                   <FaRegFile className='text-4xl' />
                   <span>Filing</span>
@@ -199,7 +200,7 @@ export default function Navbar({ isOpen, toggleSidebar }) {
               )}
             </div>
             <div className="flex flex-col mt-2">
-              <button onClick={() => toggleSection('settings')} className='flex items-center justify-between p-3 rounded-l-xl hover:bg-sky-100'>
+              <button aria-label="Open settings" onClick={() => toggleSection('settings')} className='flex items-center justify-between p-3 rounded-l-xl hover:bg-sky-100'>
                 <div className="flex items-center space-x-3">
                   <IoSettingsOutline className='text-4xl' />
                   <span>Settings</span>

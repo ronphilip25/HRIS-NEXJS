@@ -66,7 +66,7 @@ export default function Loading() {
                 <div className=" border-gray-400 border animate-pulse rounded-lg lg:p-4 p-2 pt-3 shadow-md lg:row-span-2 md:row-span-1">
                     <div className="relative">
                         <div className="absolute right-0 top-0 cursor-pointer">
-                            <button className='border border-blue-400 rounded-lg animate-pulse text-base font-sans font-bold w-24 h-10  px-3 py-1 lg:w-24 lg:h-10 md:w-24'>
+                            <button aria-label="Open settings" className='border border-blue-400 rounded-lg animate-pulse text-base font-sans font-bold w-24 h-10  px-3 py-1 lg:w-24 lg:h-10 md:w-24'>
 
                             </button>
                         </div>
@@ -113,7 +113,7 @@ export default function Loading() {
                             <svg className=" mr-4" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="13" cy="13" r="13" fill="#FAD2D2" />
                             </svg>
-                            <button className="hover:scale-125 ease-out duration-150">
+                            <button aria-label="Open settings" className="hover:scale-125 ease-out duration-150">
                                 <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0.600254 0.658517C0.295613 0.96325 0.124475 1.3765 0.124475 1.80739C0.124475 2.23828 0.295613 2.65153 0.600254 2.95627L8.644 11L0.600254 19.0438C0.304247 19.3502 0.140456 19.7607 0.144158 20.1868C0.147861 20.6129 0.31876 21.0204 0.620049 21.3217C0.921336 21.623 1.32891 21.7939 1.75498 21.7976C2.18105 21.8013 2.59152 21.6375 2.898 21.3415L12.0906 12.1489C12.3953 11.8442 12.5664 11.4309 12.5664 11C12.5664 10.5691 12.3953 10.1559 12.0906 9.85114L2.898 0.658517C2.59327 0.353877 2.18002 0.182739 1.74913 0.182739C1.31824 0.182739 0.904986 0.353877 0.600254 0.658517Z" fill="#333333" />
                                 </svg>
@@ -126,7 +126,7 @@ export default function Loading() {
                             <svg className=" mr-4" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="13" cy="13" r="13" fill="#FAD2D2" />
                             </svg>
-                            <button className="hover:scale-125 ease-out duration-150">
+                            <button aria-label="Open settings" className="hover:scale-125 ease-out duration-150">
                                 <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0.600254 0.658517C0.295613 0.96325 0.124475 1.3765 0.124475 1.80739C0.124475 2.23828 0.295613 2.65153 0.600254 2.95627L8.644 11L0.600254 19.0438C0.304247 19.3502 0.140456 19.7607 0.144158 20.1868C0.147861 20.6129 0.31876 21.0204 0.620049 21.3217C0.921336 21.623 1.32891 21.7939 1.75498 21.7976C2.18105 21.8013 2.59152 21.6375 2.898 21.3415L12.0906 12.1489C12.3953 11.8442 12.5664 11.4309 12.5664 11C12.5664 10.5691 12.3953 10.1559 12.0906 9.85114L2.898 0.658517C2.59327 0.353877 2.18002 0.182739 1.74913 0.182739C1.31824 0.182739 0.904986 0.353877 0.600254 0.658517Z" fill="#333333" />
                                 </svg>
@@ -136,7 +136,7 @@ export default function Loading() {
                     <div className='lg:block md:hidden hidden'>
                         <div className="line mb-3 p-4 border border-gray-400 animate-pulse rounded-lg text-lg font-normal flex justify-between">
                             <div className='bg-gradient-to-r from-gray-200 via-gray-400 to-gray-400 rounded w-[200px] h-5'></div>
-                            <button className="hover:scale-125 ease-out duration-150">
+                            <button aria-label="Open settings" className="hover:scale-125 ease-out duration-150">
                                 <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0.600254 0.658517C0.295613 0.96325 0.124475 1.3765 0.124475 1.80739C0.124475 2.23828 0.295613 2.65153 0.600254 2.95627L8.644 11L0.600254 19.0438C0.304247 19.3502 0.140456 19.7607 0.144158 20.1868C0.147861 20.6129 0.31876 21.0204 0.620049 21.3217C0.921336 21.623 1.32891 21.7939 1.75498 21.7976C2.18105 21.8013 2.59152 21.6375 2.898 21.3415L12.0906 12.1489C12.3953 11.8442 12.5664 11.4309 12.5664 11C12.5664 10.5691 12.3953 10.1559 12.0906 9.85114L2.898 0.658517C2.59327 0.353877 2.18002 0.182739 1.74913 0.182739C1.31824 0.182739 0.904986 0.353877 0.600254 0.658517Z" fill="#333333" />
                                 </svg>
@@ -144,7 +144,7 @@ export default function Loading() {
                         </div>
                         <div className="line p-4 border border-gray-400 animate-pulse rounded-lg text-lg font-normal flex justify-between">
                             <div className='bg-gradient-to-r from-gray-200 via-gray-400 to-gray-400 rounded w-[200px] h-5'></div>
-                            <button className="hover:scale-125 ease-out duration-150">
+                            <button aria-label="Open settings" className="hover:scale-125 ease-out duration-150">
                                 <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0.600254 0.658517C0.295613 0.96325 0.124475 1.3765 0.124475 1.80739C0.124475 2.23828 0.295613 2.65153 0.600254 2.95627L8.644 11L0.600254 19.0438C0.304247 19.3502 0.140456 19.7607 0.144158 20.1868C0.147861 20.6129 0.31876 21.0204 0.620049 21.3217C0.921336 21.623 1.32891 21.7939 1.75498 21.7976C2.18105 21.8013 2.59152 21.6375 2.898 21.3415L12.0906 12.1489C12.3953 11.8442 12.5664 11.4309 12.5664 11C12.5664 10.5691 12.3953 10.1559 12.0906 9.85114L2.898 0.658517C2.59327 0.353877 2.18002 0.182739 1.74913 0.182739C1.31824 0.182739 0.904986 0.353877 0.600254 0.658517Z" fill="#333333" />
                                 </svg>
@@ -158,7 +158,7 @@ export default function Loading() {
                 <div className='lg:hidden mt-1 md:block md:flex-shrink-0 flex flex-col '>
                     <div className="line p-4 border border-gray-400 animate-pulse rounded-lg text-lg font-normal flex justify-between">
                         <div className='bg-gradient-to-r from-gray-200 via-gray-400 to-gray-400 rounded w-[200px] h-5'></div>
-                        <button className="hover:scale-125 ease-out duration-150">
+                        <button aria-label="Open settings" className="hover:scale-125 ease-out duration-150">
                             <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0.600254 0.658517C0.295613 0.96325 0.124475 1.3765 0.124475 1.80739C0.124475 2.23828 0.295613 2.65153 0.600254 2.95627L8.644 11L0.600254 19.0438C0.304247 19.3502 0.140456 19.7607 0.144158 20.1868C0.147861 20.6129 0.31876 21.0204 0.620049 21.3217C0.921336 21.623 1.32891 21.7939 1.75498 21.7976C2.18105 21.8013 2.59152 21.6375 2.898 21.3415L12.0906 12.1489C12.3953 11.8442 12.5664 11.4309 12.5664 11C12.5664 10.5691 12.3953 10.1559 12.0906 9.85114L2.898 0.658517C2.59327 0.353877 2.18002 0.182739 1.74913 0.182739C1.31824 0.182739 0.904986 0.353877 0.600254 0.658517Z" fill="#333333" />
                             </svg>
@@ -166,7 +166,7 @@ export default function Loading() {
                     </div>
                     <div className="line p-4 border border-gray-400 animate-pulse rounded-lg text-lg font-normal flex justify-between">
                         <div className='bg-gradient-to-r from-gray-200 via-gray-400 to-gray-400 rounded w-[200px] h-5'></div>
-                        <button className="hover:scale-125 ease-out duration-150">
+                        <button aria-label="Open settings" className="hover:scale-125 ease-out duration-150">
                             <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0.600254 0.658517C0.295613 0.96325 0.124475 1.3765 0.124475 1.80739C0.124475 2.23828 0.295613 2.65153 0.600254 2.95627L8.644 11L0.600254 19.0438C0.304247 19.3502 0.140456 19.7607 0.144158 20.1868C0.147861 20.6129 0.31876 21.0204 0.620049 21.3217C0.921336 21.623 1.32891 21.7939 1.75498 21.7976C2.18105 21.8013 2.59152 21.6375 2.898 21.3415L12.0906 12.1489C12.3953 11.8442 12.5664 11.4309 12.5664 11C12.5664 10.5691 12.3953 10.1559 12.0906 9.85114L2.898 0.658517C2.59327 0.353877 2.18002 0.182739 1.74913 0.182739C1.31824 0.182739 0.904986 0.353877 0.600254 0.658517Z" fill="#333333" />
                             </svg>

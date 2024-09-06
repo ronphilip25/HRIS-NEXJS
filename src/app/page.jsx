@@ -89,7 +89,7 @@ export default function Index() {
                           </div>
                         </div>
                         <div className="font-sans font-inter font-semibold">
-                          <button type="submit" className="bg-sky-800 text-white text-xs lg:text-sm md:text-md md:text-nowrap py-[8px] w-full text-nowrap rounded-lg hover:scale-95 ease-in cursor-pointer duration-200">Login</button>
+                          <button aria-label="Login" type="submit" className="bg-sky-800 text-white text-xs lg:text-sm md:text-md md:text-nowrap py-[8px] w-full text-nowrap rounded-lg hover:scale-95 ease-in cursor-pointer duration-200">Login</button>
                         </div>
                       </form>
                     </div>

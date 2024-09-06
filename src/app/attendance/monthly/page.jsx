@@ -11,9 +11,7 @@ const page = () => {
         keywords="Next.js, React, SEO"
       >
         <div className='grid grid-cols-4 gap-4'>
-
           <AttendanceWidget />
-
           <div className=" col-start-4 rounded-md cursor-pointer">
             <div className="flex items-center justify-end">
               <div className="text-white text-xs font-sans font-inter font-bold">
@@ -30,8 +28,6 @@ const page = () => {
             <div className="flex justify-between items-center mt-3 ml-3">
               <h5 className="leading-44 text-2xl font-bold text-gray-700">Attendance</h5>
             </div>
-
-
             <div className="lg:grid lg:grid-cols-8 grid grid-cols-8  font-sans text-base font-bold text-gray-700 mt-2 lg: lg:py lg:px-3 overflow-y-auto overflow-x-auto h-[32vh] lg:h-[65vh] md:h-[18vh]">
               <table className="col-span-8 border-separate border-gray-200 border-spacing-y-[2rem] my-[-2rem]">
                 <colgroup>
@@ -85,7 +81,6 @@ const page = () => {
               </table>
             </div>
           </div>
-
         </div>
       </MainLayout>
     </>
