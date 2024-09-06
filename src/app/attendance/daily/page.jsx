@@ -6,18 +6,14 @@ import React from 'react'
 const page = () => {
 
     const tableData = [
-        { date: "Placeholder Date", day: "Placeholder Day", time: "Placeholder Time", break: "Placeholder Break", totalHours: "Placeholder Total Hrs", overtime: "Placeholder Overtime", notes: "Placeholder Notes" },
-        { date: "Placeholder Date", day: "Placeholder Day", time: "Placeholder Time", break: "Placeholder Break", totalHours: "Placeholder Total Hrs", overtime: "Placeholder Overtime", notes: "Placeholder Notes" },
-        { date: "Placeholder Date", day: "Placeholder Day", time: "Placeholder Time", break: "Placeholder Break", totalHours: "Placeholder Total Hrs", overtime: "Placeholder Overtime", notes: "Placeholder Notes" },
-        { date: "Placeholder Date", day: "Placeholder Day", time: "Placeholder Time", break: "Placeholder Break", totalHours: "Placeholder Total Hrs", overtime: "Placeholder Overtime", notes: "Placeholder Notes" },
-        { date: "Placeholder Date", day: "Placeholder Day", time: "Placeholder Time", break: "Placeholder Break", totalHours: "Placeholder Total Hrs", overtime: "Placeholder Overtime", notes: "Placeholder Notes" },
-        { date: "Placeholder Date", day: "Placeholder Day", time: "Placeholder Time", break: "Placeholder Break", totalHours: "Placeholder Total Hrs", overtime: "Placeholder Overtime", notes: "Placeholder Notes" },
-        { date: "Placeholder Date", day: "Placeholder Day", time: "Placeholder Time", break: "Placeholder Break", totalHours: "Placeholder Total Hrs", overtime: "Placeholder Overtime", notes: "Placeholder Notes" },
-        { date: "Placeholder Date", day: "Placeholder Day", time: "Placeholder Time", break: "Placeholder Break", totalHours: "Placeholder Total Hrs", overtime: "Placeholder Overtime", notes: "Placeholder Notes" },
-        { date: "Placeholder Date", day: "Placeholder Day", time: "Placeholder Time", break: "Placeholder Break", totalHours: "Placeholder Total Hrs", overtime: "Placeholder Overtime", notes: "Placeholder Notes" },
-        { date: "Placeholder Date", day: "Placeholder Day", time: "Placeholder Time", break: "Placeholder Break", totalHours: "Placeholder Total Hrs", overtime: "Placeholder Overtime", notes: "Placeholder Notes" },
-        { date: "Placeholder Date", day: "Placeholder Day", time: "Placeholder Time", break: "Placeholder Break", totalHours: "Placeholder Total Hrs", overtime: "Placeholder Overtime", notes: "Placeholder Notes" },
-        { date: "Placeholder Date", day: "Placeholder Day", time: "Placeholder Time", break: "Placeholder Break", totalHours: "Placeholder Total Hrs", overtime: "Placeholder Overtime", notes: "Placeholder Notes" },
+        { date: "09/06/2024", day: "Friday", time: "8:00 AM - 5:00 PM", break: "1:00 PM - 3:00 PM", totalHours: "10:00", overtime: "0:00", notes: "Kupal" },
+        { date: "09/06/2024", day: "Friday", time: "8:00 AM - 5:00 PM", break: "1:00 PM - 3:00 PM", totalHours: "10:00", overtime: "0:00", notes: "Kupal" },
+        { date: "09/06/2024", day: "Friday", time: "8:00 AM - 5:00 PM", break: "1:00 PM - 3:00 PM", totalHours: "10:00", overtime: "0:00", notes: "Kupal" },
+        { date: "09/06/2024", day: "Friday", time: "8:00 AM - 5:00 PM", break: "1:00 PM - 3:00 PM", totalHours: "10:00", overtime: "0:00", notes: "Kupal" },
+        { date: "09/06/2024", day: "Friday", time: "8:00 AM - 5:00 PM", break: "1:00 PM - 3:00 PM", totalHours: "10:00", overtime: "0:00", notes: "Kupal" },
+        { date: "09/06/2024", day: "Friday", time: "8:00 AM - 5:00 PM", break: "1:00 PM - 3:00 PM", totalHours: "10:00", overtime: "0:00", notes: "Kupal" },
+        { date: "09/06/2024", day: "Friday", time: "8:00 AM - 5:00 PM", break: "1:00 PM - 3:00 PM", totalHours: "10:00", overtime: "0:00", notes: "Kupal" },
+
 
     ];
 
@@ -61,7 +57,6 @@ const page = () => {
                         </div>
 
                         {/* <!-- Widget 5 --> */}
-                        <div className='overflow-x-auto'>
                             <div className="lg:grid lg:grid-cols-8 grid grid-cols-8 font-sans text-base font-bold text-gray-700 lg:ml-1 lg:py-2 lg:p-4">
                                 <div className="col-span-8 border-gray-200 ">
                                     <table className="w-full table-fixed">
@@ -127,7 +122,6 @@ const page = () => {
                                     </table>
                                 </div>
                             </div>
-                        </div>
 
 
 

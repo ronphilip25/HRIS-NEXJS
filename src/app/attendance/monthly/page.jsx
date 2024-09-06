@@ -31,7 +31,6 @@ const page = () => {
               <h5 className="leading-44 text-2xl font-bold text-gray-700">Attendance</h5>
             </div>
 
-            {/* {% include '_components/_attendance[components]/thresholdtab.html' %} */}
 
             <div className="lg:grid lg:grid-cols-8 grid grid-cols-8  font-sans text-base font-bold text-gray-700 mt-2 lg: lg:py lg:px-3 overflow-y-auto overflow-x-auto h-[32vh] lg:h-[65vh] md:h-[18vh]">
               <table className="col-span-8 border-separate border-gray-200 border-spacing-y-[2rem] my-[-2rem]">
