@@ -51,7 +51,7 @@ const Approval = () => {
                                         <td className="px-4 text-center">{item.type || 'N/A'}</td>
                                         <td className="px-4 text-center">{item.requestDate || 'N/A'}</td>
                                         <td className="px-4 text-center">
-                                            <a href="/" className="text-blue-700" aria-label={`View details for ${item.name}`}>Details</a>
+                                            <a href="/not-found" className="text-blue-700" aria-label={`View details for ${item.name}`}>Details</a>
                                         </td>
                                     </tr>
                                 ))}
