@@ -59,7 +59,7 @@ const page = () => {
                       />
                       <div className="absolute bottom-[1.5px] left-9 mb-1 border-white border-2 bg-green-600 rounded-full w-4 h-4"></div>
                       <div className="text-sm font-bold font-sans font-inter mt-1 ml-2">
-                        Chan P Dacillo
+                        John Doe
                         <div className="text-xs font-sans font-inter font-normal mt-1">
                           Team Leader
                         </div>

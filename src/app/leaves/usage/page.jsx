@@ -13,13 +13,13 @@ const page = () => {
                 <div className="flex-col-2 flex gap-6">
                     <div className="h-[822px] w-[378px] rounded-lg bg-white shadow-md">
                         <h6 className="p-5 mt-3 font-sans text-xl font-bold text-gray-700">
-                            Geopro Global Solutions Inc.
+                            Human Resource Info System.
                         </h6>
                         <div className="ml-6 mr-6 border-b border-blue-900"></div>
                         <div className="p-5">
                             <details>
                                 <summary className="list-disc text-gray-700 text-sm font-sans font-bold">
-                                    Geopro Global Solutions Inc. (0)
+                                    Human Resource Info System. (0)
                                 </summary>
                                 <ul className="list-disc [&>li]:ml-8 text-sm text-gray-700 font-normal">
                                     <li>

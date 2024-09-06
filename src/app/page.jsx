@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import Home from "./home/page";
+import Dashboard from "./dashboard/page";
 
 export default function Index() {
   const [username, setUsername] = useState('');
@@ -32,7 +32,7 @@ export default function Index() {
         <title>Login | Human Resource Information System</title>
       </header>
       <main className="bg-blue-100 bg-opacity-50 min-h-screen">
-        {authenticated ? (<Home />) : (
+        {authenticated ? (<Dashboard />) : (
           <div className="container mx-auto md:max-w-4xl lg:max-w-6xl">
             <div className="flex min-h-screen justify-center items-center">
               <div className="grid grid-cols-1 md:grid-cols-2 bg-blue-500 md:max-h-[700px] rounded-xl shadow-lg">
@@ -60,7 +60,7 @@ export default function Index() {
                       <div className="mb-5">
                         {/* Conditional rendering of Image component */}
                         {(
-                          <Image src="/assets/logo.png" width={100} height={100} alt="Logo" className="w-16 h-16 motion-safe:animate-bounce" />
+                          <Image src="/assets/hrislgo.png" width={100} height={100} alt="Logo" className="w-18 h-18 rounded-full border-2 border-blue-300" priority={true} />
                         )}
                       </div>
                       <div className="font-sans font-inter mt-0 md:mt-2">
