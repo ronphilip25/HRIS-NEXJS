@@ -22,6 +22,7 @@ export default function NotFound() {
                             width={175}
                             alt={`A cute animal!`}
                             unoptimized={true}
+                            className='rounded-lg'
                         />
                     </div>
                 </div>
