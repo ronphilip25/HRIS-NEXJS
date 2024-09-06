@@ -5,7 +5,7 @@ export default function NotFound() {
     return (
         <>
             <div className="flex items-center justify-center min-h-screen bg-blue-100 text-center">
-                <div className="p-8 bg-white rounded-lg shadow-lg  mx-auto">
+                <div className="p-8 bg-white rounded-lg shadow-lg mx-auto">
                     <h1 className="text-6xl font-bold text-red-500">Oops!</h1>
                     <p className="mt-4 text-xl text-gray-700">We can't find the page you're looking for.</p>
                     <p className="mt-2 text-lg text-gray-500">It might have slipped away...</p>
@@ -16,7 +16,7 @@ export default function NotFound() {
                     </div>
                     <div className="mt-8">
                         <Image
-                            src={'/assets/laughing-cat.gif'}
+                            src={'/assets/404_not_found.png'}
                             layout={'responsive'}
                             height={175}
                             width={175}
