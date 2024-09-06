@@ -4,6 +4,23 @@ import Image from 'next/image'
 import React from 'react'
 
 const page = () => {
+
+    const tableData = [
+        { date: "Placeholder Date", day: "Placeholder Day", time: "Placeholder Time", break: "Placeholder Break", totalHours: "Placeholder Total Hrs", overtime: "Placeholder Overtime", notes: "Placeholder Notes" },
+        { date: "Placeholder Date", day: "Placeholder Day", time: "Placeholder Time", break: "Placeholder Break", totalHours: "Placeholder Total Hrs", overtime: "Placeholder Overtime", notes: "Placeholder Notes" },
+        { date: "Placeholder Date", day: "Placeholder Day", time: "Placeholder Time", break: "Placeholder Break", totalHours: "Placeholder Total Hrs", overtime: "Placeholder Overtime", notes: "Placeholder Notes" },
+        { date: "Placeholder Date", day: "Placeholder Day", time: "Placeholder Time", break: "Placeholder Break", totalHours: "Placeholder Total Hrs", overtime: "Placeholder Overtime", notes: "Placeholder Notes" },
+        { date: "Placeholder Date", day: "Placeholder Day", time: "Placeholder Time", break: "Placeholder Break", totalHours: "Placeholder Total Hrs", overtime: "Placeholder Overtime", notes: "Placeholder Notes" },
+        { date: "Placeholder Date", day: "Placeholder Day", time: "Placeholder Time", break: "Placeholder Break", totalHours: "Placeholder Total Hrs", overtime: "Placeholder Overtime", notes: "Placeholder Notes" },
+        { date: "Placeholder Date", day: "Placeholder Day", time: "Placeholder Time", break: "Placeholder Break", totalHours: "Placeholder Total Hrs", overtime: "Placeholder Overtime", notes: "Placeholder Notes" },
+        { date: "Placeholder Date", day: "Placeholder Day", time: "Placeholder Time", break: "Placeholder Break", totalHours: "Placeholder Total Hrs", overtime: "Placeholder Overtime", notes: "Placeholder Notes" },
+        { date: "Placeholder Date", day: "Placeholder Day", time: "Placeholder Time", break: "Placeholder Break", totalHours: "Placeholder Total Hrs", overtime: "Placeholder Overtime", notes: "Placeholder Notes" },
+        { date: "Placeholder Date", day: "Placeholder Day", time: "Placeholder Time", break: "Placeholder Break", totalHours: "Placeholder Total Hrs", overtime: "Placeholder Overtime", notes: "Placeholder Notes" },
+        { date: "Placeholder Date", day: "Placeholder Day", time: "Placeholder Time", break: "Placeholder Break", totalHours: "Placeholder Total Hrs", overtime: "Placeholder Overtime", notes: "Placeholder Notes" },
+        { date: "Placeholder Date", day: "Placeholder Day", time: "Placeholder Time", break: "Placeholder Break", totalHours: "Placeholder Total Hrs", overtime: "Placeholder Overtime", notes: "Placeholder Notes" },
+
+    ];
+
     return (
         <MainLayout
             pageTitle="Daily | Next.js"
@@ -44,115 +61,75 @@ const page = () => {
                         </div>
 
                         {/* <!-- Widget 5 --> */}
-                        <div className="lg:grid lg:grid-cols-8 grid grid-cols-8  font-sans text-base font-bold text-gray-700 mt-2 lg:ml-1 lg:py-2 lg:p-4 overflow-y-auto overflow-x-auto h-[32vh] lg:h-[34vh] md:h-[18vh]">
-                            <table className="col-span-8 border-gray-200 lg:border-separate lg:border-spacing-y-[0.rem] lg:my-[-1rem]">
-                                <colgroup>
-                                    <col span="3" className="text-center" />
-                                </colgroup>
-                                <thead>
-                                    <tr>
-                                        <th scope="col" className="text-xs lg:px-0 md:text-xs lg:pl-3 md:pr-9 pr-9 lg:py-2 lg:text-left border-b border-gray-300">
-                                            Date
-                                        </th>
-                                        <th scope="col" className="text-xs lg:px-2 md:text-xs lg:py-2 md:pr-9 pr-9 lg:text-left border-b border-gray-300">
-                                            Day
-                                        </th>
-                                        <th scope="col" className="text-xs lg:px-3 md:text-xs lg:py-2 border-b border-gray-300 lg:text-center">
-                                            Time in/ Time-out
-                                        </th>
-                                        <th scope="col" className="text-xs lg:px-3 md:text-xs lg:py-2 border-b border-gray-300 lg:text-center">
-                                            Break
-                                        </th>
-                                        <th scope="col" className="text-xs lg:px-3 md:text-xs lg:py-2 border-b border-gray-300 lg:text-center">
-                                            Total working hrs
-                                        </th>
-                                        <th scope="col" className="text-xs lg:px-3 md:text-xs lg:py-2 border-b border-gray-300 lg:text-center">
-                                            Overtime
-                                        </th>
-                                        <th scope="col" className="text-xs lg:px-3 md:text-xs lg:py-2 border-b border-gray-300 lg:text-center">
-                                            Notes
-                                        </th>
-                                        <th scope="col" className="text-xs lg:px-3 md:text-xs lg:py-2 border-b border-gray-300 lg:text-center">
-                                            Action
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody className="text-xs font-normal">
-                                    <tr>
-                                        <td className="px-3 py-2">Placeholder Date</td>
-                                        <td className="px-3 py-2">Placeholder Day</td>
-                                        <td className="px-3 py-2 text-center">Placeholder Time</td>
-                                        <td className="px-3 py-2 text-center">Placeholder Break</td>
-                                        <td className="px-3 py-2 text-center">Placeholder Total Hrs</td>
-                                        <td className="px-3 py-2 text-center">Placeholder Overtime</td>
-                                        <td className="px-3 py-2 text-center">Placeholder Notes</td>
-                                        <td className="text-blue-500 text-center">
-                                            <a href="#">Edit</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className="px-3 py-2">Placeholder Date</td>
-                                        <td className="px-3 py-2">Placeholder Day</td>
-                                        <td className="px-3 py-2 text-center">Placeholder Time</td>
-                                        <td className="px-3 py-2 text-center">Placeholder Break</td>
-                                        <td className="px-3 py-2 text-center">Placeholder Total Hrs</td>
-                                        <td className="px-3 py-2 text-center">Placeholder Overtime</td>
-                                        <td className="px-3 py-2 text-center">Placeholder Notes</td>
-                                        <td className="text-blue-500 text-center">
-                                            <a href="#">Edit</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className="px-3 py-2">Placeholder Date</td>
-                                        <td className="px-3 py-2">Placeholder Day</td>
-                                        <td className="px-3 py-2 text-center">Placeholder Time</td>
-                                        <td className="px-3 py-2 text-center">Placeholder Break</td>
-                                        <td className="px-3 py-2 text-center">Placeholder Total Hrs</td>
-                                        <td className="px-3 py-2 text-center">Placeholder Overtime</td>
-                                        <td className="px-3 py-2 text-center">Placeholder Notes</td>
-                                        <td className="text-blue-500 text-center">
-                                            <a href="#">Edit</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className="px-3 py-2">Placeholder Date</td>
-                                        <td className="px-3 py-2">Placeholder Day</td>
-                                        <td className="px-3 py-2 text-center">Placeholder Time</td>
-                                        <td className="px-3 py-2 text-center">Placeholder Break</td>
-                                        <td className="px-3 py-2 text-center">Placeholder Total Hrs</td>
-                                        <td className="px-3 py-2 text-center">Placeholder Overtime</td>
-                                        <td className="px-3 py-2 text-center">Placeholder Notes</td>
-                                        <td className="text-blue-500 text-center">
-                                            <a href="#">Edit</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className="px-3 py-2">Placeholder Date</td>
-                                        <td className="px-3 py-2">Placeholder Day</td>
-                                        <td className="px-3 py-2 text-center">Placeholder Time</td>
-                                        <td className="px-3 py-2 text-center">Placeholder Break</td>
-                                        <td className="px-3 py-2 text-center">Placeholder Total Hrs</td>
-                                        <td className="px-3 py-2 text-center">Placeholder Overtime</td>
-                                        <td className="px-3 py-2 text-center">Placeholder Notes</td>
-                                        <td className="text-blue-500 text-center">
-                                            <a href="#">Edit</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className="px-3 py-2">Placeholder Date</td>
-                                        <td className="px-3 py-2">Placeholder Day</td>
-                                        <td className="px-3 py-2 text-center">Placeholder Time</td>
-                                        <td className="px-3 py-2 text-center">Placeholder Break</td>
-                                        <td className="px-3 py-2 text-center">Placeholder Total Hrs</td>
-                                        <td className="px-3 py-2 text-center">Placeholder Overtime</td>
-                                        <td className="px-3 py-2 text-center">Placeholder Notes</td>
-                                        <td className="text-blue-500 text-center">
-                                            <a href="#">Edit</a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <div className='overflow-x-auto'>
+                            <div className="lg:grid lg:grid-cols-8 grid grid-cols-8 font-sans text-base font-bold text-gray-700 lg:ml-1 lg:py-2 lg:p-4">
+                                <div className="col-span-8 border-gray-200 ">
+                                    <table className="w-full table-fixed">
+                                        <colgroup>
+                                            <col className='w-1/8' />
+                                            <col className='w-1/8' />
+                                            <col className='w-1/8' />
+                                            <col className='w-1/8' />
+                                            <col className='w-1/8' />
+                                            <col className='w-1/8' />
+                                            <col className='w-1/8' />
+                                            <col className='w-1/8' />
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" className="text-xs lg:px-0 md:text-xs lg:pl-3 md:pr-9 pr-9 lg:py-2 lg:text-left border-b border-gray-300">
+                                                    Date
+                                                </th>
+                                                <th scope="col" className="text-xs lg:px-2 md:text-xs lg:py-2 md:pr-9 pr-9 lg:text-left border-b border-gray-300">
+                                                    Day
+                                                </th>
+                                                <th scope="col" className="text-xs lg:px-3 md:text-xs lg:py-2 border-b border-gray-300 lg:text-center">
+                                                    Time in/ Time-out
+                                                </th>
+                                                <th scope="col" className="text-xs lg:px-3 md:text-xs lg:py-2 border-b border-gray-300 lg:text-center">
+                                                    Break
+                                                </th>
+                                                <th scope="col" className="text-xs lg:px-3 md:text-xs lg:py-2 border-b border-gray-300 lg:text-center">
+                                                    Total working hrs
+                                                </th>
+                                                <th scope="col" className="text-xs lg:px-3 md:text-xs lg:py-2 border-b border-gray-300 lg:text-center">
+                                                    Overtime
+                                                </th>
+                                                <th scope="col" className="text-xs lg:px-3 md:text-xs lg:py-2 border-b border-gray-300 lg:text-center">
+                                                    Notes
+                                                </th>
+                                                <th scope="col" className="text-xs lg:px-3 md:text-xs lg:py-2 border-b border-gray-300 lg:text-center">
+                                                    Action
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+
+                                <div className="col-span-8 overflow-x-auto  h-[32vh] lg:h-[30vh] md:h-[10vh]">
+                                    <table className="w-full table-fixed">
+                                        <tbody className="font-sans text-xs font-normal font-inter">
+                                            {tableData.map((row, index) => (
+                                                <tr key={index}>
+                                                    <td className="px-2 py-2">{row.date}</td>
+                                                    <td className="px-2 py-2">{row.day}</td>
+                                                    <td className="px-2 py-2 text-center">{row.time}</td>
+                                                    <td className="px-2 py-2 text-center">{row.break}</td>
+                                                    <td className="px-2 py-2 text-center">{row.totalHours}</td>
+                                                    <td className="px-2 py-2 text-center">{row.overtime}</td>
+                                                    <td className="px-2 py-2 text-center">{row.notes}</td>
+                                                    <td className="text-blue-500 text-center">
+                                                        <a href="#">Edit</a>
+                                                    </td>
+                                                </tr>
+                                            ))}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
+
+
 
                     </div>
                 </div>
