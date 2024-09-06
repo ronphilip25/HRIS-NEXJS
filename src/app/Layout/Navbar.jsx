@@ -127,7 +127,7 @@ export default function Navbar({ isOpen, toggleSidebar }) {
           <div className='flex w-full items-center justify-between'>
             <div>
               {/* <Image src="/assets/hrislgo.png" width={75} height={60} className="mr-2 h-16 w-full" alt="Profile Icon" /> */}
-              <h1 className="text-lg font-semibold text-gray-900"><span id="navbarText">Human Resource Info System</span></h1>
+              <h1 className="text-xl font-semibold text-gray-900 mr-4"><span id="navbarText">Human Resource Info System</span></h1>
             </div>
             <div onClick={toggleNav} className="flex">
               <button aria-label="Open settings" ><SlClose className='text-sky-200 text-4xl' /></button>
