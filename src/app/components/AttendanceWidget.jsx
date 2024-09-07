@@ -37,7 +37,6 @@ const AttendanceWidget = () => {
                     </div>
                 </div>
             </div>
-
             <div>
                 <div className="rounded-lg shadow-md bg-white w-full lg:h-[119px] p-2">
                     <h2 className="text-md ml-2 mt-2 font-normal">Department</h2>
@@ -60,14 +59,11 @@ const AttendanceWidget = () => {
                                 <li><a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">HR</a></li>
                                 <li><a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Finance</a></li>
                                 <li><a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Admin</a></li>
-                                {/* <!-- Add more options as needed --> */}
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-
-
             <div>
                 <div className="rounded-lg shadow-md bg-white w-full lg:h-[119px] p-2">
                     <h2 className="text-md ml-2 mt-2 flex font-normal text-base">Employees</h2>
@@ -80,7 +76,6 @@ const AttendanceWidget = () => {
                     </div>
                 </div>
             </div>
-
         </>
     )
 }

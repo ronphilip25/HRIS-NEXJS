@@ -51,7 +51,6 @@ const Dashboard = () => {
                 </div>
               </div>
             </div>
-
             <div className="flex items-center justify-center">
               <div className="rounded-lg bg-white lg:px-auto lg:h-[119px] lg:p-4 shadow-md md:w-full md:h-[119px] md:flex-shrink-0 md:px-auto md:p-4 px-1 h-[90px] w-full">
                 <div className="relative">
@@ -93,24 +92,18 @@ const Dashboard = () => {
                 </div>
               </div>
             </div>
-
             {/* Company News */}
-
             <CompanyNews />
-
             <div className="lg:col-span-2 md:col-span-1">
               <div className="grid grid-cols-1 md:flex-shrink-0">
-                <div className="rounded-lg shadow-lg bg-white p-4 lg:h-[410px] lg:w-full ">
+                <div className="rounded-lg shadow-lg bg-white p-4 lg:h-[410px] lg:w-full">
                   <h2 className="lg:mb-4 lg:text-lg lg:font-bold md:text-base md:font-bold md:mb-1">Attendance Overview</h2>
                   <AttendanceChart />
                 </div>
               </div>
             </div>
-
             {/* Monthly Tardinesss */}
-
             <Monthly />
-
             <div className="lg:gap-3 md:mt-1 md:gap-1 md:flex-shrink-0 flex flex-col gap-1 ">
               <div className="line p-4 bg-white rounded-lg text-lg font-normal flex justify-between">Acceptance Pending
                 <div className="flex items-center justify-center">
@@ -155,9 +148,7 @@ const Dashboard = () => {
                 </div>
               </div>
             </div>
-
             {/* probationary mobile */}
-
             <div className='lg:hidden mt-1 md:block md:flex-shrink-0 flex flex-col '>
               <div className="line mb-1 p-4 bg-white rounded-lg text-lg font-normal flex justify-between">Probationary Employees
                 <button type='button' className="hover:scale-125 ease-out duration-150">

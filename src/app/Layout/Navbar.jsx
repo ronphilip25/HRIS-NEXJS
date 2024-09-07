@@ -44,7 +44,6 @@ export default function Navbar({ isOpen, toggleSidebar }) {
   return (
     <>
       <nav className={`${isOpen ? 'w-[1657px]' : 'w-full'} w-full transition-width duration-500 ease-in-out relative flex h-20 items-center justify-center bg-white border rounded-sm border-gray-200`}>
-        {/* Toggle button */}
         <div>
           <button aria-label="Open sidebar" onClick={toggleSidebar} className="lg:flex md:flex items-center justify-center p-2 rounded-lg border-sky-200 border-2 ml-5 hidden ">
             {isOpen ? <ChevronsLeft className='text-sky-200 text-6xl' /> : <ChevronsRight className='text-sky-200 text-6xl' />}
@@ -122,18 +121,18 @@ export default function Navbar({ isOpen, toggleSidebar }) {
 
       {/* Mobile Sidebar */}
 
-      <div className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70 z-40' : ''}>
-        <div className={nav ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-white shadow-md p-10 ease-in duration-500 overflow-y-auto z-50' : 'fixed left-[-100%] top-0 p-10 ease-in duration-500 z-50'}>
+      <div className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-white/70 z-40' : ''}>
+        <div className={nav ? 'fixed left-0 top-0 w-[100%] sm:w-[60%] md:w-[45%] h-screen bg-white shadow-md p-10 ease-in duration-500 overflow-y-auto z-50' : 'fixed left-[-100%] h-screen top-0 p-10 ease-in duration-500 z-50'}>
           <div className='flex w-full items-center justify-between'>
             <div>
               {/* <Image src="/assets/hrislgo.png" width={75} height={60} className="mr-2 h-16 w-full" alt="Profile Icon" /> */}
-              <h1 className="text-xl font-semibold text-gray-900 mr-4"><span id="navbarText">Human Resource Info System</span></h1>
+              <h1 className="text-xl font-semibold text-gray-900 "><span id="navbarText">Human Resource Info System</span></h1>
             </div>
             <div onClick={toggleNav} className="flex">
               <button aria-label="Open settings" ><SlClose className='text-sky-200 text-4xl' /></button>
             </div>
           </div>
-          <nav className='flex flex-col mt-2'>
+          <nav className='flex flex-col mt-8'>
             <a href="/dashboard" className='flex items-center space-x-3 p-3 rounded-l-xl hover:bg-sky-100'>
               <MdOutlineDashboard className='text-4xl' />
               <span>Dashboard</span>
@@ -148,9 +147,9 @@ export default function Navbar({ isOpen, toggleSidebar }) {
               </button>
               {expandedSections.attendance && (
                 <div className="ml-10 flex flex-col space-y-2">
-                  <a href="/attendance/daily" className="p-2 rounded-md hover:bg-gray-100 text-sm">Daily</a>
-                  <a href="/attendance/monthly" className="p-2 rounded-md hover:bg-gray-100 text-sm">Weekly/Monthly</a>
-                  <a href="/attendance/schedule_settings" className="p-2 rounded-md hover:bg-gray-100 text-sm">Schedule Settings</a>
+                  <a href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Daily</a>
+                  <a href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Weekly/Monthly</a>
+                  <a href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Schedule Settings</a>
                 </div>
               )}
             </div>
@@ -164,9 +163,9 @@ export default function Navbar({ isOpen, toggleSidebar }) {
               </button>
               {expandedSections.leaves && (
                 <div className="ml-10 flex flex-col space-y-2">
-                  <a href="/leaves/usage" className="p-2 rounded-md hover:bg-gray-100 text-sm">Leave Usage History</a>
-                  <a href="/leaves/manual" className="p-2 rounded-md hover:bg-gray-100 text-sm">Manual Grant</a>
-                  <a href="/leaves/setting" className="p-2 rounded-md hover:bg-gray-100 text-sm">Leave Setting</a>
+                  <a href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Leave Usage History</a>
+                  <a href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Manual Grant</a>
+                  <a href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Leave Setting</a>
                 </div>
               )}
             </div>
@@ -180,8 +179,8 @@ export default function Navbar({ isOpen, toggleSidebar }) {
               </button>
               {expandedSections.team && (
                 <div className="ml-10 flex flex-col space-y-2">
-                  <a href="#" className="p-2 rounded-md hover:bg-gray-100 text-sm">Employees</a>
-                  <a href="#" className="p-2 rounded-md hover:bg-gray-100 text-sm">Organization</a>
+                  <a href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Employees</a>
+                  <a href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Organization</a>
                 </div>
               )}
             </div>
@@ -195,8 +194,8 @@ export default function Navbar({ isOpen, toggleSidebar }) {
               </button>
               {expandedSections.filing && (
                 <div className="ml-10 flex flex-col space-y-2">
-                  <a href="#" className="p-2 rounded-md hover:bg-gray-100 text-sm">Approval Management</a>
-                  <a href="#" className="p-2 rounded-md hover:bg-gray-100 text-sm">Filing Settings</a>
+                  <a href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Approval Management</a>
+                  <a href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Filing Settings</a>
                 </div>
               )}
             </div>
@@ -210,8 +209,8 @@ export default function Navbar({ isOpen, toggleSidebar }) {
               </button>
               {expandedSections.settings && (
                 <div className="ml-10 flex flex-col space-y-2">
-                  <a href="#" className="p-2 rounded-md hover:bg-gray-100 text-sm">Company Settings</a>
-                  <a href="#" className="p-2 rounded-md hover:bg-gray-100 text-sm">Admin Settings</a>
+                  <a href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Company Settings</a>
+                  <a href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Admin Settings</a>
                 </div>
               )}
             </div>
