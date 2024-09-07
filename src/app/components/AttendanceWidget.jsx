@@ -8,7 +8,7 @@ const AttendanceWidget = () => {
                 <div className="relative font-inter font-sans">
                     <div className="rounded-lg border border-gray-600 w-full mt-4">
                         <div
-                            className="font-sans font-inter lg:text-base font-bold text-gray-700 lg:py-[7px] md:text-xs md:py-[1px] py-[8px] md:p-2 flex justify-center mr-4"
+                            className="font-sans font-inter lg:text-base font-bold text-gray-700 lg:py-[7px] md:text-xs md:py-[8px] py-[8px] md:p-2 flex justify-center mr-4"
                         >
                             <div className="mr-4 lg:block md:hidden">
                                 <svg
@@ -30,7 +30,7 @@ const AttendanceWidget = () => {
                                     />
                                 </svg>
                             </div>
-                            01/29/2024 Mon - 02/04/2024 Sun
+                            <div>01/29/2024 Mon - 02/04/2024 Sun</div>
                         </div>
                     </div>
                 </div>

@@ -42,7 +42,7 @@ const page = () => {
                     <div className='lg:grid lg:grid-cols-4 lg:gap-4 md:grid md:grid-cols-2 md:gap-2 gap-4 md:flex-shrink-0 flex flex-col mx-4 md:mx-auto lg:mx-auto'>
                         <AttendanceWidget />
                         <div className='lg:col-start-1 lg:col-span-3 md:col-span-2'>
-                            <div className="rounded-lg bg-white p-2 lg:h-[700px] md:h-[74vh] w-auto shadow-md">
+                            <div className="rounded-lg bg-white p-2 lg:h-auto md:h-[74vh] w-auto shadow-md">
                                 <div className="flex justify-between items-center mt-3 ml-2">
                                     <h5 className="leading-44 text-2xl font-bold text-gray-700">Attendance</h5>
                                     <div className="rounded-md py-2 px-2 bg-blue-800 cursor-pointer mr-3">
@@ -117,7 +117,7 @@ const page = () => {
                                         </table>
                                     </div>
 
-                                    <div className="col-span-8 overflow-x-auto  h-[32vh] lg:h-[30vh] md:h-[10vh]">
+                                    <div className="col-span-8 overflow-x-auto h-[32vh] lg:h-[30vh] md:h-[10vh]">
                                         <table className="w-full table-fixed">
                                             <tbody className="font-sans text-xs font-normal font-inter">
                                                 {tableData.map((row, index) => (
@@ -146,7 +146,7 @@ const page = () => {
                                 <div className="font-inter ml-2 mt-2 font-sans">
                                     <h5 className="leading-44 text-2xl font-bold text-black">Employees</h5>
                                 </div>
-                                <div className='mt-4 lg:h-[77vh] md:h-[65vh] h-[34vh] w-auto overflow-y-auto'>
+                                <div className='mt-4 lg:h-[77vh] md:h-[63.5vh] h-[34vh] w-auto overflow-y-auto'>
                                     <table className="min-w-full table-fixed">
                                         <thead>
                                             <tr>
