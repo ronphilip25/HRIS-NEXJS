@@ -39,11 +39,11 @@ const page = () => {
                 keywords="Human Resource Info System, Vercel, Nextjs, React"
             >
                 {isLoading ? <Loading /> :
-                    <div className='lg:grid lg:grid-cols-4 lg:gap-4 md:grid md:grid-cols-3 md:gap-4 grid gap-4'>
+                    <div className='lg:grid lg:grid-cols-4 lg:gap-4 md:grid md:grid-cols-2 md:gap-2 gap-4 md:flex-shrink-0 flex flex-col mx-4 md:mx-auto lg:mx-auto'>
                         <AttendanceWidget />
                         <div className='lg:col-start-1 lg:col-span-3 md:col-span-2'>
                             <div className="rounded-lg bg-white p-2 lg:h-[700px] md:h-[74vh] w-auto shadow-md">
-                                <div className="flex justify-between items-center mt-3 ml-3">
+                                <div className="flex justify-between items-center mt-3 ml-2">
                                     <h5 className="leading-44 text-2xl font-bold text-gray-700">Attendance</h5>
                                     <div className="rounded-md py-2 px-2 bg-blue-800 cursor-pointer mr-3">
                                         <div className="text-white text-xs px-5 py-1 font-sans font-inter">
@@ -56,7 +56,7 @@ const page = () => {
 
                                 <div className="flex flex-col justify-evenly item-end font-sans font-inter text-gray-700 mt-3 ml-2 py-2">
 
-                                    <div className="text-base font-bold ml-1">
+                                    <div className="text-base font-bold lg:ml-1">
                                         Sanchez Ron Philip P
                                     </div>
 
