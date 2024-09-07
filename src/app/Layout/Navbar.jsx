@@ -147,7 +147,7 @@ export default function Navbar({ isOpen, toggleSidebar }) {
               </button>
               {expandedSections.attendance && (
                 <div className="ml-10 flex flex-col space-y-2">
-                  <a href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Daily</a>
+                  <a href="/attendance/daily" className="p-2 rounded-md hover:bg-gray-100 text-sm">Daily</a>
                   <a href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Weekly/Monthly</a>
                   <a href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Schedule Settings</a>
                 </div>

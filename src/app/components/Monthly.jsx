@@ -47,10 +47,10 @@ const Monthly = () => {
                             <tbody className="font-sans text-xs font-normal font-inter">
                                 {data.length > 0 && data.map((data, index) => (
                                     <tr key={index}>
-                                        <td className="lg:py-1 lg:pl-2 text-start break-words lg:w-1/4 w-1/4">{data.name}</td>
-                                        <td className="lg:py-1 break-words lg:w-2/4 w-2/4">{data.department}</td>
-                                        <td className="lg:py-1 text-center break-words lg:w-1/4 w-1/4">{data.tardiness}</td>
-                                        <td className="lg:py-1 text-center break-words lg:w-1/4 w-1/4">{data.absent}</td>
+                                        <td className="py-3 lg:pl-2 text-start break-words lg:w-1/4 w-1/4">{data.name}</td>
+                                        <td className="py-3 lg:px-3 break-words lg:w-2/4 w-2/4">{data.department}</td>
+                                        <td className="py-3 text-center break-words lg:w-1/4 w-1/4">{data.tardiness}</td>
+                                        <td className="py-3 text-center break-words lg:w-1/4 w-1/4">{data.absent}</td>
                                     </tr>
                                 ))}
                             </tbody>

@@ -26,16 +26,16 @@ const Approval = () => {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-5 font-sans font-inter text-xs font-bold text-gray-700 mt-1 ml-2 py-2">
+                <div className="grid grid-cols-5 font-sans font-inter font-bold lg:text-base text-xs text-gray-700 mt-1 py-2">
                     <div className="col-span-5">
                         <table className="w-full table-fixed"> {/* Ensure both thead and tbody are in the same table */}
                             <thead>
                                 <tr>
-                                    <th className="w-1/5 px-4 py-1 text-center border-b border-gray-700">Name</th>
-                                    <th className="w-1/5 px-4 py-1 text-center border-b border-gray-700">Department</th>
-                                    <th className="w-1/5 px-4 py-1 text-center border-b border-gray-700">Type</th>
-                                    <th className="w-1/5 px-4 py-1 text-center border-b border-gray-700">Request Date</th>
-                                    <th className="w-1/5 px-4 py-1 text-center border-b border-gray-700">Action</th>
+                                    <th className="w-1/5 text-center border-b border-gray-700">Name</th>
+                                    <th className="w-1/5 text-center border-b border-gray-700">Department</th>
+                                    <th className="w-1/5 text-center border-b border-gray-700">Type</th>
+                                    <th className="w-1/5 text-center border-b border-gray-700">Request Date</th>
+                                    <th className="w-1/5 text-center border-b border-gray-700">Action</th>
                                 </tr>
                             </thead>
                         </table>
@@ -46,11 +46,11 @@ const Approval = () => {
                             <tbody className="font-sans text-xs font-normal font-inter">
                                 {data.length > 0 && data.map((item, index) => (
                                     <tr key={index}>
-                                        <td className="px-4 py-2 text-center">{item.name || 'N/A'}</td>
-                                        <td className="px-4 text-center">{item.department || 'N/A'}</td>
-                                        <td className="px-4 text-center">{item.type || 'N/A'}</td>
-                                        <td className="px-4 text-center">{item.requestDate || 'N/A'}</td>
-                                        <td className="px-4 text-center">
+                                        <td className="py-3 px-4 text-center">{item.name || 'N/A'}</td>
+                                        <td className="py-3 px-4 text-center">{item.department || 'N/A'}</td>
+                                        <td className="py-3 px-4 text-center">{item.type || 'N/A'}</td>
+                                        <td className="py-3 px-4 text-center">{item.requestDate || 'N/A'}</td>
+                                        <td className="py-3 px-4 text-center">
                                             <a href="/not-found" className="text-blue-700" aria-label={`View details for ${item.name}`}>Details</a>
                                         </td>
                                     </tr>
