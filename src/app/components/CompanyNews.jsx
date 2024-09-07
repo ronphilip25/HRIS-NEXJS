@@ -16,7 +16,6 @@ const CompanyNews = () => {
                     <div className="font-inter flex items-center justify-center font-sans lg:text-base font-normal md:text-sm md:mt-5">No News</div>
                 </div>
             </div>
-
         </>
     )
 }

@@ -1,11 +1,9 @@
 'use client'
 
 import React from 'react';
-import Navbar from './Navbar';
-import Sidebar from './Siderbar';
+import Navbar from '../components/Navbar';
+import Sidebar from '../components/Siderbar';
 import { useState } from 'react';
-
-
 
 
 const MainLayout = ({ pageTitle, description, keywords, children }) => {
