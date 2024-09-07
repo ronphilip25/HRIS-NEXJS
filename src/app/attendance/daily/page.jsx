@@ -146,7 +146,7 @@ const page = () => {
                                 <div className="font-inter ml-2 mt-2 font-sans">
                                     <h5 className="leading-44 text-2xl font-bold text-black">Employees</h5>
                                 </div>
-                                <div className='mt-4 lg:h-[77vh] md:h-[63.5vh] h-[34vh] w-auto overflow-y-auto'>
+                                <div className='mt-4 lg:h-[76.5vh] md:h-[63.5vh] h-[34vh] w-auto overflow-y-auto'>
                                     <table className="min-w-full table-fixed">
                                         <thead>
                                             <tr>
