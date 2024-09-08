@@ -4,7 +4,7 @@ const DashboardWidget = () => {
     return (
         <>
             <div className="flex items-center justify-center">
-                <div className="rounded-lg bg-white lg:px-auto lg:h-[119px] lg:p-4 shadow-md md:w-full md:h-[119px] md:flex-shrink-0 md:px-auto md:p-4 px-1 h-[90px] w-full">
+                <div className="rounded-lg bg-white lg:px-auto lg:h-[119px] lg:p-4 shadow-md md:w-full md:h-[119px] md:flex-shrink-0 md:px-auto md:p-4 px-1 h-[90px] w-full lg:max-[1440px]:text-base">
                     <div className="relative">
                         <div className="absolute right-0 top-0">
                             <svg className="mr-2 mt-2" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">

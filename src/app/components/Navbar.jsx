@@ -43,7 +43,7 @@ export default function Navbar({ isOpen, toggleSidebar }) {
 
   return (
     <>
-      <nav className={`${isOpen ? 'w-[1657px]' : 'w-full'} w-full transition-width duration-500 ease-in-out relative flex h-20 items-center justify-center bg-white border rounded-sm border-gray-200`}>
+      <nav className={`${isOpen ? 'w-[1657px]' : 'w-full'} w-auto lg:max-[1440px]:max-w-auto transition-width duration-500 ease-in-out relative flex h-20 items-center justify-center bg-white border rounded-sm border-gray-200`}>
         <div>
           <button aria-label="Open sidebar" onClick={toggleSidebar} className="lg:flex md:flex items-center justify-center p-2 rounded-lg border-sky-200 border-2 ml-5 hidden ">
             {isOpen ? <ChevronsLeft className='text-sky-200 text-6xl' /> : <ChevronsRight className='text-sky-200 text-6xl' />}
