@@ -27,7 +27,7 @@ const page = () => {
                 keywords="Human Resource Info System, Vercel, Nextjs, React"
             >
                 {isLoading ? <Loading /> :
-                    <div className='lg:grid lg:grid-cols-4 lg:gap-4 md:grid md:grid-cols-2 md:gap-2 gap-4 md:flex-shrink-0 flex flex-col mx-4 md:mx-auto lg:mx-auto'>
+                    <div className='lg:grid lg:grid-cols-4 lg:gap-4 md:grid md:grid-cols-2 md:gap-2 gap-4 md:flex-shrink-0 flex flex-col mx-4 md:mx-auto lg:mx-auto mb-4'>
 
                         {/* Attendance Widget */}
                         <AttendanceWidget />
