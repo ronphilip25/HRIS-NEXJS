@@ -22,7 +22,7 @@ const Monthly = () => {
 
     return (
         <>
-            <div className="rounded-xl bg-white p-2 shadow-md col-span-1 lg:max-[1440px]:h-[40vh] md:max-[768px]:h-[26vh] h-auto">
+            <div className="rounded-xl bg-white p-2 shadow-md col-span-1 lg:max-[1440px]:h-[45vh] h-auto">
                 <div className="relative">
                     <div className="absolute right-0 top-0"></div>
                     <div className="font-inter ml-2 mt-1 font-sans">

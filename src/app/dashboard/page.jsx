@@ -47,8 +47,7 @@ const Dashboard = () => {
             <TaskList />
             <Approval />
             <Platform />
-          </div>
-        }
+          </div>}
       </MainLayout>
     </>
   )

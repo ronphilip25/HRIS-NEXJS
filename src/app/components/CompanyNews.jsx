@@ -3,7 +3,7 @@ import React from 'react'
 const CompanyNews = () => {
     return (
         <>
-            <div className='rounded-lg bg-white lg:p-4 p-2 pt-3 shadow-md lg:row-span-2 md:row-span-1 overflow-x-auto overflow-y-auto lg:max-[1440px]:w-4/5 lg:max-[1440px]:h-[55vh] lg:h-full md:h-[13.5vh] h-[35vh] md:max-[768px]:h-[13.5vh]'>
+            <div className='rounded-lg bg-white lg:p-4 p-2 pt-3 shadow-md lg:row-span-2 md:row-span-1 overflow-x-auto overflow-y-auto lg:max-[1440px]:w-4/5 lg:max-[1440px]:h-[20vh] lg:h-full md:h-[16vh] h-[35vh]'>
                 <div className="">
                     <div className="relative">
                         <div className="absolute right-0 top-0 cursor-pointer">
