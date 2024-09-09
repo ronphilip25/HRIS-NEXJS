@@ -12,26 +12,13 @@ import { IoSettingsOutline } from "react-icons/io5";
 const Sidebar = ({ isOpen }) => {
   const [expandedSections, setExpandedSections] = useState(true)
 
-  const [nav, setNav] = useState(false)
-
-  const toggleNav = () => {
-    setNav(!nav)
-
-    if (!nav) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
-  }
-
-
-
   const toggleSection = (section) => {
     setExpandedSections((prevSections) => ({
       ...prevSections,
       [section]: !prevSections[section],
     }));
   }
+
   return (
     <>
       <div className={`flex flex-col h-screen  bg-white text-black border ${isOpen ? 'lg:w-[286px] md:w-[250px] w-[200px] lg:block md:block hidden' : 'lg:w-44 md:w-34 w-36 lg:block md:block hidden'}  transition-all duration-500 shadow-lg`}>

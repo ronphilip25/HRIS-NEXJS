@@ -32,15 +32,9 @@ const Dashboard = () => {
         keywords="Human Resource Info System, Vercel, Nextjs, React"
       >
         {isLoading ? <Loading /> :
-          <div className='lg:grid lg:grid-cols-4 lg:gap-4 md:grid md:grid-cols-2 md:gap-2 gap-4 md:flex-shrink-0 flex flex-col mx-4 md:mx-auto lg:mx-auto mb-4'>
-
-            {/* Dashboard Widget */}
+          <div className='lg:grid lg:grid-cols-4 lg:gap-4 md:grid md:grid-cols-2 md:gap-2 gap-4 md:flex-shrink-0 flex flex-col mx-4 md:max-m-auto lg:max-mx-auto mb-4 md:mb-4'>
             <DashboardWidget />
-
-            {/* Company News */}
             <CompanyNews />
-
-            {/* Attendance Chart */}
             <div className="lg:col-span-2 md:col-span-1">
               <div className="grid grid-cols-1 md:flex-shrink-0">
                 <div className="rounded-lg shadow-lg bg-white p-4 lg:h-[410px] lg:max-[1440px]:h-[355px] lg:w-full">
@@ -49,17 +43,9 @@ const Dashboard = () => {
                 </div>
               </div>
             </div>
-
-            {/* Monthly Tardinesss */}
             <Monthly />
-
-            {/* Task List */}
             <TaskList />
-
-            {/* Needs Approval */}
             <Approval />
-
-            {/* Platform Notice */}
             <Platform />
           </div>
         }

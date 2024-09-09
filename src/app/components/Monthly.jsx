@@ -22,7 +22,7 @@ const Monthly = () => {
 
     return (
         <>
-            <div className="rounded-xl bg-white p-2 shadow-md col-span-1 lg:max-[1440px]:h-[40vh]">
+            <div className="rounded-xl bg-white p-2 shadow-md col-span-1 lg:max-[1440px]:h-[40vh] md:max-[768px]:h-[26vh] h-auto">
                 <div className="relative">
                     <div className="absolute right-0 top-0"></div>
                     <div className="font-inter ml-2 mt-1 font-sans">
@@ -42,7 +42,7 @@ const Monthly = () => {
                             </thead>
                         </table>
                     </div>
-                    <div className="col-span-4 overflow-y-auto overflow-x-auto lg:max-[1440px]:h-[30vh] lg:h-[32vh] md:h-[19vh] h-[35vh]">
+                    <div className="col-span-4 overflow-y-auto overflow-x-auto lg:max-[1440px]:h-[30vh] lg:h-[32vh] md:h-[19vh] h-[35vh] md:max-[768px]:h-[16vh]">
                         <table className="w-full table-fixed">
                             <tbody className="font-sans text-xs font-normal font-inter">
                                 {data.length > 0 && data.map((data, index) => (

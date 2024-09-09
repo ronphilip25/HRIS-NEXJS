@@ -80,7 +80,7 @@ const AttendanceCard = () => {
                                             Total working hrs
                                         </th>
                                         <th scope="col" className="text-xs lg:px-3 md:text-xs lg:py-2 border-b border-gray-300 lg:text-center">
-                                            Overtime
+                                            OT
                                         </th>
                                         <th scope="col" className="text-xs lg:px-3 md:text-xs lg:py-2 border-b border-gray-300 lg:text-center">
                                             Notes
