@@ -6,3 +6,6 @@
   @apply flex flex-col;
 }
 
+.html {
+  scroll-behavior: smooth !important;
+}

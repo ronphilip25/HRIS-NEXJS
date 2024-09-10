@@ -29,7 +29,7 @@ const Monthly = () => {
                         <h5 className="lg:text-lg md:text-base font-bold text-black text-xs lg:max-[1440px]:text-xs">Monthly Tardiness and Absences</h5>
                     </div>
                 </div>
-                <div className="grid grid-cols-4 font-sans font-inter text-xs font-bold text-gray-700 lg:mt-5 md:mt-3 mt-2 ">
+                <div className="grid grid-cols-4 font-sans font-inter text-xs font-bold text-gray-700 lg:mt-auto md:mt-3 mt-2 ">
                     <div className="col-span-4">
                         <table className="w-full table-fixed">
                             <thead>
