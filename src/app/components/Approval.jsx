@@ -18,7 +18,7 @@ const Approval = () => {
 
     return (
         <>
-            <div className="rounded-xl bg-white p-2 shadow-md col-span-2 lg:col-span-2 lg:col-start-2 lg:row-start-3 md:col-span-1 md:py-4 md:row-start-4 lg:max-[1440px]:h-[30vh]">
+            <div className="rounded-xl bg-white p-2 shadow-md col-span-2 lg:col-span-2 lg:col-start-2 lg:row-start-3 md:py-4 md:row-start-5 md:col-span-2 lg:max-[1440px]:h-auto">
                 <div className="relative">
                     <div className="absolute right-0 top-0"></div>
                     <div className="ml-2 font-sans">

@@ -153,7 +153,7 @@ const AttendanceChart = () => {
         <button className={`p-1 lg:max-[1440px]:text-xs border-2 border-r-0 text-xs md:text-xs px-3 lg:text-sm font-normal lg:border-2 lg:border-r-0 ${timePeriod === '7days' ? 'text-black' : 'text-blue-200'}`} onClick={() => setTimePeriod('7days')}>7 Days</button>
         <button className={`p-1 lg:max-[1440px]:text-xs border-2 text-xs rounded-r-md md:text-xs px-3 lg:text-sm font-normal lg:border-2 lg:rounded-r-md ${timePeriod === '24hrs' ? 'text-black' : 'text-blue-200'}`} onClick={() => setTimePeriod('24hrs')}>24 Hours</button>
       </div>
-      <canvas className='mt-3' height={120} id="attendanceChart" ref={chartRef} />
+      <canvas className='mt-3' layout={"responsive"} height={120} id="attendanceChart" ref={chartRef} />
     </div>
   );
 };
