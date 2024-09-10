@@ -33,7 +33,7 @@ export default function Index() {
       </header>
       <main className="bg-blue-100 bg-opacity-50 min-h-screen">
         {authenticated ? (<Home />) : (
-          <div className="container mx-auto md:max-w-4xl lg:max-w-6xl">
+          <div className="container mx-auto md:max-w-4xl lg:max-w-6xl lg:max-[1024px]:h-auto ">
             <div className="flex min-h-screen justify-center items-center">
               <div className="grid grid-cols-1 md:grid-cols-2 bg-blue-500 md:max-h-[700px] rounded-xl shadow-lg">
 

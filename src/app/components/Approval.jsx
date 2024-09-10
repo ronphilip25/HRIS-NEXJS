@@ -25,7 +25,7 @@ const Approval = () => {
                         <h5 className="lg:text-2xl font-bold text-black md:text-base text-xs lg:max-[1440px]:text-base">Needs Approval</h5>
                     </div>
                 </div>
-                <div className="grid grid-cols-5 font-sans font-inter font-bold lg:text-base text-xs lg:max-[1440px]:text-xs text-gray-700 mt-1 py-2">
+                <div className="grid grid-cols-5 font-sans font-inter font-bold lg:text-base text-xs lg:max-[1440px]:text-xs text-gray-700 mt-2">
                     <div className="col-span-5">
                         <table className="w-full table-fixed">
                             <thead>
@@ -39,7 +39,7 @@ const Approval = () => {
                             </thead>
                         </table>
                     </div>
-                    <div className="col-span-5 overflow-y-auto lg:h-[18vh] md:h-[24vh] h-[35vh]">
+                    <div className="col-span-5 overflow-y-auto lg:h-[18vh] lg:max-[1024px]:h-[23vh] md:h-[18vh] h-[35vh]">
                         <table className="mx-auto w-full table-fixed">
                             <tbody className="font-sans text-xs font-normal font-inter">
                                 {data.length > 0 && data.map((item, index) => (

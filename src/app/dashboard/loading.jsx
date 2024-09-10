@@ -58,7 +58,7 @@ export default function Loading() {
                     </div>
                 </div>
                 {/* Company News */}
-                <div className=" border-gray-400 border animate-pulse rounded-lg lg:p-4 p-2 pt-3 shadow-md lg:row-span-2 md:row-span-1 lg:max-[1440px]:w-4/5 lg:max-[1440px]:h-[55vh]">
+                <div className=" border-gray-400 border animate-pulse rounded-lg lg:p-4 p-2 pt-3 shadow-md lg:row-span-2 md:row-span-1 lg:max-[1440px]:w-4/5 lg:max-[1440px]:h-auto">
                     <div className="relative">
                         <div className="absolute right-0 top-0 cursor-pointer">
                             <button aria-label="Open settings" className='border border-blue-400 rounded-lg animate-pulse text-base font-sans font-bold lg:max-[1440px]:w-14 lg:max-[1440px]:h-9 w-24 h-10 px-3 py-1 lg:w-24 lg:h-10 md:w-24'>
@@ -81,18 +81,18 @@ export default function Loading() {
                     </div>
                 </div>
                 {/* Monthly Tardinesss */}
-                <div className="rounded-xl border-gray-400 border animate-pulse p-2 shadow-md col-span-1 lg:max-[1440px]:h-[40vh] lg:row-start-2 lg:col-start-3 md:row-start-4 md:col-start-1">
+                <div className="rounded-xl border-gray-400 border animate-pulse p-2 shadow-md col-span-1 lg:max-[1440px]:h-auto lg:row-start-2 lg:col-start-3 md:row-start-4 md:col-start-1">
                     <div className="relative">
                         <div className="absolute right-0 top-0"></div>
                         <div className="font-inter ml-2 mt-1 font-sans">
-                            <h5 className="animate-pulse lg:text-2xl rounded h-5 w-[250px] bg-gradient-to-r from-gray-200 via-gray-400 to-gray-400 md:text-base"></h5>
+                            <h5 className="animate-pulse lg:text-2xl rounded h-5 w-[250px] md:max-[1024px]:w-[150px] bg-gradient-to-r from-gray-200 via-gray-400 to-gray-400 md:text-base"></h5>
                         </div>
                     </div>
                     <div className="grid grid-cols-4 gap-3 font-sans font-inter text-xs font-bold text-gray-700 mt-3 ml-2 py-2">
-                        <div className='bg-gradient-to-r from-gray-200 via-gray-400 to-gray-400 rounded lg:max-[1440px]:w-12 lg:max-[1440px]:h-5 w-16 h-5'></div>
-                        <div className='bg-gradient-to-r from-gray-200 via-gray-400 to-gray-400 rounded lg:max-[1440px]:w-12 lg:max-[1440px]:h-5 w-16 h-5'></div>
-                        <div className='bg-gradient-to-r from-gray-200 via-gray-400 to-gray-400 rounded lg:max-[1440px]:w-12 lg:max-[1440px]:h-5 w-16 h-5'></div>
-                        <div className='bg-gradient-to-r from-gray-200 via-gray-400 to-gray-400 rounded lg:max-[1440px]:w-12 lg:max-[1440px]:h-5 w-16 h-5'></div>
+                        <div className='bg-gradient-to-r from-gray-200 via-gray-400 to-gray-400 rounded lg:max-[1440px]:w-auto lg:max-[1440px]:h-5 w-16 h-5'></div>
+                        <div className='bg-gradient-to-r from-gray-200 via-gray-400 to-gray-400 rounded lg:max-[1440px]:w-auto lg:max-[1440px]:h-5 w-16 h-5'></div>
+                        <div className='bg-gradient-to-r from-gray-200 via-gray-400 to-gray-400 rounded lg:max-[1440px]:w-auto lg:max-[1440px]:h-5 w-16 h-5'></div>
+                        <div className='bg-gradient-to-r from-gray-200 via-gray-400 to-gray-400 rounded lg:max-[1440px]:w-auto lg:max-[1440px]:h-5 w-16 h-5'></div>
                     </div>
                 </div>
                 {/* Task List */}
@@ -180,7 +180,7 @@ export default function Loading() {
                     </div>
                 </div>
                 {/* Needs Approval */}
-                <div className="rounded-xl border animate-pulse border-gray-400 p-2 shadow-md col-span-2 lg:col-span-2 lg:col-start-2 lg:row-start-3  md:py-4 md:row-start-5 md:col-span-2 lg:max-[1440px]:h-[30vh]">
+                <div className="rounded-xl border animate-pulse border-gray-400 p-2 shadow-md col-span-2 lg:col-span-2 lg:col-start-2 lg:row-start-3  md:py-4 md:row-start-5 md:col-span-2 lg:max-[1440px]:h-auto">
                     <div className="relative">
                         <div className="absolute right-0 top-0"></div>
                         <div className="ml-2 font-sans">
@@ -196,7 +196,7 @@ export default function Loading() {
                     </div>
                 </div>
                 {/* Platform Notice */}
-                <div className="rounded-xl animate-pulse border border-gray-400 lg:p-4 md:p-2 shadow-md col-span-1 lg:col-start-4 lg:h-auto lg:row-start-3 md:row-start-4 lg:max-[1440px]:w-4/5 lg:max-[1440px]:h-[30vh]">
+                <div className="rounded-xl animate-pulse border border-gray-400 lg:p-4 md:p-2 shadow-md col-span-1 lg:col-start-4 lg:h-auto lg:row-start-3 md:row-start-4 lg:max-[1440px]:w-4/5 lg:max-[1440px]:h-auto">
                     <div className="relative">
                         <div className="font-inter ml-2 mt-1 font-sans">
                             <h5 className="animate-pulse bg-gradient-to-r from-gray-200 via-gray-400 rounded h-8 w-[200px] lg:max-[1440px]:w-4/5 lg:max-[1440px]:h-4"></h5>

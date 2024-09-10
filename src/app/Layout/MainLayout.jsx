@@ -27,7 +27,7 @@ const MainLayout = ({ pageTitle, description, keywords, children }) => {
           <Sidebar isOpen={isOpen} />
           <div className="flex-1 flex flex-col">
             <Navbar isOpen={isOpen} toggleSidebar={toggleSidebar} />
-            <main className={` ${isOpen ? 'lg:mx-12 lg:max-[1440px]:mx-7 md:max-mx-auto' : 'lg:mr-[95px] md:mr-[95px]  md:ml-5 md:max-[916px]:ml-auto'} mx-auto mt-3 container transition-all duration-700`}>
+            <main className={` ${isOpen ? 'lg:mx-12 lg:max-[1440px]:mx-7 md:max-mx-auto' : 'lg:mr-[95px] md:mr-[95px]  md:ml-5 md:max-[916px]:ml-auto'}  mx-auto mt-3 lg:max-[1024px]:mt-2 container transition-all duration-700`}>
               {children}
             </main>
           </div>
