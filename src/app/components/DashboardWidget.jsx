@@ -7,7 +7,7 @@ const DashboardWidget = () => {
                 <div className="rounded-lg bg-white lg:px-auto lg:h-[119px] lg:p-4 shadow-md md:w-full md:h-[119px] md:flex-shrink-0 md:px-auto md:p-4 px-1 h-[90px] w-full lg:max-[1440px]:text-base">
                     <div className="relative">
                         <div className="absolute right-0 top-0 ">
-                            <svg className="mr-2 mt-2" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg className="mr-2 mt-2 lg:max-[1024px]:h-[75px] lg:max-[1024px]:w-[50px]" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="70" height="70" rx="12" fill="#D0E9FE" />
                                 <g clipPath="url(#clip0_36_168)">
                                     <path d="M30.0002 19.0937C27.8689 19.55 26.1689 20.95 25.3689 22.9125C24.6564 24.6625 24.7377 26.5875 25.6064 28.2625C26.4439 29.8937 27.8502 31.0125 29.6877 31.5125C30.1439 31.6312 30.3689 31.6562 31.2502 31.6562C32.4064 31.6562 32.9002 31.5562 33.8314 31.1562C34.8252 30.725 35.9002 29.8375 36.5002 28.9437C38.1752 26.4562 37.9127 23.1375 35.8752 20.975C34.9439 19.9875 33.8439 19.3812 32.4877 19.1C31.8939 18.975 30.5689 18.975 30.0002 19.0937Z" fill="#045CA4" />
@@ -27,7 +27,7 @@ const DashboardWidget = () => {
                 <div className="rounded-lg bg-white lg:px-auto lg:h-[119px] lg:p-4 shadow-md md:w-full md:h-[119px] md:flex-shrink-0 md:px-auto md:p-4 px-1 h-[90px] w-full">
                     <div className="relative">
                         <div className="absolute right-0 top-0">
-                            <svg className="mr-2 mt-2" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg className="mr-2 mt-2 lg:max-[1024px]:h-[75px] lg:max-[1024px]:w-[50px]" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="70" height="70" rx="12" fill="#F0E1F1" />
                                 <g clipPath="url(#clip0_36_182)">
                                     <path d="M30.0002 19.0937C27.8689 19.55 26.1689 20.95 25.3689 22.9125C24.6564 24.6625 24.7377 26.5875 25.6064 28.2625C26.4439 29.8937 27.8502 31.0125 29.6877 31.5125C30.1439 31.6312 30.3689 31.6562 31.2502 31.6562C32.4064 31.6562 32.9002 31.5562 33.8314 31.1562C34.8252 30.725 35.9002 29.8375 36.5002 28.9437C38.1752 26.4562 37.9127 23.1375 35.8752 20.975C34.9439 19.9875 33.8439 19.3812 32.4877 19.1C31.8939 18.975 30.5689 18.975 30.0002 19.0937Z" fill="#AC5BB3" />
@@ -48,7 +48,7 @@ const DashboardWidget = () => {
                 <div className="rounded-lg bg-white lg:px-auto lg:h-[119px] lg:p-4 shadow-md md:w-full md:h-[119px] md:flex-shrink-0 md:px-auto md:p-4 px-1 h-[90px] w-full">
                     <div className="relative">
                         <div className="absolute right-0 top-0">
-                            <svg className="mr-2 mt-2" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg className="mr-2 mt-2 lg:max-[1024px]:h-[75px] lg:max-[1024px]:w-[50px]" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="70" height="70" rx="12" fill="#FAD2D2" />
                                 <g clipPath="url(#clip0_36_194)">
                                     <path d="M30.0002 19.0937C27.8689 19.55 26.1689 20.95 25.3689 22.9125C24.6564 24.6625 24.7377 26.5875 25.6064 28.2625C26.4439 29.8937 27.8502 31.0125 29.6877 31.5125C30.1439 31.6312 30.3689 31.6562 31.2502 31.6562C32.4064 31.6562 32.9002 31.5562 33.8314 31.1562C34.8252 30.725 35.9002 29.8375 36.5002 28.9437C38.1752 26.4562 37.9127 23.1375 35.8752 20.975C34.9439 19.9875 33.8439 19.3812 32.4877 19.1C31.8939 18.975 30.5689 18.975 30.0002 19.0937Z" fill="#E94545" />
