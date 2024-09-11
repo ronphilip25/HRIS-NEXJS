@@ -28,7 +28,7 @@ const Approval = () => {
                 <div className="grid grid-cols-5 font-sans font-inter font-bold lg:text-base text-xs lg:max-[1440px]:text-xs text-gray-700 mt-2">
                     <div className="col-span-5">
                         <table className="w-full table-fixed">
-                            <thead>
+                            <thead className='bg-gray-100'>
                                 <tr>
                                     <th className="w-1/5 text-center border-b border-gray-700">Name</th>
                                     <th className="w-1/5 text-center border-b border-gray-700">Department</th>

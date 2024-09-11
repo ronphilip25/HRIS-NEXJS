@@ -32,7 +32,7 @@ const Monthly = () => {
                 <div className="grid grid-cols-4 font-sans font-inter text-xs font-bold text-gray-700 lg:mt-auto md:mt-3  ">
                     <div className="col-span-4">
                         <table className="w-full table-fixed">
-                            <thead>
+                            <thead className='bg-gray-100 '>
                                 <tr className='lg:max-[1024px]:hidden'>
                                     <th className="lg:px-2 lg:max-[1440px]:text-xs lg:max-[1440px]:px-1 lg:py-2 border-b border-gray-700 text-start lg:w-1/4 w-1/4">Name</th>
                                     <th className="lg:px-2 lg:max-[1440px]:text-xs lg:max-[1440px]:px-1 lg:py-2 border-b border-gray-700 text-start lg:w-2/4 w-2/4">Department</th>

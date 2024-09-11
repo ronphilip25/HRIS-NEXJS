@@ -4,8 +4,7 @@ import Image from 'next/image'
 const EmployeeList = () => {
     return (
         <>
-            <div className='lg:col-start-4 lg:row-start-1 md:row-start-2 md:col-start-3 md:row-span-2'>
-                <div className="rounded-lg bg-white p-4 shadow-md">
+            <div className='lg:col-start-4 lg:row-start-1 md:row-start-2 md:col-start-3 md:row-span-2 rounded-lg bg-white lg:max-[1024px]:col-start-3 lg:max-[1024px]:row-start-2 lg:p-4 p-2 pt-3 shadow-md lg:row-span-2 overflow-x-auto overflow-y-auto lg:max-[1440px]:w-4/5 lg:max-[1440px]:h-auto lg:h-full md:h-auto h-[35vh]'>
                     <div className="font-inter ml-2 mt-2 font-sans">
                         <h5 className="leading-44 text-2xl font-bold text-black">Employees</h5>
                     </div>
@@ -44,7 +43,6 @@ const EmployeeList = () => {
                             </tbody>
                         </table>
                     </div>
-                </div>
             </div>
         </>
     )

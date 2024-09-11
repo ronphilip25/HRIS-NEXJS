@@ -17,8 +17,8 @@ const AttendanceCard = () => {
 
     return (
         <>
-            <div className='lg:col-start-1 lg:col-span-3 md:col-span-2'>
-                <div className="rounded-lg bg-white p-2 lg:h-auto md:h-[74vh] w-auto shadow-md">
+            <div className='lg:col-start-1 lg:col-span-3 md:col-span-2 lg:max-[1024px]:col-span-2'>
+                <div className="rounded-lg bg-white p-2 lg:max-[1440px]:h-auto md:h-[74vh] w-auto shadow-md">
                     <div className="flex justify-between items-center mt-3 ml-2">
                         <h5 className="leading-44 text-2xl font-bold text-gray-700">Attendance</h5>
                         <div className="rounded-md py-2 px-2 bg-blue-800 cursor-pointer mr-3">
@@ -62,7 +62,7 @@ const AttendanceCard = () => {
                                     <col className='w-1/8' />
                                     <col className='w-1/8' />
                                 </colgroup>
-                                <thead>
+                                <thead className='bg-gray-100'>
                                     <tr>
                                         <th scope="col" className="text-xs lg:px-0 md:text-xs lg:pl-3 md:pr-9 pr-9 lg:py-2 lg:text-left border-b border-gray-300">
                                             Date

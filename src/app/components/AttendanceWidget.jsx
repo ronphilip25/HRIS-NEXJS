@@ -34,8 +34,8 @@ const AttendanceWidget = () => {
         <h2 className="text-md ml-2 mt-2 font-normal">Period</h2>
         <div className="relative font-inter font-sans">
           <div className="rounded-lg border border-gray-600 w-full mt-4">
-            <div className="font-sans font-inter lg:text-base font-bold text-gray-700 lg:py-[7px] md:text-xs md:py-[8px] py-[8px] md:p-2 flex justify-center mr-4">
-              <div className="mr-4 lg:block md:hidden">
+            <div className="font-sans font-inter lg:text-base lg:max-[1024px]:text-base lg:max-[1024px]:py-2 font-bold text-gray-700 lg:py-[7px] md:text-xs md:py-[8px] py-[8px] md:p-2 flex justify-center mr-4">
+              <div className="mr-4 lg:block md:hidden lg:max-[1024px]:hidden">
                 <svg
                   width="24"
                   height="24"
@@ -55,7 +55,7 @@ const AttendanceWidget = () => {
                   />
                 </svg>
               </div>
-              <div>{formatDate(currentDate)}</div>
+              <div className='lg:max-[1024px]:mx-auto]:'>{formatDate(currentDate)}</div>
             </div>
           </div>
         </div>
@@ -71,7 +71,7 @@ const AttendanceWidget = () => {
             id="menu-button"
             aria-expanded={isDropdownOpen}
             aria-haspopup="true"
-            className="flex items-center justify-between py-[8px] lg:text-base md:text-xs w-full rounded-lg bg-white text-base font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-700"
+            className="flex items-center justify-between py-[8px] lg:text-base lg:max-[1024px]:text-sm lg:max-[1024px]:py-3 md:text-xs w-full rounded-lg bg-white text-base font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-700"
           >
             <div className="flex ml-2">Select Departments</div>
             <div className="flex justify-end mr-4 mt-[1.5]">
@@ -94,7 +94,7 @@ const AttendanceWidget = () => {
       </div>
 
       {/* Employees Card */}
-      <div className="rounded-lg shadow-md bg-white w-full lg:h-[119px] p-2">
+      <div className="rounded-lg shadow-md bg-white w-full lg:max-[1024px]:w-4/5 lg:h-[119px] p-2">
         <h2 className="text-md ml-2 mt-2 flex font-normal text-base">Employees</h2>
         <div className="relative mt-[1rem] lg:text-base md:text-xs">
           <input
