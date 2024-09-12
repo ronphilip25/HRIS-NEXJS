@@ -1,5 +1,5 @@
 import MainLayout from '../../Layout/MainLayout';
-import AttendanceWidget from '../../components/AttendanceWidget';
+import AttendanceWidget from '../../../components/AttendanceWidget';
 import React from 'react'
 
 const page = () => {
