@@ -93,7 +93,7 @@ const AttendanceCard = () => {
                             </table>
                         </div>
 
-                        <div className="col-span-8 overflow-x-auto h-[32vh] lg:max-[1440px]:h-[30vh] lg:max-[1024px]:h-[15vh] md:h-[10vh]">
+                        <div className="col-span-8 overflow-x-auto h-[32vh] lg:max-[1440px]:h-[30vh] lg:h-[22vh] lg:max-[1024px]:h-[24vh] md:h-[10vh]">
                             <table className="w-full table-fixed">
                                 <tbody className="font-sans text-xs font-normal font-inter">
                                     {tableData.map((row, index) => (
