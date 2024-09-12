@@ -14,11 +14,11 @@ const AttendanceCard = () => {
 
 
     ];
-
+// lg:max-[1440px]:h-auto lg:max-[1024px]:h-auto
     return (
         <>
             <div className='lg:col-start-1 lg:col-span-3 md:col-span-2 lg:max-[1024px]:col-span-2'>
-                <div className="rounded-lg bg-white p-2 lg:max-[1440px]:h-auto lg:max-[1024px]:h-auto md:h-[74vh] w-auto shadow-md">
+                <div className="rounded-lg bg-white p-2 lg:h-auto md:h-[74vh] w-auto shadow-md">
                     <div className="flex justify-between items-center mt-3 ml-2">
                         <h5 className="leading-44 text-2xl font-bold text-gray-700">Attendance</h5>
                         <div className="rounded-md md:max-[768px]:py-2 md:max-[768px]:px-2 py-3 px-8 bg-blue-800 cursor-pointer mr-3 mt-2 md:max-[768px]:ml-3">

@@ -8,7 +8,7 @@ const EmployeeList = () => {
                 <div className="font-inter ml-2 mt-1 font-sans">
                     <h5 className="text-2xl font-bold text-black">Employees</h5>
                 </div>
-                <div className='mt-3 lg:max-[1024px]:h-[24vh] lg:h-[65vh] md:h-[63.5vh] h-[34vh] w-auto overflow-y-auto'>
+                <div className='mt-3 lg:max-[1024px]:h-[50vh] lg:h-[65vh] md:h-[63.5vh] h-[34vh] w-auto overflow-y-auto'>
                     <table className="min-w-full table-fixed">
                         <thead>
                             <tr>
