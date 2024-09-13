@@ -3,8 +3,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 
-
-
 const AttendanceWidget = () => {
 
   const [isDropdownOpen, setDropdownOpen] = useState(false);
@@ -31,7 +29,7 @@ const AttendanceWidget = () => {
   return (
     <>
       {/* Period Card */}
-      <div className="rounded-lg shadow-md bg-white w-full lg:h-auto p-2">
+      <div className="rounded-lg shadow-md bg-white w-full lg:h-[119px] p-2 col-start-1">
         <h2 className="text-md ml-2 mt-2 font-normal">Period</h2>
         <div className="relative font-inter font-sans">
           <div className="rounded-lg border border-gray-600 w-full mt-4">
@@ -63,7 +61,7 @@ const AttendanceWidget = () => {
       </div>
 
       {/* Department Card */}
-      <div className="rounded-lg shadow-md bg-white w-full lg:h-auto p-2">
+      <div className="rounded-lg shadow-md bg-white w-full lg:h-auto p-2 col-start-2">
         <h2 className="text-md ml-2 mt-2 font-normal">Department</h2>
         <div className="relative inline-block w-full mt-4">
           <button
@@ -95,7 +93,7 @@ const AttendanceWidget = () => {
       </div>
 
       {/* Employees Card */}
-      <div className="rounded-lg shadow-md bg-white w-full lg:max-[1024px]:w-4/5 lg:h-auto p-2">
+      <div className="rounded-lg shadow-md lg:max-[1024px]:w-auto bg-white w-full lg:h-auto p-2 col-start-3">
         <h2 className="text-md ml-2 mt-2 flex font-normal text-base">Employees</h2>
         <div className="relative mt-[1rem] lg:text-base md:text-xs">
           <input

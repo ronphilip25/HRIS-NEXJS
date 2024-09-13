@@ -28,7 +28,7 @@ const page = () => {
             >
                 {isLoading ? <Loading /> :
                     <div className='mx-auto px-4'>
-                        <div className='lg:grid lg:grid-cols-4 lg:gap-4 lg:max-[1440px]:gap-2 lg:max-[1024px]:gap-2 lg:max-[1024px]:grid-cols-2 lg:max-[1024px]:mx-auto md:grid md:grid-cols-2 md:gap-2 gap-4 md:flex-shrink-0 flex flex-col md:max-m-auto h-auto lg:max-mx-auto mb-4 md:mb-4'>
+                        <div className='lg:grid lg:grid-cols-4 lg:gap-4 lg:max-[1440px]:gap-2 md:grid md:grid-cols-2 md:gap-2 gap-4 md:flex-shrink-0 flex flex-col md:max-m-auto h-auto lg:max-mx-auto mb-4 md:mb-4'>
 
                             {/* Attendance Widget */}
                             <AttendanceWidget />
