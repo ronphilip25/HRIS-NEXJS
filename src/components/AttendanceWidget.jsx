@@ -30,7 +30,7 @@ const AttendanceWidget = () => {
     <>
       {/* Period Card */}
       <div className="rounded-lg shadow-md bg-white w-full lg:h-[119px] p-2 col-start-1">
-        <h2 className="text-md ml-2 mt-2 font-normal">Period</h2>
+        <h2 className="text-md text-black ml-2 mt-2 font-normal">Period</h2>
         <div className="relative font-inter font-sans">
           <div className="rounded-lg border border-gray-600 w-full mt-4">
             <div className="font-sans font-inter lg:text-base lg:max-[1024px]:text-base lg:max-[1024px]:py-2 font-bold text-gray-700 lg:py-[7px] md:text-xs md:py-[8px] py-[8px] md:p-2 flex justify-center mr-4">
@@ -62,7 +62,7 @@ const AttendanceWidget = () => {
 
       {/* Department Card */}
       <div className="rounded-lg shadow-md bg-white w-full lg:h-auto p-2 col-start-2">
-        <h2 className="text-md ml-2 mt-2 font-normal">Department</h2>
+        <h2 className="text-md text-black ml-2 mt-2 font-normal">Department</h2>
         <div className="relative inline-block w-full mt-4">
           <button
             type="button"
@@ -94,7 +94,7 @@ const AttendanceWidget = () => {
 
       {/* Employees Card */}
       <div className="rounded-lg shadow-md lg:max-[1024px]:w-auto bg-white w-full lg:h-auto p-2 col-start-3">
-        <h2 className="text-md ml-2 mt-2 flex font-normal text-base">Employees</h2>
+        <h2 className="text-md text-black ml-2 mt-2 flex font-normal text-base">Employees</h2>
         <div className="relative mt-[1rem] lg:text-base md:text-xs">
           <input
             type="text"

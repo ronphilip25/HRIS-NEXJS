@@ -5,13 +5,3 @@
 .labels {
   @apply flex flex-col;
 }
-
-.html {
-  scroll-behavior: smooth !important;
-}
-
-@layer base {
-  :root {
-    --radius: 0.5rem;
-  }
-}

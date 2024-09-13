@@ -18,7 +18,7 @@ const AttendanceCard = () => {
     return (
         <>
             <div className='lg:col-start-1 lg:col-span-3 md:col-span-2 '>
-                <div className="rounded-lg bg-white p-2 lg:max-[1440px]:h-auto lg:max-[1024px]:h-auto lg:h-[74vh] md:h-[74vh] w-auto shadow-md">
+                <div className="rounded-lg bg-white p-2 lg:max-[1440px]:h-auto lg:max-[1024px]:h-auto lg:h-[74vh]  w-auto shadow-md">
                     <div className="flex justify-between items-center mt-3 ml-2">
                         <h5 className="leading-44 text-2xl font-bold text-gray-700">Attendance</h5>
                         <div className="rounded-md md:max-[768px]:py-2 md:max-[768px]:px-2 py-3 px-8 bg-blue-800 cursor-pointer mr-3 mt-2 md:max-[768px]:ml-3">
@@ -37,7 +37,7 @@ const AttendanceCard = () => {
                         </div>
 
                         {/* table */}
-                        <div className="lg:grid lg:grid-cols-2 lg:grid-rows-4 lg:[&_div:nth-child(even)]:text-right lg:mt-5 lg:p-4 lg:max-[1024px]:hidden md:hidden">
+                        <div className="lg:grid lg:grid-cols-2 lg:grid-rows-4 lg:[&_div:nth-child(even)]:text-right lg:mt-5 lg:p-4 lg:max-[1024px]:hidden">
                             <div className="border-b lg:max-[1024px]:text-xs border-gray-200 py-1 mb-3 text-gray-400">Department</div>
                             <div className="border-b lg:max-[1024px]:text-xs border-gray-200 py-1 mb-3 text-gray-500 text-sm font-bold">IT Department</div>
                             <div className="border-b lg:max-[1024px]:text-xs border-gray-200 py-1 mb-3 text-gray-400">Work Schedule</div>
@@ -48,9 +48,9 @@ const AttendanceCard = () => {
                             <div className="border-b lg:max-[1024px]:text-xs border-gray-200 py-1 text-gray-500 text-sm font-bold"> - </div>
                         </div>
 
-                        <details className="collapse lg:max-[1024px]:flex lg:hidden md:flex hidden">
+                        <details className="collapse lg:max-[1024px]:flex lg:hidden md:hidden hidden">
                             <div className="collapse-content">
-                                <div className="lg:grid lg:grid-cols-2 lg:grid-rows-4 lg:[&_div:nth-child(even)]:text-right lg:mt-5 lg:p-4 ">
+                                <div className="lg:grid lg:grid-cols-2 lg:grid-rows-4 lg:[&_div:nth-child(even)]:text-right lg:mt-5 lg:max-[1024px]:mt-0 lg:p-4 lg:max-[1024px]:p-2 ">
                                     <div className="border-b lg:max-[1024px]:text-md md:max-[768px]:text-xs border-gray-200 py-1 mb-3 text-gray-400">Department</div>
                                     <div className="border-b lg:max-[1024px]:text-md md:max-[768px]:text-xs border-gray-200 py-1 mb-3 text-gray-500 text-sm font-bold">IT Department</div>
                                     <div className="border-b lg:max-[1024px]:text-md md:max-[768px]:text-xs border-gray-200 py-1 mb-3 text-gray-400">Work Schedule</div>

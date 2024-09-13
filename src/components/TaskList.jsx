@@ -66,7 +66,7 @@ const TaskList = () => {
                 </div>
             </div>
             {/* probationary mobile */}
-            <div className='lg:hidden md:block hidden md:flex-shrink-0 flex-col mt-1 '>
+            <div className='lg:hidden md:block hidden md:flex-shrink-0 flex-col mt-1 text-black '>
                 <div className="line mb-1 p-4 bg-white rounded-lg text-lg font-normal flex justify-between">Probationary Employees
                     <button type='button' className="hover:scale-125 ease-out duration-150">
                         <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
