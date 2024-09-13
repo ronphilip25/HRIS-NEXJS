@@ -37,7 +37,7 @@ const AttendanceCard = () => {
                         </div>
 
                         {/* table */}
-                        <div className="lg:grid lg:grid-cols-2 lg:grid-rows-4 lg:[&_div:nth-child(even)]:text-right lg:mt-5 lg:p-4 ">
+                        <div className="lg:grid lg:grid-cols-2 lg:grid-rows-4 lg:[&_div:nth-child(even)]:text-right lg:mt-5 lg:p-4 lg:max-[1024px]:hidden md:hidden">
                             <div className="border-b lg:max-[1024px]:text-xs border-gray-200 py-1 mb-3 text-gray-400">Department</div>
                             <div className="border-b lg:max-[1024px]:text-xs border-gray-200 py-1 mb-3 text-gray-500 text-sm font-bold">IT Department</div>
                             <div className="border-b lg:max-[1024px]:text-xs border-gray-200 py-1 mb-3 text-gray-400">Work Schedule</div>
@@ -47,6 +47,22 @@ const AttendanceCard = () => {
                             <div className="border-b lg:max-[1024px]:text-xs border-gray-200 py-1 text-gray-400">Cumulative working hours</div>
                             <div className="border-b lg:max-[1024px]:text-xs border-gray-200 py-1 text-gray-500 text-sm font-bold"> - </div>
                         </div>
+
+                        <details className="collapse lg:max-[1024px]:flex lg:hidden md:flex">
+                            
+                            <div className="collapse-content">
+                                <div className="lg:grid lg:grid-cols-2 lg:grid-rows-4 lg:[&_div:nth-child(even)]:text-right lg:mt-5 lg:p-4 ">
+                                    <div className="border-b lg:max-[1024px]:text-xs md:max-[768px]:text-xs border-gray-200 py-1 mb-3 text-gray-400">Department</div>
+                                    <div className="border-b lg:max-[1024px]:text-xs md:max-[768px]:text-xs border-gray-200 py-1 mb-3 text-gray-500 text-sm font-bold">IT Department</div>
+                                    <div className="border-b lg:max-[1024px]:text-xs md:max-[768px]:text-xs border-gray-200 py-1 mb-3 text-gray-400">Work Schedule</div>
+                                    <div className="border-b lg:max-[1024px]:text-xs md:max-[768px]:text-xs border-gray-200 py-1 mb-3 text-gray-500 text-sm font-bold">Mon, Tue, Wed, Thu, Fri(9:00-18:00)</div>
+                                    <div className="border-b lg:max-[1024px]:text-xs md:max-[768px]:text-xs border-gray-200 py-1 mb-3 text-gray-400">Period</div>
+                                    <div className="border-b lg:max-[1024px]:text-xs md:max-[768px]:text-xs border-gray-200 py-1 mb-3 text-gray-500 text-sm font-bold">01/29/2024 Mon - 02/04/2024 Sun</div>
+                                    <div className="border-b lg:max-[1024px]:text-xs md:max-[768px]:text-xs border-gray-200 py-1 text-gray-400">Cumulative working hours</div>
+                                    <div className="border-b lg:max-[1024px]:text-xs md:max-[768px]:text-xs border-gray-200 py-1 text-gray-500 text-sm font-bold"> - </div>
+                                </div>
+                            </div>
+                        </details>
                     </div>
 
                     <div className="lg:grid lg:grid-cols-8 grid grid-cols-8 font-sans text-base font-bold text-gray-700 lg:ml-1 lg:py-2 lg:p-4">

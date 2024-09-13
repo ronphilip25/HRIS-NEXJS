@@ -33,9 +33,9 @@ const StatusCard = ({ color, iconColor, title, count }) => (
                         </svg>
                     </div>
                 </div>
-                <h2 className="text-md ml-2 mt-2 font-normal">{title}</h2>
+                <h2 className="text-md text-black ml-2 mt-2 font-normal">{title}</h2>
                 <div className="font-inter ml-2 font-sans">
-                    <h3 className="leading-44 text-4xl font-bold text-black">{count}</h3>
+                    <h3 className="text-4xl font-bold text-black">{count}</h3>
                 </div>
             </div>
         </div>

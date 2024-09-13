@@ -47,7 +47,7 @@ const Monthly = () => {
                             <table className="w-full table-fixed">
                                 <tbody className="font-sans text-xs font-normal font-inter">
                                     {data.length > 0 && data.map((data, index) => (
-                                        <tr key={index}>
+                                        <tr key={index} className='even:bg-gray-200'>
                                             <td className="lg:py-3 lg:pl-2 text-start break-words lg:w-1/4 w-1/4">{data.name}</td>
                                             <td className="lg:py-3 lg:px-3 break-words lg:w-2/4 w-2/4">{data.department}</td>
                                             <td className="lg:py-3 text-center break-words lg:w-1/4 w-1/4">{data.tardiness}</td>

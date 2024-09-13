@@ -56,7 +56,7 @@ const Dashboard = () => {
               <div className="lg:col-span-2 md:col-span-2 ">
                 <div className="grid grid-cols-1 md:flex-shrink-0">
                   <div className="rounded-lg shadow-lg bg-white p-4 lg:w-full">
-                    <h2 className="lg:mb-4 lg:text-lg lg:font-bold md:text-base md:font-bold md:mb-1 lg:max-[1440px]:text-base">Attendance Overview</h2>
+                    <h2 className="lg:mb-4 lg:text-lg lg:font-bold md:text-base md:font-bold md:mb-1 text-black lg:max-[1440px]:text-base">Attendance Overview</h2>
                     <AttendanceChart />
                   </div>
                 </div>

@@ -101,7 +101,7 @@ const AttendanceWidget = () => {
           <input
             type="text"
             placeholder="Search Employees"
-            className="px-4 py-[8px] rounded-md w-full border border-gray-700"
+            className="px-4 py-[8px] rounded-md w-full border border-gray-700 bg-white"
           />
         </div>
       </div>

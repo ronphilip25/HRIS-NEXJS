@@ -43,7 +43,7 @@ const Approval = () => {
                         <table className="mx-auto w-full table-fixed">
                             <tbody className="font-sans text-xs font-normal font-inter">
                                 {data.length > 0 && data.map((item, index) => (
-                                    <tr key={index}>
+                                    <tr key={index} className='even:bg-gray-200'>
                                         <td className="py-3 px-4 text-center">{item.name || 'N/A'}</td>
                                         <td className="py-3 px-4 text-center">{item.department || 'N/A'}</td>
                                         <td className="py-3 px-4 text-center">{item.type || 'N/A'}</td>

@@ -3,7 +3,7 @@ import React from 'react'
 const TaskList = () => {
     return (
         <>
-            <div className="lg:gap-3 lg:max-[1440px]:gap-2 md:mt-1 md:gap-1 md:flex-shrink-0 flex flex-col gap-1 ">
+            <div className="lg:gap-3 lg:max-[1440px]:gap-2 md:mt-1 md:gap-1 md:flex-shrink-0 flex flex-col gap-1 text-black">
                 <div className="line p-4 bg-white rounded-lg text-lg font-normal flex justify-between lg:max-[1440px]:text-xs">Acceptance Pending
                     <div className="flex items-center justify-center">
                         <svg className=" mr-4" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
