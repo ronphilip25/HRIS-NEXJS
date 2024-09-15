@@ -93,7 +93,7 @@ const AttendanceWidget = () => {
       </div>
 
       {/* Employees Card */}
-      <div className="rounded-lg shadow-md lg:max-[1024px]:w-auto bg-white w-full lg:h-auto p-2 col-start-3">
+      <div className="rounded-lg shadow-md lg:max-[1024px]:w-auto bg-white w-auto lg:h-auto p-2 col-start-3">
         <h2 className="text-md text-black ml-2 mt-2 flex font-normal text-base">Employees</h2>
         <div className="relative mt-[1rem] lg:text-base md:text-xs">
           <input
