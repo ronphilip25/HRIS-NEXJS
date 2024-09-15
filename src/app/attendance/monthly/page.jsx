@@ -25,7 +25,7 @@ const page = () => {
               </div>
             </div>
 
-            <div className="rounded-lg bg-white p-4 shadow-md col-span-4 lg:max-[1024px]:col-span-3 lg:max-[1440px]:w-[94%] h-auto mt-1 pb-2">
+            <div className="rounded-lg bg-white p-4 shadow-md col-span-4 lg:max-[1024px]:col-span-3 lg:max-[1440px]:w-[94%] lg:max-[1024px]:w-full h-auto mt-1 pb-2">
               <div className="flex justify-between items-center mt-3 ml-3">
                 <h5 className="leading-44 text-2xl font-bold text-gray-700">Attendance</h5>
               </div>
