@@ -25,7 +25,7 @@ const page = () => {
               </div>
             </div>
 
-            <div className="rounded-lg bg-white p-4 shadow-md col-span-4 lg:max-[1024px]:col-span-4 lg:max-[1440px]:w-[94%] lg:max-[1024px]:w-[94%] h-[65vh] mt-1 pb-2">
+            <div className="rounded-lg bg-white p-4 shadow-md col-span-4 lg:max-[1024px]:col-span-4 lg:max-[1440px]:w-[94%] lg:max-[1024px]:w-[94%] lg:max-[1024px]:h-[65vh] h-auto mt-1 pb-2">
               <div className="flex justify-between items-center lg:mt-3 lg:ml-3 lg:max-[1024px]:mt-1">
                 <h5 className="text-2xl font-bold text-gray-700">Attendance</h5>
               </div>
