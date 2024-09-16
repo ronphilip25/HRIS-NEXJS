@@ -27,61 +27,49 @@ const page = () => {
 
             <div className="rounded-lg bg-white p-4 shadow-md col-span-4 lg:max-[1024px]:col-span-3 lg:max-[1440px]:w-[94%] lg:max-[1024px]:w-full h-auto mt-1 pb-2">
               <div className="flex justify-between items-center mt-3 ml-3">
-                <h5 className="leading-44 text-2xl font-bold text-gray-700">Attendance</h5>
+                <h5 className="text-2xl font-bold text-gray-700">Attendance</h5>
               </div>
-              <div className="lg:grid lg:grid-cols-8 grid grid-cols-8  font-sans text-base font-bold text-gray-700 mt-2 lg: lg:py lg:px-3 overflow-y-auto overflow-x-auto h-[32vh] lg:h-[65vh] md:h-[18vh]">
-                <table className="col-span-8 border-separate border-gray-200 border-spacing-y-[2rem] my-[-2rem]">
-                  <colgroup>
-                    <col span="3" className="text-center" />
-                  </colgroup>
-                  <thead>
-                    <tr>
-                      <th className="text-gray-500 border-b text-left border-gray-700">Name</th>
-                      <th className="text-gray-500 border-b border-gray-700">Department</th>
-                      <th className="text-gray-500 py-2 border-b border-gray-700">Work Schedule</th>
-                      <th className="text-gray-500 py-2 border-b border-gray-700">Worked Hour</th>
-                      <th className="text-gray-500 py-2 border-b border-gray-700">Overtime</th>
-                      <th className="text-gray-500 py-2 border-b border-gray-700">Holiday Work</th>
-                      <th className="text-gray-500 py-2 border-b border-gray-700">Holiday Overtime</th>
-                      <th className="text-gray-500 py-2 border-b border-gray-700">Leave</th>
-                      <th className="text-gray-500 py-2 border-b border-gray-700">Tardiness</th>
-                      <th className="text-gray-500 py-2 border-b border-gray-700">Under time</th>
-                      <th className="text-gray-500 py-2 border-b border-gray-700">Absences</th>
-                      <th className="text-gray-500 py-2 border-b border-gray-700">Custom Policy</th>
-                    </tr>
-                  </thead>
-                  <tbody className="font-sans text-xs font-normal font-inter">
-                    <tr className=''>
-                      <td className="inline-flex relative">
-                        <img
-                          src="/assets/employee1.png"
-                          className="rounded-full border border-b h-12 w-12"
-                          alt="profile"
-                        />
-                        <div className="absolute bottom-[1.5px] left-9 mb-1 border-white border-2 bg-green-600 rounded-full w-4 h-4"></div>
-                        <div className="text-sm font-bold font-sans font-inter mt-1 ml-2">
-                          John Doe
-                          <div className="text-xs font-sans font-inter font-normal mt-1">
-                            Team Leader
-                          </div>
-                        </div>
-                      </td>
-                      <td className="px-3 py-2 text-center"></td>
-                      <td className="px-3 py-2 text-center"></td>
-                      <td className="px-3 py-2 text-center"></td>
-                      <td className="px-3 py-2 text-center"></td>
-                      <td className="px-3 py-2 text-center"></td>
-                      <td className="px-3 py-2 text-center"></td>
-                      <td className="px-3 py-2 text-center"></td>
-                      <td className="px-3 py-2 text-center"></td>
-                      <td className="px-3 py-2 text-center"></td>
-                      <td className="px-3 py-2 text-center"></td>
-                      <td className="px-3 py-2 text-center"></td>
-                    </tr>
-                  </tbody>
-                </table>
+              <div className="lg:grid lg:grid-cols-8 grid grid-cols-1 font-sans text-base font-bold text-gray-700 mt-2 lg:py-3 lg:px-3 overflow-y-auto overflow-x-auto h-[32vh] lg:h-[65vh] md:h-[18vh]">
+                <div className="col-span-8">
+                  <table className="w-full table-fixed">
+                    <thead className="bg-gray-100">
+                      <tr>
+                        <th className="text-center border-b border-gray-700">Name</th>
+                        <th className="text-center border-b border-gray-700">Department</th>
+                        <th className="text-center border-b border-gray-700">Work Schedule</th>
+                        <th className="text-center border-b border-gray-700">Worked Hour</th>
+                        <th className="text-center border-b border-gray-700">Overtime</th>
+                        <th className="text-center border-b border-gray-700">Holiday Work</th>
+                        <th className="text-center border-b border-gray-700">Holiday Overtime</th>
+                        <th className="text-center border-b border-gray-700">Leave</th>
+                        <th className="text-center border-b border-gray-700">Tardiness</th>
+                        <th className="text-center border-b border-gray-700">Under time</th>
+                        <th className="text-center border-b border-gray-700">Absences</th>
+                        <th className="text-center border-b border-gray-700">Custom Policy</th>
+                      </tr>
+                    </thead>
+                    <tbody className="font-sans text-xs font-normal font-inter">
+                      <tr className="even:bg-gray-200">
+                        <td className="py-3 px-4 text-center">John Doe</td>
+                        <td className="py-3 px-4 text-center">IT</td>
+                        <td className="py-3 px-4 text-center">9 AM - 5 PM</td>
+                        <td className="py-3 px-4 text-center">8 hrs</td>
+                        <td className="py-3 px-4 text-center">2 hrs</td>
+                        <td className="py-3 px-4 text-center">0</td>
+                        <td className="py-3 px-4 text-center">1 hr</td>
+                        <td className="py-3 px-4 text-center">0</td>
+                        <td className="py-3 px-4 text-center">0</td>
+                        <td className="py-3 px-4 text-center">0</td>
+                        <td className="py-3 px-4 text-center">0</td>
+                        <td className="py-3 px-4 text-center">N/A</td>
+                      </tr>
+                      {/* Add more rows as needed */}
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
+
           </div>
         </div>
       </MainLayout>
