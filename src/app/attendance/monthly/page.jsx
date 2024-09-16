@@ -17,7 +17,7 @@ const page = () => {
               <div className="flex items-center lg:justify-end lg:max-[1440px]:w-[75%]">
                 <div className="text-white text-xs font-sans font-inter font-bold">
                   <div className="flex justify-center lg:mt-16 border relative bg-blue-700 text-white rounded-lg">
-                    <button className=' lg:w-36 lg:h-11 w-[400px] h-12'>
+                    <button className=' lg:w-36 lg:h-11 w-[390px] h-12'>
                       Download Excel
                     </button>
                   </div>
