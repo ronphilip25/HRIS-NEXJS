@@ -25,8 +25,8 @@ const page = () => {
               </div>
             </div>
 
-            <div className="rounded-lg bg-white p-4 shadow-md col-span-4 lg:max-[1024px]:col-span-3 lg:max-[1440px]:w-[94%] lg:max-[1024px]:w-full h-auto mt-1 pb-2">
-              <div className="flex justify-between items-center mt-3 ml-3">
+            <div className="rounded-lg bg-white p-4 shadow-md col-span-4 lg:max-[1024px]:col-span-4 lg:max-[1440px]:w-[94%] lg:max-[1024px]:w-[94%] h-[65vh] mt-1 pb-2">
+              <div className="flex justify-between items-center lg:mt-3 lg:ml-3 lg:max-[1024px]:mt-1">
                 <h5 className="text-2xl font-bold text-gray-700">Attendance</h5>
               </div>
               <div className="lg:grid lg:grid-cols-8 grid grid-cols-1 font-sans text-base font-bold text-gray-700 mt-2 lg:py-3 lg:px-3 overflow-y-auto overflow-x-auto h-[32vh] lg:h-[65vh] md:h-[18vh]">
@@ -36,11 +36,11 @@ const page = () => {
                       <tr>
                         <th className="text-center border-b border-gray-700">Name</th>
                         <th className="text-center border-b border-gray-700">Department</th>
-                        <th className="text-center border-b border-gray-700">Work Schedule</th>
+                        <th className="text-center border-b border-gray-700">Schedule</th>
                         <th className="text-center border-b border-gray-700">Worked Hour</th>
                         <th className="text-center border-b border-gray-700">Overtime</th>
                         <th className="text-center border-b border-gray-700">Holiday Work</th>
-                        <th className="text-center border-b border-gray-700">Holiday Overtime</th>
+                        <th className="text-center border-b border-gray-700">Holiday OT</th>
                         <th className="text-center border-b border-gray-700">Leave</th>
                         <th className="text-center border-b border-gray-700">Tardiness</th>
                         <th className="text-center border-b border-gray-700">Under time</th>
