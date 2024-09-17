@@ -99,7 +99,6 @@ export default function Index() {
             </div>
           </div>
         )}
-
       </main>
     </div>
   );
