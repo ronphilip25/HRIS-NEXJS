@@ -9,7 +9,7 @@ import { FaRegFile } from "react-icons/fa6";
 import { IoSettingsOutline } from "react-icons/io5";
 
 
-const Sidebar = ({ isOpen }) => {
+const Sidebar = ({ isOpen, nav }) => {
   const [expandedSections, setExpandedSections] = useState(true)
 
   const toggleSection = (section) => {

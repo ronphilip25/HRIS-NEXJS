@@ -121,7 +121,7 @@ export default function Navbar({ isOpen, toggleSidebar }) {
 
       {/* Mobile Sidebar */}
 
-      <div className={nav ? 'md:hidden text-black fixed left-0 top-0 w-full h-screen bg-white/70 z-40' : ''}>
+      <div className={nav ? 'md:max-[768px]:flex text-black fixed left-0 top-0 w-full h-screen bg-white/70 z-40' : ''}>
         <div className={nav ? 'fixed left-0 top-0 w-[100%] sm:w-[60%] md:w-[45%] h-screen bg-white shadow-md p-10 ease-in duration-300 overflow-y-auto z-50' : 'fixed left-[-100%] h-screen top-0 p-10 ease-in duration-500 z-50'}>
           <div className='flex w-full items-center justify-between'>
             <div>

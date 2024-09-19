@@ -10,10 +10,10 @@ const page = () => {
         description="Welcome to my Next.js app. Learn about the latest trends."
         keywords="Next.js, React, SEO"
       >
-        <div className='container mx-auto px-4 '>
+        <div className='container mx-auto px-4'>
           <div className='lg:grid lg:grid-cols-4 lg:gap-4 lg:max-[1440px]:gap-2 lg:max-[1024px]:gap-2 md:grid md:grid-cols-2 md:gap-2 gap-4 md:flex-shrink-0 flex flex-col md:max-m-auto h-auto lg:max-mx-auto  mb-4 md:mb-4'>
             <AttendanceWidget />
-            <div className="col-start-4 lg:block md:hidden">
+            <div className="col-start-4 lg:block">
               <div className="flex items-center lg:justify-end lg:max-[1440px]:w-[75%]">
                   <div className="flex justify-center lg:mt-16 border relative bg-blue-700 text-white rounded-lg lg:w-36 lg:h-11 w-[100%] h-12">
                     <button className='  text-white text-xs font-sans font-inter font-bold'>
