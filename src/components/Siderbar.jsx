@@ -111,7 +111,6 @@ const Sidebar = ({ isOpen, nav }) => {
         </nav>
       </div>
     </>
-
   )
 }
 
