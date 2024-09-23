@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa'
@@ -41,9 +42,9 @@ const Sidebar = ({ isOpen, nav }) => {
             </button>
             {expandedSections['attendance'] && isOpen && (
               <div className="ml-24 flex flex-col space-y-2">
-                <a href="/attendance/daily" className="p-2 rounded-md hover:bg-gray-100 text-sm">Daily</a>
-                <a href="/attendance/monthly" className="p-2 rounded-md hover:bg-gray-100 text-sm">Weekly/Monthly</a>
-                <a href="/attendance/schedule_settings" className="p-2 rounded-md hover:bg-gray-100 text-sm">Schedule Settings</a>
+                <Link href="/attendance/daily" className="p-2 rounded-md hover:bg-gray-100 text-sm">Daily</Link>
+                <Link href="/attendance/monthly" className="p-2 rounded-md hover:bg-gray-100 text-sm">Weekly/Monthly</Link>
+                <Link href="/attendance/schedule_settings" className="p-2 rounded-md hover:bg-gray-100 text-sm">Schedule Settings</Link>
               </div>
             )}
           </div>
@@ -57,9 +58,9 @@ const Sidebar = ({ isOpen, nav }) => {
             </button>
             {expandedSections['leaves'] && isOpen && (
               <div className="ml-24 flex flex-col space-y-2">
-                <a href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Leave Usage History</a>
-                <a href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Manual Grant</a>
-                <a href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Leave Setting</a>
+                <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Leave Usage History</Link>
+                <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Manual Grant</Link>
+                <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Leave Setting</Link>
               </div>
             )}
           </div>
@@ -73,8 +74,8 @@ const Sidebar = ({ isOpen, nav }) => {
             </button>
             {expandedSections['team'] && isOpen && (
               <div className="ml-24 flex flex-col space-y-2">
-                <a href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Employees</a>
-                <a href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Organization</a>
+                <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Employees</Link>
+                <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Organization</Link>
               </div>
             )}
           </div>
@@ -88,8 +89,8 @@ const Sidebar = ({ isOpen, nav }) => {
             </button>
             {expandedSections['filing'] && isOpen && (
               <div className="ml-24 flex flex-col space-y-2">
-                <a href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Approval Management</a>
-                <a href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Filing Settings</a>
+                <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Approval Management</Link>
+                <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Filing Settings</Link>
               </div>
             )}
           </div>
@@ -103,8 +104,8 @@ const Sidebar = ({ isOpen, nav }) => {
             </button>
             {expandedSections['settings'] && isOpen && (
               <div className="ml-24 flex flex-col space-y-2">
-                <a href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Company Settings</a>
-                <a href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Admin Settings</a>
+                <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Company Settings</Link>
+                <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Admin Settings</Link>
               </div>
             )}
           </div>

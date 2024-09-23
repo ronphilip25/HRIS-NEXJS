@@ -1,12 +1,23 @@
+'use client'
+
 import MainLayout from '../../Layout/MainLayout';
 import AttendanceWidget from '../../../components/AttendanceWidget';
 import React from 'react'
+import { useEffect } from 'react';
+import { useNavbar } from '@/context/NavbarContext';
 
 const page = () => {
+  const { setPageTitle, setSubTitle } = useNavbar();
+
+  useEffect(() => {
+      setPageTitle("Attendance");
+      setSubTitle("Weekly/Monthly");
+  }, [setPageTitle]);
+
   return (
     <>
       <MainLayout
-        pageTitle="Monthly | Next.js"
+        pageTitle="Weekly/Monthly | Next.js"
         description="Welcome to my Next.js app. Learn about the latest trends."
         keywords="Next.js, React, SEO"
       >

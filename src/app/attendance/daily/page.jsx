@@ -7,6 +7,7 @@ import { useState, useEffect } from 'react'
 import Loading from '../../attendance/daily/loading'
 import AttendanceCard from '../../../components/AttendanceCard'
 import EmployeeList from '../../../components/EmployeeList'
+import { useNavbar } from '../../../context/NavbarContext'
 
 const page = () => {
 
@@ -18,6 +19,13 @@ const page = () => {
             setIsLoading(false);
         }, 1000);
     }, []);
+
+    const { setPageTitle, setSubTitle } = useNavbar();
+
+    useEffect(() => {
+        setPageTitle("Attendance");
+        setSubTitle("Daily");
+    }, [setPageTitle, setSubTitle]);
 
     return (
         <>

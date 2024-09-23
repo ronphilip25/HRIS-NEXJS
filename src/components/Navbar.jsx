@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react'
+import Link from 'next/link'
 import Image from 'next/image'
 import { ChevronsLeft, ChevronsRight } from 'lucide-react'
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa'
@@ -11,10 +12,12 @@ import { FaRegFile } from "react-icons/fa6";
 import { IoSettingsOutline } from "react-icons/io5";
 import { SlClose } from "react-icons/sl";
 import { useState } from 'react'
+import { useNavbar } from '@/context/NavbarContext'
 
 
-export default function Navbar({ isOpen, toggleSidebar }) {
+export default function Navbar({ isOpen, toggleSidebar, title }) {
   const [nav, setNav] = useState(false)
+  const { pageTitle, subTitle } = useNavbar();
 
   const toggleNav = () => {
     setNav(!nav)
@@ -41,6 +44,8 @@ export default function Navbar({ isOpen, toggleSidebar }) {
     setIsDropdownOpen(!isDropdownOpen);
   };
 
+  const isDashboard = pageTitle === "Dashboard";
+
   return (
     <>
       <nav className={`${isOpen ? 'w-[1657px]' : 'w-full'}  w-auto lg:max-[1440px]:max-w-auto transition-width duration-500 ease-in-out lg:relative md:relative flex lg:h-20 md:h-16 lg:max-[1024px]:h-16 h-20 items-center justify-center bg-white border rounded-sm border-gray-200`}>
@@ -55,7 +60,12 @@ export default function Navbar({ isOpen, toggleSidebar }) {
           </button>
         </div>
         <div className="flex w-full justify-between px-5">
-          <h1 className="text-lg font-semibold text-gray-900"><span id="navbarText">Dashboard</span></h1>
+          <div className="flex flex-col">
+            <h1 className={`font-semibold ${isDashboard ? 'text-xl' : 'text-sm'} text-gray-900`}>
+              {isDashboard ? "Dashboard" : pageTitle}
+            </h1>
+            {subTitle && <h2 className="text-xl font-bold text-black">{subTitle}</h2>}
+          </div>
           <span id="subtext"></span>
           <div className='flex items-center justify-end'>
             <Image
@@ -133,10 +143,10 @@ export default function Navbar({ isOpen, toggleSidebar }) {
             </div>
           </div>
           <nav className='flex flex-col mt-8'>
-            <a href="/dashboard" className='flex items-center space-x-3 p-3 rounded-l-xl hover:bg-sky-100'>
+            <Link href="/dashboard" className='flex items-center space-x-3 p-3 rounded-l-xl hover:bg-sky-100' onClick={() => changeNavbarText('Dashboard')}>
               <MdOutlineDashboard className='text-4xl' />
               <span>Dashboard</span>
-            </a>
+            </Link>
             <div className="flex flex-col mt-2">
               <button aria-label="Open settings" onClick={() => toggleSection('attendance')} className='flex items-center justify-between p-3 rounded-l-xl hover:bg-sky-100'>
                 <div className="flex items-center space-x-3">
@@ -147,9 +157,9 @@ export default function Navbar({ isOpen, toggleSidebar }) {
               </button>
               {expandedSections.attendance && (
                 <div className="ml-10 flex flex-col space-y-2">
-                  <a href="/attendance/daily" className="p-2 rounded-md hover:bg-gray-100 text-sm">Daily</a>
-                  <a href="/attendance/monthly" className="p-2 rounded-md hover:bg-gray-100 text-sm">Weekly/Monthly</a>
-                  <a href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Schedule Settings</a>
+                  <Link href="/attendance/daily" className="p-2 rounded-md hover:bg-gray-100 text-sm" onClick={() => changeNavbarText('Daily')}>Daily</Link>
+                  <Link href="/attendance/monthly" className="p-2 rounded-md hover:bg-gray-100 text-sm" onClick={() => changeNavbarText('Monthly')}>Weekly/Monthly</Link>
+                  <Link href="/attendance/schedule_settings" className="p-2 rounded-md hover:bg-gray-100 text-sm" onClick={() => changeNavbarText('Schedule Settings')}>Schedule Settings</Link>
                 </div>
               )}
             </div>
@@ -163,9 +173,9 @@ export default function Navbar({ isOpen, toggleSidebar }) {
               </button>
               {expandedSections.leaves && (
                 <div className="ml-10 flex flex-col space-y-2">
-                  <a href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Leave Usage History</a>
-                  <a href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Manual Grant</a>
-                  <a href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Leave Setting</a>
+                  <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Leave Usage History</Link>
+                  <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Manual Grant</Link>
+                  <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Leave Setting</Link>
                 </div>
               )}
             </div>
@@ -179,8 +189,8 @@ export default function Navbar({ isOpen, toggleSidebar }) {
               </button>
               {expandedSections.team && (
                 <div className="ml-10 flex flex-col space-y-2">
-                  <a href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Employees</a>
-                  <a href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Organization</a>
+                  <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Employees</Link>
+                  <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Organization</Link>
                 </div>
               )}
             </div>
@@ -194,8 +204,8 @@ export default function Navbar({ isOpen, toggleSidebar }) {
               </button>
               {expandedSections.filing && (
                 <div className="ml-10 flex flex-col space-y-2">
-                  <a href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Approval Management</a>
-                  <a href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Filing Settings</a>
+                  <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Approval Management</Link>
+                  <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Filing Settings</Link>
                 </div>
               )}
             </div>
@@ -209,8 +219,8 @@ export default function Navbar({ isOpen, toggleSidebar }) {
               </button>
               {expandedSections.settings && (
                 <div className="ml-10 flex flex-col space-y-2">
-                  <a href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Company Settings</a>
-                  <a href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Admin Settings</a>
+                  <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Company Settings</Link>
+                  <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Admin Settings</Link>
                 </div>
               )}
             </div>

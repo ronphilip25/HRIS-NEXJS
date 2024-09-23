@@ -11,6 +11,7 @@ import { useState, useEffect } from 'react';
 import Loading from '../dashboard/loading';
 import TaskList from '../../components/TaskList';
 import StatusCard from '../../components/StatusCard';
+import { useNavbar } from '../../context/NavbarContext';
 
 
 const Dashboard = () => {
@@ -23,6 +24,13 @@ const Dashboard = () => {
       setIsLoading(false);
     }, 1000);
   }, []);
+
+  const { setPageTitle } = useNavbar();
+
+  useEffect(() => {
+      setPageTitle("Dashboard");
+  }, [setPageTitle]);
+
 
   return (
     <>
