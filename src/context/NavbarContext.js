@@ -6,7 +6,7 @@ import React, { createContext, useContext, useState } from 'react';
 const NavbarContext = createContext();
 
 export const NavbarProvider = ({ children }) => {
-  const [pageTitle, setPageTitle] = useState("Dashboard");
+  const [pageTitle, setPageTitle] = useState("");
   const [subTitle, setSubTitle] = useState("");
 
   return (

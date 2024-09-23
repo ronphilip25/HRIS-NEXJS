@@ -25,10 +25,11 @@ const Dashboard = () => {
     }, 1000);
   }, []);
 
-  const { setPageTitle } = useNavbar();
+  const { setPageTitle, setSubTitle } = useNavbar();
 
   useEffect(() => {
-      setPageTitle("Dashboard");
+      setPageTitle("Administrator");
+      setSubTitle("Dashboard");
   }, [setPageTitle]);
 
 

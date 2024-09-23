@@ -44,8 +44,6 @@ export default function Navbar({ isOpen, toggleSidebar, title }) {
     setIsDropdownOpen(!isDropdownOpen);
   };
 
-  const isDashboard = pageTitle === "Dashboard";
-
   return (
     <>
       <nav className={`${isOpen ? 'w-[1657px]' : 'w-full'}  w-auto lg:max-[1440px]:max-w-auto transition-width duration-500 ease-in-out lg:relative md:relative flex lg:h-20 md:h-16 lg:max-[1024px]:h-16 h-20 items-center justify-center bg-white border rounded-sm border-gray-200`}>
@@ -61,10 +59,8 @@ export default function Navbar({ isOpen, toggleSidebar, title }) {
         </div>
         <div className="flex w-full justify-between px-5">
           <div className="flex flex-col">
-            <h1 className={`font-semibold ${isDashboard ? 'text-xl' : 'text-sm'} text-gray-900`}>
-              {isDashboard ? "Dashboard" : pageTitle}
-            </h1>
-            {subTitle && <h2 className="text-xl font-bold text-black">{subTitle}</h2>}
+            <h1 className="text-sm font-semibold text-gray-900">{pageTitle}</h1> {/* Adjust size here */}
+            {subTitle && <h2 className="text-xl font-bold text-black">{subTitle}</h2>} {/* Smaller size for subtitle */}
           </div>
           <span id="subtext"></span>
           <div className='flex items-center justify-end'>

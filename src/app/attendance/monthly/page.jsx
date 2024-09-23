@@ -11,7 +11,7 @@ const page = () => {
 
   useEffect(() => {
       setPageTitle("Attendance");
-      setSubTitle("Weekly/Monthly");
+      setSubTitle("Weekly / Monthly Report");
   }, [setPageTitle]);
 
   return (
