@@ -1,12 +1,12 @@
 'use client'
 
 import MainLayout from '../../Layout/MainLayout';
-import AttendanceWidget from '../../../components/AttendanceWidget';
+import AttendanceWidget from '../components/AttendanceWidget';
 import React from 'react'
 import { useState, useEffect } from 'react'
 import Loading from '../../attendance/daily/loading'
-import AttendanceCard from '../../../components/AttendanceCard'
-import EmployeeList from '../../../components/EmployeeList'
+import AttendanceCard from '../components/AttendanceCard'
+import EmployeeList from '../components/EmployeeList'
 import { useNavbar } from '../../../context/NavbarContext'
 
 const page = () => {

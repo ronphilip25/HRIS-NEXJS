@@ -1,16 +1,16 @@
 'use client'
 
 import React from 'react';
-import AttendanceChart from '../../components/AttendanceChart';
-import Monthly from '../../components/Monthly';
-import Approval from '../../components/Approval';
-import Platform from '../../components/Platform';
-import CompanyNews from '../../components/CompanyNews';
+import AttendanceChart from './components/AttendanceChart';
+import Monthly from './components/Monthly';
+import Approval from './components/Approval';
+import Platform from './components/Platform';
+import CompanyNews from './components/CompanyNews';
 import MainLayout from '../Layout/MainLayout';
 import { useState, useEffect } from 'react';
 import Loading from '../dashboard/loading';
-import TaskList from '../../components/TaskList';
-import StatusCard from '../../components/StatusCard';
+import TaskList from './components/TaskList';
+import StatusCard from './components/StatusCard';
 import { useNavbar } from '../../context/NavbarContext';
 
 
