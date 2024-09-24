@@ -1,7 +1,16 @@
 import React from 'react'
 import MainLayout from '../../Layout/MainLayout'
+import { useNavbar } from '@/context/NavbarContext'
 
 const page = () => {
+
+    const { setPageTitle, setSubTitle } = useNavbar();
+
+    useEffect(() => {
+        setPageTitle("Attendance");
+        setSubTitle("Schedule Settings");
+    }, [setPageTitle, setSubTitle]);
+
     return (
         <>
             <MainLayout
