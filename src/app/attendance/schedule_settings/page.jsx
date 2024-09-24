@@ -1,6 +1,9 @@
+'use client'
+
 import React from 'react'
 import MainLayout from '../../Layout/MainLayout'
-import { useNavbar } from '@/context/NavbarContext'
+import { useNavbar } from '@/context/NavbarContext';
+import { useEffect } from 'react';
 
 const page = () => {
 
