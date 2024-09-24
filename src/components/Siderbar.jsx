@@ -41,7 +41,7 @@ const Sidebar = ({ isOpen, nav }) => {
               {isOpen && (expandedSections['attendance'] ? <FaChevronUp /> : <FaChevronDown />)}
             </button>
             {expandedSections['attendance'] && isOpen && (
-              <div className="ml-24 flex flex-col space-y-2">
+              <div className="ml-24 flex flex-col space-y-2 border-l-2 border-gray-500">
                 <Link href="/attendance/daily" className="p-2 rounded-md hover:bg-gray-100 text-sm">Daily</Link>
                 <Link href="/attendance/monthly" className="p-2 rounded-md hover:bg-gray-100 text-sm">Weekly/Monthly</Link>
                 <Link href="/attendance/schedule_settings" className="p-2 rounded-md hover:bg-gray-100 text-sm">Schedule Settings</Link>
@@ -57,7 +57,7 @@ const Sidebar = ({ isOpen, nav }) => {
               {isOpen && (expandedSections['leaves'] ? <FaChevronUp /> : <FaChevronDown />)}
             </button>
             {expandedSections['leaves'] && isOpen && (
-              <div className="ml-24 flex flex-col space-y-2">
+              <div className="ml-24 flex flex-col space-y-2 border-l-2 border-gray-500">
                 <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Leave Usage History</Link>
                 <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Manual Grant</Link>
                 <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Leave Setting</Link>
@@ -73,7 +73,7 @@ const Sidebar = ({ isOpen, nav }) => {
               {isOpen && (expandedSections['team'] ? <FaChevronUp /> : <FaChevronDown />)}
             </button>
             {expandedSections['team'] && isOpen && (
-              <div className="ml-24 flex flex-col space-y-2">
+              <div className="ml-24 flex flex-col space-y-2 border-l-2 border-gray-500">
                 <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Employees</Link>
                 <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Organization</Link>
               </div>
@@ -88,7 +88,7 @@ const Sidebar = ({ isOpen, nav }) => {
               {isOpen && (expandedSections['filing'] ? <FaChevronUp /> : <FaChevronDown />)}
             </button>
             {expandedSections['filing'] && isOpen && (
-              <div className="ml-24 flex flex-col space-y-2">
+              <div className="ml-24 flex flex-col space-y-2 border-l-2 border-gray-500">
                 <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Approval Management</Link>
                 <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Filing Settings</Link>
               </div>
@@ -103,7 +103,7 @@ const Sidebar = ({ isOpen, nav }) => {
               {isOpen && (expandedSections['settings'] ? <FaChevronUp /> : <FaChevronDown />)}
             </button>
             {expandedSections['settings'] && isOpen && (
-              <div className="ml-24 flex flex-col space-y-2">
+              <div className="ml-24 flex flex-col space-y-2 border-l-2 border-gray-500">
                 <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Company Settings</Link>
                 <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Admin Settings</Link>
               </div>
