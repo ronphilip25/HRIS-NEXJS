@@ -6,16 +6,17 @@ import { useNavbar } from '@/context/NavbarContext';
 import { useEffect, useState } from 'react';
 import Dropdown from '../schedule_settings/components/dropdown';
 import WorkSched from './components/worksched';
+import SaveBtn from '../schedule_settings/components/savebtn';
 
 const page = () => {
 
     const { setPageTitle, setSubTitle } = useNavbar();
     const [isFormVisible1, setIsFormVisible1] = useState(false);
     const [isDropdownOpen1, setIsDropdownOpen1] = useState(false);
-    
+
     const [isFormVisible2, setIsFormVisible2] = useState(false);
     const [isDropdownOpen2, setIsDropdownOpen2] = useState(false);
-    
+
     const handleYesClick1 = () => {
         setIsFormVisible1(true);
         setIsDropdownOpen1(true);
@@ -111,13 +112,7 @@ const page = () => {
                                             <Dropdown />
                                         </div>
                                         <div className="flex justify-end mt-9">
-                                            <button
-                                                type="submit"
-                                                aria-label="Save approver settings"
-                                                className="rounded-lg text-white bg-sky-800 w-[103px] h-[55px] font-bold text-base font-sans hover:scale-105 ease-in duration-200"
-                                            >
-                                                <span>Save</span>
-                                            </button>
+                                            <SaveBtn />
                                         </div>
                                     </form>
                                 </div>
@@ -149,12 +144,7 @@ const page = () => {
                                         </button>
                                     </div>
                                     {!isDropdownOpen2 && (
-                                        <button
-                                            aria-label="Save settings"
-                                            className="rounded-lg text-white bg-sky-800 w-[103px] h-[55px] mr-5 font-bold text-base font-sans hover:scale-105 ease-in duration-200"
-                                        >
-                                            <span>Save</span>
-                                        </button>
+                                        <SaveBtn />
                                     )}
                                 </div>
 
@@ -173,14 +163,8 @@ const page = () => {
                                             <div className="mt-4">
                                                 <Dropdown />
                                             </div>
-                                            <div className="flex justify-end mt-9">
-                                                <button
-                                                    type="submit"
-                                                    aria-label="Save approver settings"
-                                                    className="rounded-lg text-white bg-sky-800 w-[103px] h-[55px] font-bold text-base font-sans hover:scale-105 ease-in duration-200"
-                                                >
-                                                    <span>Save</span>
-                                                </button>
+                                            <div className="flex justify-end  mt-9">
+                                                <SaveBtn />
                                             </div>
                                         </form>
                                     </div>
