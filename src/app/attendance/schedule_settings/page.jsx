@@ -3,11 +3,12 @@
 import React from 'react'
 import MainLayout from '../../Layout/MainLayout'
 import { useNavbar } from '@/context/NavbarContext';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 const page = () => {
 
     const { setPageTitle, setSubTitle } = useNavbar();
+    const [isFormVisible, setIsFormVisible] = useState(false);
 
     useEffect(() => {
         setPageTitle("Attendance");
@@ -40,105 +41,131 @@ const page = () => {
 
                 <!-- Second Section --> */}
                     <div className="grid grid-cols-3 grid-rows-3 mt-4">
-                        <div className="rounded-lg shadow-lg w-[496px] bg-white h-44" >
-                            <div className="flex text-normal font-sans font-inter ml-4 font-bold pt-5">
-                                <span>Allow Overtime / Rest / Holiday / Night Shift
-                                    <br />Registration?
-                                </span>
+                        <div className="rounded-lg shadow-lg w-[496px] bg-white h-44">
+                            <div className="flex text-normal font-sans font-bold ml-4 pt-5">
+                                <span>Allow Overtime / Rest / Holiday / Night Shift Registration?</span>
                             </div>
-                            <div className="flex justify-between text-center font-normal font-sans font-inter text-base pt-8">
+                            <div className="flex justify-between text-center font-normal font-sans text-base pt-14">
                                 <div className="ml-5">
-                                    <button aria-label="Open settings" className="h-[55px] w-[92px] rounded-lg border border-gray-400 hover:border-2 hover:border-blue-600 hover:font-bold hover:text-blue-600 focus:border-2 focus:border-blue-600 focus:font-bold focus:text-blue-600 active:border-blue-600"
-                                    >Yes</button>
-                                    <button aria-label="Open settings" className="h-[55px] w-[92px] rounded-lg border border-gray-400 hover:border-2 hover:border-blue-600 hover:font-bold hover:text-blue-600 focus:border-2 focus:border-blue-600 focus:font-bold focus:text-blue-600 active:border-blue-600 ml-2"
-                                    >No</button>
+                                    <button
+                                        aria-label="Allow registration"
+                                        className="h-[55px] w-[92px] rounded-lg border border-gray-400 hover:border-2 hover:border-blue-600 hover:font-bold hover:text-blue-600 focus:border-2 focus:border-blue-600 focus:font-bold focus:text-blue-600 active:border-blue-600"
+                                        onClick={() => setIsFormVisible(true)}
+                                    >
+                                        Yes
+                                    </button>
+                                    <button
+                                        aria-label="Disallow registration"
+                                        className="h-[55px] w-[92px] rounded-lg border border-gray-400 hover:border-2 hover:border-blue-600 hover:font-bold hover:text-blue-600 focus:border-2 focus:border-blue-600 focus:font-bold focus:text-blue-600 active:border-blue-600 ml-2"
+                                        onClick={() => setIsFormVisible(false)}
+                                    >
+                                        No
+                                    </button>
                                 </div>
                                 <button
-                                    aria-label="Open settings"
-                                    className="rounded-lg text-white bg-sky-800 w-[103px] h-[55px] mr-5 font-bold text-base font-sans font-inter hover:scale-105 ease-in duration-200">
+                                    aria-label="Save settings"
+                                    className="rounded-lg text-white bg-sky-800 w-[103px] h-[55px] mr-5 font-bold text-base font-sans hover:scale-105 ease-in duration-200"
+                                >
                                     <span>Save</span>
                                 </button>
                             </div>
-                            {/* <!-- Form starts hidden and expands when "Yes" button is clicked --> */}
-                            <div className="overflow-hidden hidden rounded-lg shadow-lg">
-                                <form action="#" method="post" className="p-5 bg-white">
-                                    <label id="name" className="block mb-2 text-gray-700 font-bold text-base font-sans font-inter">Select an approver</label>
-                                    <div className="flex justify-between items-center">
-                                        <label id="name" className="block text-gray-700 font-normal text-base font-sans font-inter">Level Head</label>
-                                        <div className="flex items-center mt-[1.5px]">
-                                            <input type="checkbox" id="automatic" name="automatic" className="mr-2" />
-                                            <label id="automatic" className="font-sans text-sm font-normal">Automatic</label>
-                                        </div>
-                                    </div>
-                                    {/* <!-- end form -->
-                                 <!-- dropdown --> */}
-                                    <div className="mt-4">
-                                        <select id="approver" name="approver" className="w-full border border-gray-400 rounded-md h-10 font-sans text-sm font-normal text-gray-500">
-                                            <option value="approver1">Level Head 1</option>
-                                            <option value="approver2">Level Head 2</option>
-                                            <option value="approver3">Level Head 3</option>
-                                        </select>
-                                    </div>
-                                    {/* <!-- end dropdown --> */}
-                                    <div className="flex justify-end mt-9">
-                                        <button
-                                            aria-label="Open settings"
-                                            className="rounded-lg text-white bg-sky-800 w-[103px] h-[55px] font-bold text-base font-sans font-inter hover:scale-105 ease-in duration-200">
-                                            <span>Save</span>
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        {/* <!-- End Second Section -->
 
-                    <!-- Third Section --> */}
-                        <div className="border-r border-l border-gray-400">
-                            <div className="rounded-lg shadow-lg mx-auto w-[496px] bg-white h-44" id="expandableForm1">
-                                <div className="flex text-base font-sans font-inter font-bold ml-5 pt-5">
-                                    <span>Edit Time-in and Time-out settings?</span>
-                                </div>
-                                <div className="flex justify-between text-center font-normal font-sans font-inter text-base pt-14">
-                                    <div className="ml-5">
-                                        <button aria-label="Open settings" className="h-[55px] w-[92px] rounded-lg border border-gray-400 hover:border-2 hover:border-blue-600 hover:font-bold hover:text-blue-600 focus:border-2 focus:border-blue-600 focus:font-bold focus:text-blue-600 active:border-blue-600"
-                                        >Yes</button>
-                                        <button aria-label="Open settings" className="h-[55px] w-[92px] rounded-lg border border-gray-400 hover:border-2 hover:border-blue-600 hover:font-bold hover:text-blue-600 focus:border-2 focus:border-blue-600 focus:font-bold focus:text-blue-600 active:border-blue-600 ml-2"
-                                        >No</button>
-                                    </div>
-                                    <button aria-label="Open settings" id="outerSaveBtn1"
-                                        className="rounded-lg text-white bg-sky-800 w-[103px] h-[55px] mr-5 font-bold text-base font-sans font-inter hover:scale-105 ease-in duration-200">
-                                        <span>Save</span>
-                                    </button>
-                                </div>
-                                {/* <!-- Form starts hidden and expands when "Yes" button is clicked --> */}
-                                <div id="formContainer1" className="overflow-hidden hidden rounded-lg shadow-lg">
+                            {/* Form starts hidden and expands when "Yes" button is clicked */}
+                            {isFormVisible && (
+                                <div className="overflow-hidden rounded-lg shadow-lg mt-4">
                                     <form action="#" method="post" className="p-5 bg-white">
-                                        <label id="name" className="block mb-2 text-gray-700 font-bold text-base font-sans font-inter">Select an approver</label>
+                                        <label htmlFor="approver" className="block mb-2 text-gray-700 font-bold text-base font-sans">Select an approver</label>
                                         <div className="flex justify-between items-center">
-                                            <label id="name" className="block text-gray-700 font-normal text-base font-sans font-inter">Level Head</label>
+                                            <label className="block text-gray-700 font-normal text-base font-sans">Level Head</label>
                                             <div className="flex items-center mt-[1.5px]">
                                                 <input type="checkbox" id="automatic" name="automatic" className="mr-2" />
-                                                <label id="automatic" className="font-sans text-sm font-normal">Automatic</label>
+                                                <label htmlFor="automatic" className="font-sans text-sm font-normal">Automatic</label>
                                             </div>
                                         </div>
-                                        {/* <!-- end form -->
-                                    <!-- dropdown --> */}
                                         <div className="mt-4">
-                                            <select id="approver1" name="approver" className="w-full border border-gray-400 rounded-md h-10 font-sans text-sm font-normal text-gray-500">
+                                            <select id="approver" name="approver" className="w-full border border-gray-400 rounded-md h-10 font-sans text-sm text-gray-500">
                                                 <option value="approver1">Level Head 1</option>
                                                 <option value="approver2">Level Head 2</option>
                                                 <option value="approver3">Level Head 3</option>
                                             </select>
                                         </div>
-                                        {/* <!-- end dropdown --> */}
                                         <div className="flex justify-end mt-9">
-                                            <button aria-label="Open settings" id="innerSaveBtn1"
-                                                className="rounded-lg text-white bg-sky-800 w-[103px] h-[55px] font-bold text-base font-sans font-inter hover:scale-105 ease-in duration-200">
+                                            <button
+                                                type="submit"
+                                                aria-label="Save approver settings"
+                                                className="rounded-lg text-white bg-sky-800 w-[103px] h-[55px] font-bold text-base font-sans hover:scale-105 ease-in duration-200"
+                                            >
                                                 <span>Save</span>
                                             </button>
                                         </div>
                                     </form>
                                 </div>
+                            )}
+                        </div>
+                        {/* <!-- End Second Section -->
+
+                    <!-- Third Section --> */}
+                        <div className="border-r border-l border-gray-400">
+                            <div className="rounded-lg shadow-lg w-[496px] bg-white h-44">
+                                <div className="flex text-normal font-sans font-bold ml-4 pt-5">
+                                    <span>Edit Time-in and Time-out settings?</span>
+                                </div>
+                                <div className="flex justify-between text-center font-normal font-sans text-base pt-14">
+                                    <div className="ml-5">
+                                        <button
+                                            aria-label="Allow registration"
+                                            className="h-[55px] w-[92px] rounded-lg border border-gray-400 hover:border-2 hover:border-blue-600 hover:font-bold hover:text-blue-600 focus:border-2 focus:border-blue-600 focus:font-bold focus:text-blue-600 active:border-blue-600"
+                                            onClick={() => setIsFormVisible(true)}
+                                        >
+                                            Yes
+                                        </button>
+                                        <button
+                                            aria-label="Disallow registration"
+                                            className="h-[55px] w-[92px] rounded-lg border border-gray-400 hover:border-2 hover:border-blue-600 hover:font-bold hover:text-blue-600 focus:border-2 focus:border-blue-600 focus:font-bold focus:text-blue-600 active:border-blue-600 ml-2"
+                                            onClick={() => setIsFormVisible(false)}
+                                        >
+                                            No
+                                        </button>
+                                    </div>
+                                    <button
+                                        aria-label="Save settings"
+                                        className="rounded-lg text-white bg-sky-800 w-[103px] h-[55px] mr-5 font-bold text-base font-sans hover:scale-105 ease-in duration-200"
+                                    >
+                                        <span>Save</span>
+                                    </button>
+                                </div>
+
+                                {/* Form starts hidden and expands when "Yes" button is clicked */}
+                                {isFormVisible && (
+                                    <div className="overflow-hidden rounded-lg shadow-lg mt-4">
+                                        <form action="#" method="post" className="p-5 bg-white">
+                                            <label htmlFor="approver" className="block mb-2 text-gray-700 font-bold text-base font-sans">Select an approver</label>
+                                            <div className="flex justify-between items-center">
+                                                <label className="block text-gray-700 font-normal text-base font-sans">Level Head</label>
+                                                <div className="flex items-center mt-[1.5px]">
+                                                    <input type="checkbox" id="automatic" name="automatic" className="mr-2" />
+                                                    <label htmlFor="automatic" className="font-sans text-sm font-normal">Automatic</label>
+                                                </div>
+                                            </div>
+                                            <div className="mt-4">
+                                                <select id="approver" name="approver" className="w-full border border-gray-400 rounded-md h-10 font-sans text-sm text-gray-500">
+                                                    <option value="approver1">Level Head 1</option>
+                                                    <option value="approver2">Level Head 2</option>
+                                                    <option value="approver3">Level Head 3</option>
+                                                </select>
+                                            </div>
+                                            <div className="flex justify-end mt-9">
+                                                <button
+                                                    type="submit"
+                                                    aria-label="Save approver settings"
+                                                    className="rounded-lg text-white bg-sky-800 w-[103px] h-[55px] font-bold text-base font-sans hover:scale-105 ease-in duration-200"
+                                                >
+                                                    <span>Save</span>
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                )}
                             </div>
                         </div>
                         {/* <!-- End Third Section --> */}
