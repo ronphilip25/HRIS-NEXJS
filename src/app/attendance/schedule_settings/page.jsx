@@ -7,6 +7,7 @@ import Dropdown from '../schedule_settings/components/dropdown';
 import WorkSched from './components/worksched';
 import SaveBtn from '../schedule_settings/components/savebtn';
 import AddBtn from '../schedule_settings/components/addbtn';
+import Checkbox from '../schedule_settings/components/checkbox';
 
 const NoteSection = () => (
     <div className="flex flex-col rounded-xl shadow-lg bg-white w-auto h-[106px] py-7 px-8">
@@ -59,13 +60,13 @@ const ActionSection = ({ title, isFormVisible, setIsFormVisible, isDropdownOpen,
 
 const FormSection = () => (
     <div className="rounded-lg shadow-lg mt-4">
-        <form action="#" method="post" className="p-5 bg-white">
+        <form action="#" method="post" className="p-5 bg-white rounded-lg">
             <label htmlFor="approver" className="block mb-2 text-gray-700 font-bold text-base font-sans">Select an approver</label>
             <div className="flex justify-between items-center">
                 <label className="block text-gray-700 font-normal text-base font-sans">Level Head</label>
                 <div className="flex items-center mt-[1.5px]">
-                    <input type="checkbox" id="automatic" name="automatic" className="mr-2" />
-                    <label htmlFor="automatic" className="font-sans text-sm font-normal">Automatic</label>
+                    <Checkbox />
+                    <label htmlFor="automatic" className="font-sans text-sm font-normal text-black">Automatic</label>
                 </div>
             </div>
             <div className="mt-4">
@@ -115,7 +116,7 @@ const Page = () => {
                             setIsDropdownOpen={setIsDropdownOpen2}
                         />
                     </div>
-                    <div className="row-start-1 col-start-3 rounded-lg shadow-lg mx-3 w-[496px] bg-white h-44">
+                    <div className="row-start-1 col-start-3 rounded-lg shadow-lg mx-3 w-[496px] bg-white h-44 ">
                         <div className="flex text-base font-sans font-inter text-black font-bold ml-5 pt-5">
                             <span>Other work schedule settings</span>
                         </div>

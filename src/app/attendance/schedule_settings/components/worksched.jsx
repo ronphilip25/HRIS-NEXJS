@@ -3,7 +3,7 @@ import React from 'react'
 const worksched = () => {
     return (
         <>
-            <div className='col-start-3 row-start-1 mt-48 mx-2'>
+            <div className='col-start-3 row-start-1 mt-48 mx-2 mb-4'>
                 <div className="mt-4 space-y-4">
                     {[1, 2, 3].map((i) => (
                         <div key={i} className="rounded-lg shadow-lg bg-white h-auto p-4 flex justify-between items-center">
