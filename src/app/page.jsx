@@ -27,11 +27,11 @@ export default function Index() {
   };
 
   return (
-    <div>
+    <div data-theme="light">
       <header>
         <title>Login | Human Resource Information System</title>
       </header>
-      <main className="bg-blue-100 bg-opacity-50 min-h-screen">
+      <main className="bg-blue-100 *:bg-opacity-50 min-h-screen">
         {authenticated ? (<Dashboard />) : (
           <div className="container mx-auto md:max-w-4xl lg:max-w-6xl lg:max-[1024px]:h-auto ">
             <div className="flex min-h-screen justify-center items-center">

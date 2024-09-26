@@ -109,7 +109,7 @@ const Page = () => {
                             setIsDropdownOpen={setIsDropdownOpen1}
                         />
                     </div>
-                    <div className='row-start-1 col-start-2'>
+                    <div className='row-start-1 col-start-2 border-l border-gray-300 border-r flex'>
                         <ActionSection
                             title="Edit Time-in and Time-out settings?"
                             isFormVisible={isFormVisible2}
