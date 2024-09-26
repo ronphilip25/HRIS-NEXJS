@@ -97,17 +97,19 @@ const Page = () => {
             description="Welcome to my Next.js app. Learn about the latest trends."
             keywords="Next.js, React, SEO"
         >
-            <div className="container mx-auto px-4  lg:h-auto md:h-screen h-screen">
+            <div className="container mx-auto px-4 lg:h-auto md:h-screen h-screen">
                 <NoteSection />
                 <div className="grid grid-cols-3 grid-rows-1 mt-4 ">
-                    <ActionSection
-                        title="Allow Overtime / Rest / Holiday / Night Shift Registration?"
-                        isFormVisible={isFormVisible1}
-                        setIsFormVisible={setIsFormVisible1}
-                        isDropdownOpen={isDropdownOpen1}
-                        setIsDropdownOpen={setIsDropdownOpen1}
-                    />
-                    <div className="border-r border-l border-gray-400">
+                    <div className='row-start-1 col-start-1'>
+                        <ActionSection
+                            title="Allow Overtime / Rest / Holiday / Night Shift Registration?"
+                            isFormVisible={isFormVisible1}
+                            setIsFormVisible={setIsFormVisible1}
+                            isDropdownOpen={isDropdownOpen1}
+                            setIsDropdownOpen={setIsDropdownOpen1}
+                        />
+                    </div>
+                    <div className='row-start-1 col-start-2'>
                         <ActionSection
                             title="Edit Time-in and Time-out settings?"
                             isFormVisible={isFormVisible2}
@@ -116,7 +118,7 @@ const Page = () => {
                             setIsDropdownOpen={setIsDropdownOpen2}
                         />
                     </div>
-                    <div className="row-start-1 col-start-3 rounded-lg shadow-lg mx-3 w-[496px] bg-white h-44 ">
+                    <div className="row-start-1 col-start-3 rounded-lg shadow-lg w-[496px] bg-white h-44 ">
                         <div className="flex text-base font-sans font-inter text-black font-bold ml-5 pt-5">
                             <span>Other work schedule settings</span>
                         </div>
