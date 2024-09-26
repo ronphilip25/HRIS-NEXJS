@@ -97,9 +97,9 @@ const Page = () => {
             description="Welcome to my Next.js app. Learn about the latest trends."
             keywords="Next.js, React, SEO"
         >
-            <div className="container mx-auto px-4 lg:h-auto md:h-screen h-screen">
+            <div className="container mx-auto px-4  lg:h-auto md:h-screen h-screen">
                 <NoteSection />
-                <div className="grid grid-cols-3 grid-rows-1 mt-4">
+                <div className="grid grid-cols-3 grid-rows-1 mt-4 ">
                     <ActionSection
                         title="Allow Overtime / Rest / Holiday / Night Shift Registration?"
                         isFormVisible={isFormVisible1}

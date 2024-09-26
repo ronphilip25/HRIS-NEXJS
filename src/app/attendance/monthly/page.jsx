@@ -1,7 +1,7 @@
 'use client'
 
 import MainLayout from '../../Layout/MainLayout';
-import AttendanceWidget from '../components/AttendanceWidget';
+import AttendanceWidget from '../daily/components/AttendanceWidget';
 import React from 'react'
 import { useEffect } from 'react';
 import { useNavbar } from '@/context/NavbarContext';
