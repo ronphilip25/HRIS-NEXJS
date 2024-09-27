@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
-export default function NotFound() {
+const NotFound =() => {
     return (
         <>
             <div className="flex items-center justify-center min-h-screen bg-blue-100 text-center">
@@ -30,3 +30,5 @@ export default function NotFound() {
         </>
     )
 }
+
+export default NotFound
