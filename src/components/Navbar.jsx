@@ -120,7 +120,6 @@ export default function Navbar({ isOpen, toggleSidebar, title }) {
               </a>
             </div>
           )}
-
         </div>
       </nav>
 
