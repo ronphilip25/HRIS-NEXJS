@@ -3,8 +3,8 @@ import React from 'react'
 const worksched = () => {
     return (
         <>
-            <div className='col-start-3 row-start-1 mt-48 mx-2 mb-4'>
-                <div className="mt-4 space-y-4">
+            <div className='lg:col-start-3 lg:row-start-1 md:col-start-2 md:row-start-2 lg:mt-48 mx-2 mb-4 md:mt-14'>
+                <div className="lg:mt-4 space-y-4">
                     {[1, 2, 3].map((i) => (
                         <div key={i} className="rounded-lg shadow-lg bg-white h-auto p-4 flex justify-between items-center">
                             <span className="font-bold text-black">Work Schedule {i}</span>

@@ -99,10 +99,10 @@ const Page = () => {
             description="Welcome to my Next.js app. Learn about the latest trends."
             keywords="Next.js, React, SEO"
         >
-            <div className="container mx-auto px-4 ">
+            <div className="container mx-auto px-4 min-h-screen">
                 <NoteSection />
-                <div className="grid grid-cols-3 grid-rows-1 mt-4 gap-2">
-                    <div className='row-start-1 col-start-1'>
+                <div className="lg:grid lg:grid-cols-3 lg:grid-rows-1 mt-4 lg:gap-2 md:grid md:grid-cols-2 md:grid-rows-1 md:gap-2">
+                    <div className='lg:row-start-1 lg:col-start-1 z-50'>
                         <ActionSection
                             title="Allow Overtime / Rest / Holiday / Night Shift Registration?"
                             isFormVisible={isFormVisible1}
@@ -111,7 +111,7 @@ const Page = () => {
                             setIsDropdownOpen={setIsDropdownOpen1}
                         />
                     </div>
-                    <div className='row-start-1 col-start-2'>
+                    <div className='lg:row-start-1 lg:col-start-2 z-50'>
                         <ActionSection
                             title="Edit Time-in and Time-out settings?"
                             isFormVisible={isFormVisible2}
@@ -120,7 +120,7 @@ const Page = () => {
                             setIsDropdownOpen={setIsDropdownOpen2}
                         />
                     </div>
-                    <div className="row-start-1 col-start-3 rounded-lg shadow-lg w-auto bg-white h-44 ">
+                    <div className="lg:row-start-1 lg:col-start-3 md:col-start-1 md:row-start-2 rounded-lg shadow-lg w-auto bg-white h-44 md:max-[1024px]:mt-14">
                         <div className="flex text-base font-sans font-inter text-black font-bold ml-5 pt-5 truncate">
                             <span>Other work schedule settings</span>
                         </div>
