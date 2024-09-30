@@ -30,7 +30,7 @@ const MainLayout = ({ pageTitle, description, keywords, children }) => {
           <Sidebar isOpen={isOpen} changeNavbarText={changeNavbarText} />
           <div className="flex-1 flex flex-col">
             <Navbar isOpen={isOpen} toggleSidebar={toggleSidebar} />
-            <main className={` ${isOpen ? 'lg:mx-8 md:mx-7' : 'lg:mr-[14px] md:mr-[14px] '} overflow-hidden mt-3 lg:max-[1024px]:mt-2 container w-auto transition-all duration-500`}>
+            <main className={` ${isOpen ? 'lg:mx-8 md:mx-7' : 'lg:mr-[14px] md:mr-[14px] mx-auto lg:mx-0 md:mx-0'} overflow-hidden mt-3 lg:max-[1024px]:mt-2 container w-auto  transition-all duration-500`}>
               {children}
             </main>
           </div>
