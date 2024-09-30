@@ -54,7 +54,7 @@ export default function Index() {
                 </div>
 
                 {/* Second Section */}
-                <div className="rounded-xl shadow-lg lg:px-20 md:px-12 md:max-h-[700px] md:pb-24 px-12 py-1.5 bg-white">
+                <div className="rounded-xl shadow-lg lg:px-20 md:px-auto md:max-h-[700px] md:pb-24 px-12 py-1.5 bg-white">
                   <div className="flex flex-col items-center justify-center">
                     <div className="flex flex-col items-center justify-center mt-24 pb-12 lg:pb-0 md:pb-0 ">
                       <div className="mb-5">
