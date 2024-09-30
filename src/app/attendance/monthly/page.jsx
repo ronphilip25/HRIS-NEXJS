@@ -24,9 +24,9 @@ const page = () => {
         <div className='container mx-auto px-4'>
           <div className='lg:grid lg:grid-cols-4 lg:gap-4 lg:max-[1440px]:gap-2 lg:max-[1024px]:gap-2 md:grid md:grid-cols-2 md:gap-2 gap-4 md:flex-shrink-0 flex flex-col md:max-m-auto h-auto lg:max-mx-auto  mb-4 md:mb-4'>
             <AttendanceWidget />
-            <div className="col-start-4 lg:block">
-              <div className="flex items-center lg:justify-end lg:max-[1440px]:w-[75%]">
-                <div className="flex justify-center md:max-[768px]:mt-16 md:max-[768px]:w-auto lg:mt-16 border relative bg-blue-700  text-white rounded-lg lg:w-36 lg:h-11 w-[100%] h-12">
+            <div className="col-start-4 lg:block md:block">
+              <div className="flex items-center lg:justify-end ">
+                <div className="flex justify-center md:max-[768px]:mt-16 md:max-[768px]:w-auto  lg:mt-16 border relative bg-blue-700  text-white rounded-lg lg:w-36 lg:h-11 w-[100%] h-12 mt-9">
                   <button className=' text-white text-xs font-sans font-inter font-bold'>
                     <a href="/not-found">Download Excel</a>
                   </button>
@@ -34,7 +34,7 @@ const page = () => {
               </div>
             </div>
 
-            <div className="rounded-lg bg-white p-4 shadow-md col-span-4 lg:max-[1024px]:col-span-4 lg:max-[1440px]:w-[94%] lg:max-[1024px]:w-[94%] lg:max-[1024px]:h-[65vh] h-auto mt-1 pb-2">
+            <div className="rounded-lg bg-white p-4 shadow-md col-span-4 lg:max-[1024px]:col-span-4 w-auto lg:max-[1024px]:h-[65vh] h-auto mt-1 pb-2">
               <div className="flex justify-between items-center lg:mt-3 lg:ml-3 lg:max-[1024px]:mt-1">
                 <h5 className="text-2xl font-bold text-gray-700">Attendance</h5>
               </div>

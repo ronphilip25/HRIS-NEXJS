@@ -10,7 +10,7 @@ import AddBtn from '../schedule_settings/components/addbtn';
 import Checkbox from '../schedule_settings/components/checkbox';
 
 const NoteSection = () => (
-    <div className="flex flex-col rounded-xl shadow-lg bg-white w-auto h-[106px] py-7 px-8">
+    <div className="flex flex-col rounded-xl shadow-lg bg-white w-auto h-auto py-7 px-8 ">
         <div className="text-normal font-bold font-sans font-inter text-blue-500 relative right-5 bottom-3">
             Note:
         </div>
@@ -22,7 +22,7 @@ const NoteSection = () => (
 );
 
 const ActionSection = ({ title, isFormVisible, setIsFormVisible, isDropdownOpen, setIsDropdownOpen }) => (
-    <div className="rounded-lg shadow-lg w-[496px] bg-white h-44">
+    <div className="rounded-lg shadow-lg  bg-white w-auto h-44 ">
         <div className="flex text-normal font-sans font-bold text-black ml-4 pt-5">
             <span>{title}</span>
         </div>
@@ -97,9 +97,9 @@ const Page = () => {
             description="Welcome to my Next.js app. Learn about the latest trends."
             keywords="Next.js, React, SEO"
         >
-            <div className="container mx-auto px-4 lg:h-auto md:h-screen h-screen">
+            <div className="container mx-auto px-4 ">
                 <NoteSection />
-                <div className="grid grid-cols-3 grid-rows-1 mt-4 ">
+                <div className="grid grid-cols-3 grid-rows-1 mt-4 gap-2">
                     <div className='row-start-1 col-start-1'>
                         <ActionSection
                             title="Allow Overtime / Rest / Holiday / Night Shift Registration?"
@@ -109,7 +109,7 @@ const Page = () => {
                             setIsDropdownOpen={setIsDropdownOpen1}
                         />
                     </div>
-                    <div className='row-start-1 col-start-2 border-l border-gray-300 border-r flex'>
+                    <div className='row-start-1 col-start-2 '>
                         <ActionSection
                             title="Edit Time-in and Time-out settings?"
                             isFormVisible={isFormVisible2}
@@ -118,7 +118,7 @@ const Page = () => {
                             setIsDropdownOpen={setIsDropdownOpen2}
                         />
                     </div>
-                    <div className="row-start-1 col-start-3 rounded-lg shadow-lg w-[496px] bg-white h-44 ">
+                    <div className="row-start-1 col-start-3 rounded-lg shadow-lg w-auto bg-white h-44 ">
                         <div className="flex text-base font-sans font-inter text-black font-bold ml-5 pt-5">
                             <span>Other work schedule settings</span>
                         </div>

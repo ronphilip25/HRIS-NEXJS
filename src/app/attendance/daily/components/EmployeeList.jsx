@@ -4,7 +4,7 @@ import Image from 'next/image'
 const EmployeeList = () => {
     return (
         <>
-            <div className='lg:col-start-4 lg:row-start-1 md:row-start-2 md:col-start-3 md:row-span-2 rounded-lg bg-white lg:p-4 p-2 pt-3 shadow-md lg:row-span-2 overflow-x-auto overflow-y-auto lg:max-[1440px]:w-4/5 lg:max-[1440px]:h-auto lg:max-[1024px]:h-auto lg:h-full md:h-auto h-[35vh]'>
+            <div className='lg:col-start-4 lg:row-start-1 md:row-start-2 md:col-start-3 md:row-span-2 rounded-lg bg-white lg:p-4 p-2 pt-3 shadow-md lg:row-span-2 overflow-x-auto overflow-y-auto lg:max-[1440px]:h-auto lg:max-[1024px]:h-auto lg:h-full md:h-auto h-[35vh]'>
                 <div className="font-inter ml-2 mt-1 font-sans">
                     <h5 className="text-2xl font-bold text-black lg:max-[1024px]:text-base">Employees</h5>
                 </div>

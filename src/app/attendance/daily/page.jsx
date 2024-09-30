@@ -5,8 +5,8 @@ import AttendanceWidget from '../components/AttendanceWidget';
 import React from 'react'
 import { useState, useEffect } from 'react'
 import Loading from '../../attendance/daily/loading'
-import AttendanceCard from '../components/AttendanceCard'
-import EmployeeList from '../components/EmployeeList'
+import AttendanceCard from '../daily/components/AttendanceCard'
+import EmployeeList from '../daily/components/EmployeeList'
 import { useNavbar } from '../../../context/NavbarContext'
 
 const page = () => {
@@ -35,7 +35,7 @@ const page = () => {
                 keywords="Human Resource Info System, Vercel, Nextjs, React"
             >
                 {isLoading ? <Loading /> :
-                    <div className='mx-auto px-4 lg:max-[1024px]:overflow-x-scroll h-[90vh] overflow-y-auto'>
+                    <div className='container mx-auto px-4 lg:max-[1024px]:overflow-x-scroll h-[90vh] overflow-y-auto'>
                         <div className='lg:grid lg:grid-cols-4 lg:gap-4 lg:max-[1440px]:gap-2 md:grid md:grid-cols-2 md:gap-2 gap-4 md:flex-shrink-0 flex flex-col md:max-m-auto h-auto lg:max-mx-auto mb-4 md:mb-4'>
 
                             {/* Attendance Widget */}
