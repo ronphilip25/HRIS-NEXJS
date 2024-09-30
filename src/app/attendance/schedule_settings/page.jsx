@@ -22,40 +22,42 @@ const NoteSection = () => (
 );
 
 const ActionSection = ({ title, isFormVisible, setIsFormVisible, isDropdownOpen, setIsDropdownOpen }) => (
-    <div className="rounded-lg shadow-lg  bg-white w-auto h-44 ">
-        <div className="flex text-normal font-sans font-bold text-black ml-4 pt-5">
-            <span>{title}</span>
-        </div>
-        <div className="flex justify-between text-center font-normal font-sans text-base pt-14">
-            <div className="ml-5">
-                <button
-                    aria-label="Allow registration"
-                    className="action-button h-[55px] w-[92px] rounded-lg border border-gray-400 hover:border-2 hover:border-blue-600 hover:font-bold hover:text-blue-600 focus:border-2 focus:border-blue-600 focus:font-bold focus:text-blue-600 active:border-blue-600"
-                    onClick={() => {
-                        setIsFormVisible(true);
-                        setIsDropdownOpen(true);
-                    }}
-                >
-                    Yes
-                </button>
-                <button
-                    aria-label="Disallow registration"
-                    className="action-button ml-2 h-[55px] w-[92px] rounded-lg border border-gray-400 hover:border-2 hover:border-blue-600 hover:font-bold hover:text-blue-600 focus:border-2 focus:border-blue-600 focus:font-bold focus:text-blue-600 active:border-blue-600"
-                    onClick={() => {
-                        setIsFormVisible(false);
-                        setIsDropdownOpen(false);
-                    }}
-                >
-                    No
-                </button>
+    <>
+        <div className="rounded-lg shadow-lg bg-white w-auto h-44 ">
+            <div className=" text-normal font-sans font-bold text-black ml-4 pt-5">
+                <span>{title}</span>
             </div>
-            {!isDropdownOpen && (
-                <SaveBtn />
-            )}
-        </div>
+                <div className="flex justify-between text-center font-normal font-sans text-base mt-14">
+                    <div className="ml-4">
+                        <button
+                            aria-label="Allow registration"
+                            className="action-button h-[55px] w-[92px]  rounded-lg border border-gray-400 hover:border-2 hover:border-blue-600 hover:font-bold hover:text-blue-600 focus:border-2 focus:border-blue-600 focus:font-bold focus:text-blue-600 active:border-blue-600"
+                            onClick={() => {
+                                setIsFormVisible(true);
+                                setIsDropdownOpen(true);
+                            }}
+                        >
+                            Yes
+                        </button>
+                        <button
+                            aria-label="Disallow registration"
+                            className="action-button ml-2 h-[55px] w-[92px] rounded-lg border border-gray-400 hover:border-2 hover:border-blue-600 hover:font-bold hover:text-blue-600 focus:border-2 focus:border-blue-600 focus:font-bold focus:text-blue-600 active:border-blue-600"
+                            onClick={() => {
+                                setIsFormVisible(false);
+                                setIsDropdownOpen(false);
+                            }}
+                        >
+                            No
+                        </button>
+                    </div>
+                    {!isDropdownOpen && (
+                        <SaveBtn />
+                    )}
+                </div>
 
-        {isFormVisible && <FormSection />}
-    </div>
+            {isFormVisible && <FormSection />}
+        </div>
+    </>
 );
 
 const FormSection = () => (
@@ -100,7 +102,7 @@ const Page = () => {
             <div className="container mx-auto px-4 ">
                 <NoteSection />
                 <div className="grid grid-cols-3 grid-rows-1 mt-4 gap-2">
-                    <div className='row-start-1 col-start-1'>
+                    <div className='row-start-1 col-start-1 '>
                         <ActionSection
                             title="Allow Overtime / Rest / Holiday / Night Shift Registration?"
                             isFormVisible={isFormVisible1}
@@ -109,7 +111,7 @@ const Page = () => {
                             setIsDropdownOpen={setIsDropdownOpen1}
                         />
                     </div>
-                    <div className='row-start-1 col-start-2 '>
+                    <div className='row-start-1 col-start-2'>
                         <ActionSection
                             title="Edit Time-in and Time-out settings?"
                             isFormVisible={isFormVisible2}
@@ -119,7 +121,7 @@ const Page = () => {
                         />
                     </div>
                     <div className="row-start-1 col-start-3 rounded-lg shadow-lg w-auto bg-white h-44 ">
-                        <div className="flex text-base font-sans font-inter text-black font-bold ml-5 pt-5">
+                        <div className="flex text-base font-sans font-inter text-black font-bold ml-5 pt-5 truncate">
                             <span>Other work schedule settings</span>
                         </div>
                         <div className="flex justify-end text-center font-normal font-sans font-inter text-base pt-14">
