@@ -24,10 +24,10 @@ const NoteSection = () => (
 const ActionSection = ({ title, isFormVisible, setIsFormVisible, isDropdownOpen, setIsDropdownOpen }) => (
     <>
         <div className="rounded-lg shadow-lg bg-white w-auto h-44 ">
-            <div className=" text-normal font-sans font-bold text-black ml-4 pt-5">
+            <div className=" text-normal truncate font-sans font-bold text-black ml-4 pt-5">
                 <span>{title}</span>
             </div>
-                <div className="flex justify-between text-center font-normal font-sans text-base mt-14">
+                <div className="flex justify-between font-normal font-sans text-base mt-14">
                     <div className="ml-4">
                         <button
                             aria-label="Allow registration"
@@ -102,7 +102,7 @@ const Page = () => {
             <div className="container mx-auto px-4 ">
                 <NoteSection />
                 <div className="grid grid-cols-3 grid-rows-1 mt-4 gap-2">
-                    <div className='row-start-1 col-start-1 '>
+                    <div className='row-start-1 col-start-1'>
                         <ActionSection
                             title="Allow Overtime / Rest / Holiday / Night Shift Registration?"
                             isFormVisible={isFormVisible1}
