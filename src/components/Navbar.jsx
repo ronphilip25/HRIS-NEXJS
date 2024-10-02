@@ -145,7 +145,7 @@ export default function Navbar({ isOpen, toggleSidebar }) {
               <MdOutlineDashboard className='text-4xl' />
               <span>Dashboard</span>
             </Link>
-            
+
             <div className="flex flex-col mt-2">
               <div className="collapse rounded-xl">
                 <input
