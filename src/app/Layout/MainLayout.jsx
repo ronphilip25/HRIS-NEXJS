@@ -30,7 +30,7 @@ const MainLayout = ({ pageTitle, description, keywords, children }) => {
           <Sidebar isOpen={isOpen} changeNavbarText={changeNavbarText} />
           <div className="flex-1 flex flex-col">
             <Navbar isOpen={isOpen} toggleSidebar={toggleSidebar} />
-            <main className={` ${isOpen ? 'lg:mx-8 md:mx-7 lg:max-[1440px]:mx-4 md:max-[1024px]:mx-2]' : 'lg:mr-[14px] md:mr-[14px] mx-auto lg:mx-0 md:mx-0'} overflow-hidden mt-3 lg:max-[1024px]:mt-2 container w-auto mx-auto transition-all duration-500`}>
+            <main className={` ${isOpen ? 'lg:mx-8 md:mx-7 lg:max-[1440px]:mx-4 md:max-[1024px]:mx-2]' : 'lg:mr-[14px] md:mr-[14px] mx-auto md:ml-5 lg:mx-0 md:mx-0'} overflow-hidden mt-3 lg:max-[1024px]:mt-2 container lg:w-auto md:w-auto w-full mx-auto transition-all duration-500`}>
               {children}
             </main>
           </div>
@@ -41,3 +41,6 @@ const MainLayout = ({ pageTitle, description, keywords, children }) => {
 };
 
 export default MainLayout;
+
+
+{/* <main className={` ${isOpen ? 'lg:mx-12 lg:max-[1440px]:mx-7 md:max-mx-auto' : 'lg:mr-[95px] md:mr-[95px]  md:ml-5 md:max-[916px]:ml-auto'} overflow-hidden  mx-auto mt-3 lg:max-[1024px]:mt-2 container transition-all duration-700`}></main> */}

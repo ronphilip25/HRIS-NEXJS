@@ -13,11 +13,14 @@ import { IoSettingsOutline } from "react-icons/io5";
 import { SlClose } from "react-icons/sl";
 import { useState } from 'react'
 import { useNavbar } from '@/context/NavbarContext'
+import { usePathname } from 'next/navigation'
 
 
-export default function Navbar({ isOpen, toggleSidebar, title }) {
+export default function Navbar({ isOpen, toggleSidebar }) {
   const [nav, setNav] = useState(false)
   const { pageTitle, subTitle } = useNavbar();
+
+  const currentPath = usePathname();
 
   const toggleNav = () => {
     setNav(!nav)
@@ -138,86 +141,131 @@ export default function Navbar({ isOpen, toggleSidebar, title }) {
             </div>
           </div>
           <nav className='flex flex-col mt-8'>
-            <Link href="/dashboard" className='flex items-center space-x-3 p-3 rounded-l-xl hover:bg-sky-100' onClick={() => changeNavbarText('Dashboard')}>
+            <Link href="/dashboard" className={`${currentPath === '/dashboard' ? 'font-bold bg-sky-100' : ''} flex items-center space-x-3 p-3 rounded-xl hover:bg-sky-100`} >
               <MdOutlineDashboard className='text-4xl' />
               <span>Dashboard</span>
             </Link>
+            
             <div className="flex flex-col mt-2">
-              <button aria-label="Open settings" onClick={() => toggleSection('attendance')} className='flex items-center justify-between p-3 rounded-l-xl hover:bg-sky-100'>
-                <div className="flex items-center space-x-3">
-                  <LuClock4 className='text-4xl' />
-                  <span>Attendance</span>
+              <div className="collapse rounded-xl">
+                <input
+                  type="checkbox"
+                  className="peer"
+                  onChange={() => toggleSection('attendance')}
+                  checked={expandedSections['attendance'] || false}
+                />
+                <div className={`collapse-title peer-checked:bg-sky-100 peer-checked:font-bold flex items-center justify-between p-3 w-auto rounded-xl ${isOpen ? 'justify-start ' : 'justify-center rounded-xl'}`}>
+                  <div className="flex items-center space-x-3">
+                    <LuClock4 className={`${isOpen ? 'text-3xl' : 'text-4xl'}`} />
+                    {isOpen && <span>Attendance</span>}
+                  </div>
+                  {isOpen && (expandedSections['attendance'] ? <FaChevronUp /> : <FaChevronDown />)}
                 </div>
-                {isOpen && (expandedSections.attendance ? <FaChevronUp /> : <FaChevronDown />)}
-              </button>
-              {expandedSections.attendance && (
-                <div className="ml-10 flex flex-col space-y-2">
-                  <Link href="/attendance/daily" className="p-2 rounded-md hover:bg-gray-100 text-sm" onClick={() => changeNavbarText('Daily')}>Daily</Link>
-                  <Link href="/attendance/monthly" className="p-2 rounded-md hover:bg-gray-100 text-sm" onClick={() => changeNavbarText('Monthly')}>Weekly/Monthly</Link>
-                  <Link href="/attendance/schedule_settings" className="p-2 rounded-md hover:bg-gray-100 text-sm" onClick={() => changeNavbarText('Schedule Settings')}>Schedule Settings</Link>
+                <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen && expandedSections['attendance'] ? 'max-h-40' : 'max-h-0 max-w-0'}`}>
+                  <div className="ml-12 flex flex-col space-y-2 border-l-2 border-gray-500">
+                    <Link href="/attendance/daily" className={`${currentPath === '/attendance/daily' ? 'text-blue-500 font-bold' : ' text-gray-500'} p-2 rounded-md text-sm`}>Daily</Link>
+                    <Link href="/attendance/monthly" className={`${currentPath === '/attendance/monthly' ? 'text-blue-500 font-bold' : 'text-gray-500'} p-2 rounded-md text-sm`}>Weekly/Monthly</Link>
+                    <Link href="/attendance/schedule_settings" className={`${currentPath === '/attendance/schedule_settings' ? 'text-blue-500 font-bold' : 'text-gray-500'} p-2 rounded-md text-sm`}>Schedule Settings</Link>
+                  </div>
                 </div>
-              )}
+              </div>
             </div>
+
             <div className="flex flex-col mt-2">
-              <button aria-label="Open settings" onClick={() => toggleSection('leaves')} className='flex items-center justify-between p-3 rounded-l-xl hover:bg-sky-100'>
-                <div className="flex items-center space-x-3">
-                  <LuCalendarClock className='text-4xl' />
-                  <span>Leaves</span>
+              <div className="collapse rounded-xl">
+                <input
+                  type="checkbox"
+                  className="peer"
+                  onChange={() => toggleSection('leaves')}
+                  checked={expandedSections['leaves'] || false}
+                />
+                <div className={`collapse-title peer-checked:bg-sky-100 peer-checked:font-bold flex items-center justify-between p-3 w-auto rounded-xl ${isOpen ? 'justify-start ' : 'justify-center rounded-xl'}`}>
+                  <div className="flex items-center space-x-3">
+                    <LuCalendarClock className={`${isOpen ? 'text-3xl' : 'text-4xl'}`} />
+                    {isOpen && <span>Leaves</span>}
+                  </div>
+                  {isOpen && (expandedSections['leaves'] ? <FaChevronUp /> : <FaChevronDown />)}
                 </div>
-                {isOpen && (expandedSections.leaves ? <FaChevronUp /> : <FaChevronDown />)}
-              </button>
-              {expandedSections.leaves && (
-                <div className="ml-10 flex flex-col space-y-2">
-                  <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Leave Usage History</Link>
-                  <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Manual Grant</Link>
-                  <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Leave Setting</Link>
+                <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen && expandedSections['leaves'] ? 'max-h-40' : 'max-h-0 max-w-0'}`}>
+                  <div className=" ml-12 flex flex-col space-y-2 border-l-2 border-gray-500">
+                    <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Leave Usage History</Link>
+                    <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Manual Grant</Link>
+                    <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Leave Setting</Link>
+                  </div>
                 </div>
-              )}
+              </div>
             </div>
+
             <div className="flex flex-col mt-2">
-              <button aria-label="Open settings" onClick={() => toggleSection('team')} className='flex items-center justify-between p-3 rounded-l-xl hover:bg-sky-100'>
-                <div className="flex items-center space-x-3">
-                  <RiTeamLine className='text-4xl' />
-                  <span>Team</span>
+              <div className="collapse rounded-xl">
+                <input
+                  type="checkbox"
+                  className="peer"
+                  onChange={() => toggleSection('team')}
+                  checked={expandedSections['team'] || false}
+                />
+                <div className={`collapse-title peer-checked:bg-sky-100 peer-checked:font-bold flex items-center justify-between p-3 w-auto rounded-xl ${isOpen ? 'justify-start ' : 'justify-center rounded-xl'}`}>
+                  <div className="flex items-center space-x-3">
+                    <RiTeamLine className={`${isOpen ? 'text-3xl' : 'text-4xl'}`} />
+                    {isOpen && <span>Team</span>}
+                  </div>
+                  {isOpen && (expandedSections['team'] ? <FaChevronUp /> : <FaChevronDown />)}
                 </div>
-                {isOpen && (expandedSections.team ? <FaChevronUp /> : <FaChevronDown />)}
-              </button>
-              {expandedSections.team && (
-                <div className="ml-10 flex flex-col space-y-2">
-                  <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Employees</Link>
-                  <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Organization</Link>
+                <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen && expandedSections['team'] ? 'max-h-40' : 'max-h-0 max-w-0'}`}>
+                  <div className=" ml-12 flex flex-col space-y-2 border-l-2 border-gray-500">
+                    <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Employees</Link>
+                    <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Organization</Link>
+                  </div>
                 </div>
-              )}
+              </div>
             </div>
+
             <div className="flex flex-col mt-2">
-              <button aria-label="Open settings" onClick={() => toggleSection('filing')} className='flex items-center justify-between p-3 rounded-l-xl hover:bg-sky-100'>
-                <div className="flex items-center space-x-3">
-                  <FaRegFile className='text-4xl' />
-                  <span>Filing</span>
+              <div className="collapse rounded-xl">
+                <input
+                  type="checkbox"
+                  className="peer"
+                  onChange={() => toggleSection('filing')}
+                  checked={expandedSections['filing'] || false}
+                />
+                <div className={`collapse-title peer-checked:bg-sky-100 peer-checked:font-bold flex items-center justify-between p-3 w-auto rounded-xl ${isOpen ? 'justify-start ' : 'justify-center rounded-xl'}`}>
+                  <div className="flex items-center space-x-3">
+                    <FaRegFile className={`${isOpen ? 'text-3xl' : 'text-4xl'}`} />
+                    {isOpen && <span>Filing</span>}
+                  </div>
+                  {isOpen && (expandedSections['filing'] ? <FaChevronUp /> : <FaChevronDown />)}
                 </div>
-                {isOpen && (expandedSections.filing ? <FaChevronUp /> : <FaChevronDown />)}
-              </button>
-              {expandedSections.filing && (
-                <div className="ml-10 flex flex-col space-y-2">
-                  <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Approval Management</Link>
-                  <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Filing Settings</Link>
+                <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen && expandedSections['filing'] ? 'max-h-40' : 'max-h-0 max-w-0'}`}>
+                  <div className=" ml-12 flex flex-col space-y-2 border-l-2 border-gray-500">
+                    <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Approval Management</Link>
+                    <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Filing Settings</Link>
+                  </div>
                 </div>
-              )}
+              </div>
             </div>
+
             <div className="flex flex-col mt-2">
-              <button aria-label="Open settings" onClick={() => toggleSection('settings')} className='flex items-center justify-between p-3 rounded-l-xl hover:bg-sky-100'>
-                <div className="flex items-center space-x-3">
-                  <IoSettingsOutline className='text-4xl' />
-                  <span>Settings</span>
+              <div className="collapse rounded-xl">
+                <input
+                  type="checkbox"
+                  className="peer"
+                  onChange={() => toggleSection('setting')}
+                  checked={expandedSections['setting'] || false}
+                />
+                <div className={`collapse-title peer-checked:bg-sky-100 peer-checked:font-bold flex items-center justify-between p-3 h-auto w-auto rounded-xl ${isOpen ? 'justify-start' : 'justify-center rounded-xl'}`}>
+                  <div className="flex items-center space-x-3">
+                    <IoSettingsOutline className={`${isOpen ? 'text-3xl' : 'text-4xl'}`} />
+                    {isOpen && <span>Setting</span>}
+                  </div>
+                  {isOpen && (expandedSections['setting'] ? <FaChevronUp /> : <FaChevronDown />)}
                 </div>
-                {isOpen && (expandedSections.settings ? <FaChevronUp /> : <FaChevronDown />)}
-              </button>
-              {expandedSections.settings && (
-                <div className="ml-10 flex flex-col space-y-2">
-                  <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Company Settings</Link>
-                  <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Admin Settings</Link>
+                <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen && expandedSections['setting'] ? 'max-h-40' : 'max-h-0 max-w-0'}`}>
+                  <div className=" ml-12 flex flex-col space-y-2 border-l-2 border-gray-500">
+                    <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Company Settings</Link>
+                    <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Admin Settings</Link>
+                  </div>
                 </div>
-              )}
+              </div>
             </div>
           </nav>
         </div>

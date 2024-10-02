@@ -46,6 +46,7 @@ const Sidebar = ({ isOpen, nav }) => {
             <MdOutlineDashboard className={`${isOpen ? 'text-3xl' : 'text-4xl'}`} />
             {isOpen && <span>Dashboard</span>}
           </Link>
+          
           <div className="flex flex-col mt-2">
             <div className="collapse rounded-r-none">
               <input
