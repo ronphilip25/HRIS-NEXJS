@@ -21,7 +21,7 @@ const page = () => {
         description="Welcome to my Next.js app. Learn about the latest trends."
         keywords="Next.js, React, SEO"
       >
-        <div className='container mx-auto px-4'>
+        <div className='container mx-auto px-4 lg:h-auto md:overflow-x-auto md:h-screen overflow-x-scroll h-screen'>
           <div className='lg:grid lg:grid-cols-4 lg:gap-4 lg:max-[1440px]:gap-2 lg:max-[1024px]:gap-2 md:grid md:grid-cols-2 md:gap-2 gap-4 md:flex-shrink-0 flex flex-col md:max-m-auto h-auto lg:max-mx-auto  mb-4 md:mb-4'>
             <AttendanceWidget />
             <div className="col-start-4 lg:block md:block">

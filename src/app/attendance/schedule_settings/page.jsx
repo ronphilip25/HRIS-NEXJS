@@ -120,7 +120,7 @@ const Page = () => {
                             setIsDropdownOpen={setIsDropdownOpen2}
                         />
                     </div>
-                    <div className="lg:row-start-1 lg:col-start-3 md:col-start-1 md:row-start-2 rounded-lg shadow-lg w-auto bg-white h-44 md:max-[1024px]:mt-14 z-auto">
+                    <div className="lg:row-start-1 lg:col-start-3 md:col-start-1 md:row-start-2 rounded-lg shadow-lg w-auto bg-white h-44  z-auto">
                         <div className="flex text-base font-sans font-inter text-black font-bold ml-5 pt-5 truncate">
                             <span>Other work schedule settings</span>
                         </div>
