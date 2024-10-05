@@ -89,7 +89,7 @@ const Sidebar = ({ isOpen, nav }) => {
               </div>
               <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen && expandedSections['leaves'] ? 'max-h-40' : 'max-h-0 max-w-0'}`}>
                 <div className=" ml-24 flex flex-col space-y-2 border-l-2 border-gray-500">
-                  <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Leave Usage History</Link>
+                  <Link href="/leaves/usage" className="p-2 rounded-md hover:bg-gray-100 text-sm">Leave Usage History</Link>
                   <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Manual Grant</Link>
                   <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Leave Setting</Link>
                 </div>
