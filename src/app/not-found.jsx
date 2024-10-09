@@ -1,7 +1,14 @@
-import Link from 'next/link'
+'use client'
+
 import Image from 'next/image'
 
 const NotFound =() => {
+
+    const handleGoBack = () => {
+        window.history.back();
+    }
+    
+    
     return (
         <>
             <div className="flex items-center justify-center min-h-screen bg-blue-100 text-center">
@@ -10,9 +17,9 @@ const NotFound =() => {
                     <p className="mt-4 text-xl text-gray-700">We can't find the page you're looking for.</p>
                     <p className="mt-2 text-lg text-gray-500">It might have slipped away...</p>
                     <div className="mt-6">
-                        <Link href="/dashboard" className="inline-block px-4 py-2 bg-green-500 text-white rounded-full hover:bg-green-600">
+                        <button onClick={handleGoBack} className="inline-block px-4 py-2 bg-green-500 text-white rounded-full hover:bg-green-600">
                             Go back Home
-                        </Link>
+                        </button>
                     </div>
                     <div className="mt-8">
                         <Image
