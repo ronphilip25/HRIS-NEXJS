@@ -114,8 +114,8 @@ const Sidebar = ({ isOpen, nav }) => {
               </div>
               <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen && expandedSections['team'] ? 'max-h-40' : 'max-h-0 max-w-0'}`}>
                 <div className=" ml-24 flex flex-col space-y-2 border-l-2 border-gray-500">
-                  <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Employees</Link>
-                  <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Organization</Link>
+                  <Link href="/team/employees" className="p-2 rounded-md hover:bg-gray-100 text-sm">Employees</Link>
+                  <Link href="/team/organization" className="p-2 rounded-md hover:bg-gray-100 text-sm">Organization</Link>
                 </div>
               </div>
             </div>
@@ -138,8 +138,8 @@ const Sidebar = ({ isOpen, nav }) => {
               </div>
               <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen && expandedSections['filing'] ? 'max-h-40' : 'max-h-0 max-w-0'}`}>
                 <div className=" ml-24 flex flex-col space-y-2 border-l-2 border-gray-500">
-                  <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Approval Management</Link>
-                  <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Filing Settings</Link>
+                  <Link href="/filing/approval_management" className="p-2 rounded-md hover:bg-gray-100 text-sm">Approval Management</Link>
+                  <Link href="/filing/filing_settings" className="p-2 rounded-md hover:bg-gray-100 text-sm">Filing Settings</Link>
                 </div>
               </div>
             </div>
@@ -162,8 +162,8 @@ const Sidebar = ({ isOpen, nav }) => {
               </div>
               <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen && expandedSections['setting'] ? 'max-h-40' : 'max-h-0 max-w-0'}`}>
                 <div className=" ml-24 flex flex-col space-y-2 border-l-2 border-gray-500">
-                  <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Company Settings</Link>
-                  <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Admin Settings</Link>
+                  <Link href="/setting/company_settings" className="p-2 rounded-md hover:bg-gray-100 text-sm">Company Settings</Link>
+                  <Link href="/setting/admin_settings" className="p-2 rounded-md hover:bg-gray-100 text-sm">Admin Settings</Link>
                 </div>
               </div>
             </div>

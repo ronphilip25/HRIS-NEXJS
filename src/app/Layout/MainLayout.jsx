@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Navbar from '../../components/Navbar';
-import Sidebar from '../../components/Siderbar';
+import Sidebar from '../../components/Sidebar';
 
 
 const MainLayout = ({ pageTitle, description, keywords, children }) => {
