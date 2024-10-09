@@ -147,14 +147,14 @@ export default function Navbar({ isOpen, toggleSidebar }) {
             </Link>
 
             <div className="flex flex-col mt-2">
-              <div className="collapse rounded-xl">
+              <div className="collapse rounded-r-none">
                 <input
                   type="checkbox"
                   className="peer"
                   onChange={() => toggleSection('attendance')}
                   checked={expandedSections['attendance'] || false}
                 />
-                <div className={`collapse-title peer-checked:bg-sky-100 peer-checked:font-bold flex items-center justify-between p-3 w-auto rounded-xl ${isOpen ? 'justify-start ' : 'justify-center rounded-xl'}`}>
+                <div className={`collapse-title peer-checked:bg-sky-100 peer-checked:font-bold flex items-center justify-between p-3 w-auto rounded-l-xl ${isOpen ? 'justify-start ' : 'justify-center rounded-xl'}`}>
                   <div className="flex items-center space-x-3">
                     <LuClock4 className={`${isOpen ? 'text-3xl' : 'text-4xl'}`} />
                     {isOpen && <span>Attendance</span>}
@@ -172,14 +172,14 @@ export default function Navbar({ isOpen, toggleSidebar }) {
             </div>
 
             <div className="flex flex-col mt-2">
-              <div className="collapse rounded-xl">
+              <div className="collapse rounded-r-none">
                 <input
                   type="checkbox"
                   className="peer"
                   onChange={() => toggleSection('leaves')}
                   checked={expandedSections['leaves'] || false}
                 />
-                <div className={`collapse-title peer-checked:bg-sky-100 peer-checked:font-bold flex items-center justify-between p-3 w-auto rounded-xl ${isOpen ? 'justify-start ' : 'justify-center rounded-xl'}`}>
+                <div className={`collapse-title peer-checked:bg-sky-100 peer-checked:font-bold flex items-center justify-between p-3 w-auto rounded-l-xl ${isOpen ? 'justify-start ' : 'justify-center rounded-xl'}`}>
                   <div className="flex items-center space-x-3">
                     <LuCalendarClock className={`${isOpen ? 'text-3xl' : 'text-4xl'}`} />
                     {isOpen && <span>Leaves</span>}
@@ -188,23 +188,23 @@ export default function Navbar({ isOpen, toggleSidebar }) {
                 </div>
                 <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen && expandedSections['leaves'] ? 'max-h-40' : 'max-h-0 max-w-0'}`}>
                   <div className=" ml-12 flex flex-col space-y-2 border-l-2 border-gray-500">
-                    <Link href="/leaves/usage" className="p-2 rounded-md hover:bg-gray-100 text-sm">Leave Usage History</Link>
-                    <Link href="/leaves/manual" className="p-2 rounded-md hover:bg-gray-100 text-sm">Manual Grant</Link>
-                    <Link href="/leaves/setting" className="p-2 rounded-md hover:bg-gray-100 text-sm">Leave Setting</Link>
+                    <Link href="/leaves/usage" className={`${currentPath === '/leaves/usage' ? 'text-blue-500 font-bold' : ' text-gray-500'} p-2 rounded-md text-sm`}>Leave Usage History</Link>
+                    <Link href="/leaves/manual" className={`${currentPath === '/leaves/manual' ? 'text-blue-500 font-bold' : ' text-gray-500'} p-2 rounded-md text-sm`}>Manual Grant</Link>
+                    <Link href="/leaves/setting" className={`${currentPath === '/leaves/setting' ? 'text-blue-500 font-bold' : ' text-gray-500'} p-2 rounded-md text-sm`}>Leave Setting</Link>
                   </div>
                 </div>
               </div>
             </div>
 
             <div className="flex flex-col mt-2">
-              <div className="collapse rounded-xl">
+              <div className="collapse rounded-r-none">
                 <input
                   type="checkbox"
                   className="peer"
                   onChange={() => toggleSection('team')}
                   checked={expandedSections['team'] || false}
                 />
-                <div className={`collapse-title peer-checked:bg-sky-100 peer-checked:font-bold flex items-center justify-between p-3 w-auto rounded-xl ${isOpen ? 'justify-start ' : 'justify-center rounded-xl'}`}>
+                <div className={`collapse-title peer-checked:bg-sky-100 peer-checked:font-bold flex items-center justify-between p-3 w-auto rounded-l-xl ${isOpen ? 'justify-start ' : 'justify-center rounded-xl'}`}>
                   <div className="flex items-center space-x-3">
                     <RiTeamLine className={`${isOpen ? 'text-3xl' : 'text-4xl'}`} />
                     {isOpen && <span>Team</span>}
@@ -213,22 +213,22 @@ export default function Navbar({ isOpen, toggleSidebar }) {
                 </div>
                 <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen && expandedSections['team'] ? 'max-h-40' : 'max-h-0 max-w-0'}`}>
                   <div className=" ml-12 flex flex-col space-y-2 border-l-2 border-gray-500">
-                    <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Employees</Link>
-                    <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Organization</Link>
+                    <Link href="/team/employees" className={`${currentPath === '/team/employees' ? 'text-blue-500 font-bold' : ' text-gray-500'} p-2 rounded-md text-sm`}>Employees</Link>
+                    <Link href="/team/organization" className={`${currentPath === '/team/organization' ? 'text-blue-500 font-bold' : ' text-gray-500'} p-2 rounded-md text-sm`}>Organization</Link>
                   </div>
                 </div>
               </div>
             </div>
 
             <div className="flex flex-col mt-2">
-              <div className="collapse rounded-xl">
+              <div className="collapse rounded-r-none">
                 <input
                   type="checkbox"
                   className="peer"
                   onChange={() => toggleSection('filing')}
                   checked={expandedSections['filing'] || false}
                 />
-                <div className={`collapse-title peer-checked:bg-sky-100 peer-checked:font-bold flex items-center justify-between p-3 w-auto rounded-xl ${isOpen ? 'justify-start ' : 'justify-center rounded-xl'}`}>
+                <div className={`collapse-title peer-checked:bg-sky-100 peer-checked:font-bold flex items-center justify-between p-3 w-auto rounded-l-xl ${isOpen ? 'justify-start ' : 'justify-center rounded-xl'}`}>
                   <div className="flex items-center space-x-3">
                     <FaRegFile className={`${isOpen ? 'text-3xl' : 'text-4xl'}`} />
                     {isOpen && <span>Filing</span>}
@@ -237,22 +237,22 @@ export default function Navbar({ isOpen, toggleSidebar }) {
                 </div>
                 <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen && expandedSections['filing'] ? 'max-h-40' : 'max-h-0 max-w-0'}`}>
                   <div className=" ml-12 flex flex-col space-y-2 border-l-2 border-gray-500">
-                    <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Approval Management</Link>
-                    <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Filing Settings</Link>
+                    <Link href="/filing/approval_management" className={`${currentPath === '/filing/approval_management' ? 'text-blue-500 font-bold' : ' text-gray-500'} p-2 rounded-md text-sm`}>Approval Management</Link>
+                    <Link href="/filing/filing_settings" className={`${currentPath === '/filing/filing_settings' ? 'text-blue-500 font-bold' : ' text-gray-500'} p-2 rounded-md text-sm`}>Filing Settings</Link>
                   </div>
                 </div>
               </div>
             </div>
 
             <div className="flex flex-col mt-2">
-              <div className="collapse rounded-xl">
+              <div className="collapse rounded-r-none">
                 <input
                   type="checkbox"
                   className="peer"
                   onChange={() => toggleSection('setting')}
                   checked={expandedSections['setting'] || false}
                 />
-                <div className={`collapse-title peer-checked:bg-sky-100 peer-checked:font-bold flex items-center justify-between p-3 h-auto w-auto rounded-xl ${isOpen ? 'justify-start' : 'justify-center rounded-xl'}`}>
+                <div className={`collapse-title peer-checked:bg-sky-100 peer-checked:font-bold flex items-center justify-between p-3 h-auto w-auto rounded-l-xl ${isOpen ? 'justify-start ' : 'justify-center rounded-xl'}`}>
                   <div className="flex items-center space-x-3">
                     <IoSettingsOutline className={`${isOpen ? 'text-3xl' : 'text-4xl'}`} />
                     {isOpen && <span>Setting</span>}
@@ -261,12 +261,13 @@ export default function Navbar({ isOpen, toggleSidebar }) {
                 </div>
                 <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen && expandedSections['setting'] ? 'max-h-40' : 'max-h-0 max-w-0'}`}>
                   <div className=" ml-12 flex flex-col space-y-2 border-l-2 border-gray-500">
-                    <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Company Settings</Link>
-                    <Link href="/not-found" className="p-2 rounded-md hover:bg-gray-100 text-sm">Admin Settings</Link>
+                    <Link href="/setting/company_settings" className={`${currentPath === '/setting/company_settings' ? 'text-blue-500 font-bold' : ' text-gray-500'} p-2 rounded-md text-sm`}>Company Settings</Link>
+                    <Link href="/setting/admin_settings" className={`${currentPath === '/setting/admin_settings' ? 'text-blue-500 font-bold' : ' text-gray-500'} p-2 rounded-md text-sm`}>Admin Settings</Link>
                   </div>
                 </div>
               </div>
             </div>
+
           </nav>
         </div>
       </div>
