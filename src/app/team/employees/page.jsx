@@ -38,7 +38,7 @@ const Dashboard = () => {
 
   return (
     <div className="container mx-auto mt-3">
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
         {cards.map((card, index) => (
           <Card key={index} title={card.title} count={card.count} link={card.link} />
         ))}
