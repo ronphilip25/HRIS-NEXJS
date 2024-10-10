@@ -168,6 +168,7 @@ const Sidebar = ({ isOpen, nav }) => {
               </div>
             </div>
           </div>
+          
         </nav>
       </div>
     </>
