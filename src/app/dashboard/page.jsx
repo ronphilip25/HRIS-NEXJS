@@ -22,7 +22,7 @@ const Dashboard = () => {
     // Simulate an async operation (e.g., fetching data)
     setTimeout(() => {
       setIsLoading(false);
-    }, 1000);
+    }, 2000);
   }, []);
 
   const { setPageTitle, setSubTitle } = useNavbar();
