@@ -43,7 +43,7 @@ const page = () => {
                 <button
                   id="dropdownBtn"
                   type="button"
-                  className="ml-2 inline-flex h-[34px] w-[264px] justify-between rounded-md border border-gray-300 bg-white px-4 p-2 text-sm font-medium text-gray-700 shadow-sm focus:border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                  className="ml-2 inline-flex h-[34px] w-[264px] justify-between rounded-md border border-gray-300 bg-white px-4 p-2 text-sm font-medium text-gray-700 shadow-sm focus:border-transparent focus:outline-none focus:ring-2 focus:border-blue-500"
                 >
                   2024
                   {/* <!-- Heroicon name: solid/chevron-down --> */}
@@ -63,13 +63,13 @@ const page = () => {
 
                 <div
                   id="dropdownContent"
-                  className="dropdown absolute right-0 mt-2 hidden w-[264px] origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5"
+                  className="dropdown absolute right-0 mt-2 hidden  w-[264px] origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5"
                 >
                   <ul className="list-none py-1">
                     <li>
                       <a
                         href="#"
-                        className="block cursor-pointer px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        className="block cursor-pointer px-4 py-2 text-sm text-gray-700 focus:border-blue-500"
                       >
                         2024
                       </a>
