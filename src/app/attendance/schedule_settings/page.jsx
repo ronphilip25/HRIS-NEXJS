@@ -61,7 +61,7 @@ const ActionSection = ({ title, isFormVisible, setIsFormVisible, isDropdownOpen,
 );
 
 const FormSection = () => (
-    <div className="rounded-lg shadow-lg mt-4">
+    <div className="rounded-lg shadow-lg mt-4 ">
         <form action="#" method="post" className="p-5 bg-white rounded-lg">
             <label htmlFor="approver" className="block mb-2 text-gray-700 font-bold text-base font-sans">Select an approver</label>
             <div className="flex justify-between items-center">
@@ -102,7 +102,7 @@ const Page = () => {
             <div className="container mx-auto px-4 lg:h-auto md:overflow-x-auto md:h-screen overflow-x-scroll h-screen">
                 <NoteSection />
                 <div className="lg:grid lg:grid-cols-3 lg:grid-rows-1 mt-4 lg:gap-2 md:grid md:grid-cols-2 md:grid-rows-1 md:gap-2 grid grid-cols-1 gap-3 md:flex-shrink-0">
-                    <div className='lg:row-start-1 lg:col-start-1 z-10'>
+                    <div className='lg:row-start-1 lg:col-start-1 lg:z-auto z-20'>
                         <ActionSection
                             title="Allow Overtime / Rest / Holiday / Night Shift Registration?"
                             isFormVisible={isFormVisible1}
