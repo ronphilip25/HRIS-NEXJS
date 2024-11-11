@@ -91,7 +91,7 @@ const Sidebar = ({ isOpen, nav }) => {
                 <div className=" ml-24 flex flex-col space-y-2 border-l-2 border-gray-500">
                 <Link href="/leaves/usage" className={`${currentPath === '/leaves/usage' ? 'text-blue-500 font-bold' : ' text-gray-500'} p-2 rounded-md text-sm`}>Leave Usage History</Link>
                 <Link href="/leaves/manual" className={`${currentPath === '/leaves/manual' ? 'text-blue-500 font-bold' : ' text-gray-500'} p-2 rounded-md text-sm`}>Manual Grant</Link>
-                <Link href="/leaves/setting" className={`${currentPath === '/leaves/setting' ? 'text-blue-500 font-bold' : ' text-gray-500'} p-2 rounded-md text-sm`}>Leave Setting</Link>
+                <Link href="/leaves/setting" className={`${currentPath === '/leaves/setting' ? 'text-blue-500 font-bold' : ' text-gray-500'} p-2 rounded-md text-sm`}>Leave Settings</Link>
                 </div>
               </div>
             </div>

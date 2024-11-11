@@ -1,7 +1,20 @@
+'use client'
+
 import React from 'react'
 import MainLayout from '../../Layout/MainLayout'
+import { useNavbar } from '../../../context/NavbarContext'
+import { useEffect } from 'react'
 
 const page = () => {
+
+    const { setPageTitle, setSubTitle } = useNavbar();
+
+    useEffect(() => {
+        setPageTitle("Leaves");
+        setSubTitle("Manual Grant");
+    }, [setPageTitle, setSubTitle]);
+
+
     return (
         <>
             <MainLayout
@@ -30,7 +43,7 @@ const page = () => {
                                     </ul>
                                 </div>
                                 <div className="relative mr-2">
-                                    <input type="text" placeholder="Search" className="h-[34px] w-[264px] rounded-md border border-gray-300 px-4 py-2 outline-none focus:border-blue-500" />
+                                    <input type="text" placeholder="Search" className="h-[34px] w-[264px] rounded-md border border-gray-300 bg-white px-4 py-2 outline-none focus:border-blue-500" />
                                     <div className="absolute inset-y-0 right-0 flex items-center pr-3">
                                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" className="h-6 w-6" viewBox="0,0,256,256">
                                             <g fillOpacity="0.27843" fill="#000000" fillRule="nonzero" stroke="none" strokeWidth="1" strokeLinecap="butt" strokeLinejoin="miter" strokeMiterlimit="10" strokeDasharray="" strokeDashoffset="0" fontFamily="none" fontWeight="none" fontSize="none" textAnchor="none" >
