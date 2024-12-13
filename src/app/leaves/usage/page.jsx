@@ -20,10 +20,10 @@ const page = () => {
         description="Welcome to my Next.js app. Learn about the latest trends."
         keywords="Next.js, React, SEO"
       >
-        <div className="container mx-auto px-4 h-screen overflow-y-auto w-full">
-          <div className=" lg:flex lg:gap-6 gap-3 ">
+        <div className="container mx-auto px-4">
+          <div className=" lg:flex lg:flex-row md:flex lg:gap-6 gap-3 ">
             {/* Left Column: HR Info */}
-            <div className="h-[790px] w-auto rounded-lg bg-white shadow-md mb-6 lg:mb-0 ">
+            <div className="lg:h-[790px] lg:w-1/3 md:h-[750px] rounded-lg bg-white shadow-md mb-6 lg:mb-0 ">
               <h6 className="p-5 mt-3 font-sans text-xl font-bold text-gray-700">
                 Human Resource Info System.
               </h6>
@@ -52,7 +52,7 @@ const page = () => {
             </div>
 
             {/* Right Column: Table & Search */}
-            {/* <div className="w-full tracking-wide lg:h-[790px] min-h-[790px] rounded-lg bg-white shadow-md">
+            <div className="w-full lg:h-[790px] md:h-[750px] rounded-lg bg-white shadow-md">
               <div className="p-5 mt-3 flex lg:flex-row items-center justify-between gap-3 lg:gap-6">
                 <button
                   id="dropdownBtn"
@@ -72,10 +72,10 @@ const page = () => {
                       clipRule="evenodd"
                     />
                   </svg>
-                </button> */}
+                </button>
 
                 {/* Search Input */}
-                {/* <div className="relative mr-2 w-full lg:w-auto">
+                <div className="relative mr-2 w-full lg:w-auto">
                   <input
                     type="text"
                     placeholder="Search"
@@ -91,11 +91,11 @@ const page = () => {
                     </svg>
                   </div>
                 </div>
-              </div> */}
+              </div>
 
               {/* Table */}
-              {/* <div className="p-2 mx-4 overflow-x-auto">
-                <table className="w-full table-auto min-w-[600px]">
+              <div className="p-2 mx-4 overflow-x-auto">
+                <table className="w-full table-auto">
                   <thead>
                     <tr className="border-b border-gray-500">
                       <th className="text-center text-sm font-sans font-bold text-gray-500">
@@ -117,7 +117,7 @@ const page = () => {
                   </thead>
                 </table>
               </div>
-            </div> */}
+            </div>
           </div>
 
           {/* Pagination */}
