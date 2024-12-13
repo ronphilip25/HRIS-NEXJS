@@ -26,7 +26,7 @@ const MainLayout = ({ pageTitle, description, keywords, children }) => {
           <meta name="description" content={description} />
           <meta name="keywords" content={keywords} />
         </header>
-        <div className="flex bg-blue-50 bg-opacity-100 z-50">
+        <div className="flex h-screen bg-blue-50 bg-opacity-100 z-50">
           <Sidebar isOpen={isOpen} changeNavbarText={changeNavbarText} />
           <div className="flex-1 flex flex-col">
             <Navbar isOpen={isOpen} toggleSidebar={toggleSidebar} />
