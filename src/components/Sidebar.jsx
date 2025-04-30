@@ -37,7 +37,7 @@ const Sidebar = ({ isOpen, nav }) => {
       <div
         className={`flex flex-col lg:h-screen lg:max-[1024px]:h-screen overflow-auto sticky bg-white text-black border lg:max-[1024px]:hidden md:hidden ${
           isOpen
-            ? "lg:w-[286px] lg:max-[1024px]:w-[240px] md:w-[250px] w-[200px] lg:block md:block hidden"
+            ? "lg:w-[286px] md:w-[250px] w-[200px] lg:block md:block hidden"
             : "lg:w-44 lg:max-[1024px]:w-32 md:w-32 w-36 lg:block md:block hidden"
         }  transition-all duration-500 shadow-lg`}
       >
