@@ -41,8 +41,8 @@ const Dashboard = () => {
         keywords="Human Resource Info System, Vercel, Nextjs, React"
       >
         {isLoading ? <Loading /> :
-          <div className='container mx-auto px-4 lg:h-auto md:overflow-x-auto md:h-screen md:max-w-auto overflow-x-scroll h-screen'>
-            <div className='lg:grid lg:grid-cols-4 lg:gap-4 lg:max-[1440px]:gap-2 lg:max-[1024px]:gap-2 md:max-w-auto md:grid md:grid-cols-2 md:gap-2 gap-4 md:flex-shrink-0 flex flex-col md:max-m-auto h-auto lg:max-mx-auto mb-4 md:mb-4'>
+          <div className='container mx-auto px-4 lg:h-auto md:overflow-x-auto md:h-screen overflow-x-scroll h-screen'>
+            <div className='lg:grid lg:grid-cols-4 lg:gap-4 lg:max-[1440px]:gap-2 lg:max-[1024px]:gap-2 md:grid md:grid-cols-2 md:gap-2 gap-4 md:flex-shrink-0 flex flex-col mb-4'>
                 <StatusCard
                   color="#D0E9FE"
                   iconColor="#045CA4"
@@ -65,7 +65,7 @@ const Dashboard = () => {
               <div className="lg:col-span-2 md:col-span-2 ">
                 <div className="grid grid-cols-1 md:flex-shrink-0">
                   <div className="rounded-lg shadow-lg bg-white p-4 lg:w-full">
-                    <h2 className="lg:mb-4 lg:text-lg lg:font-bold md:text-base md:font-bold md:mb-1 text-black lg:max-[1440px]:text-base">Attendance Overview</h2>
+                    <h2 className="lg:mb-4 lg:text-lg lg:font-bold md:text-base md:font-bold md:mb-1 text-black ">Attendance Overview</h2>
                     <AttendanceChart />
                   </div>
                 </div>

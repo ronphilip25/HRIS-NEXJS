@@ -37,7 +37,7 @@ const AttendanceCard = () => {
                         </div>
 
                         {/* table */}
-                        <div className="lg:grid lg:grid-cols-2 lg:grid-rows-4 lg:[&_div:nth-child(even)]:text-right lg:mt-5 lg:p-4 lg:max-[1024px]:hidden">
+                        <div className="lg:grid lg:grid-cols-2 lg:grid-rows-4 lg:[&_div:nth-child(even)]:text-right lg:mt-5 lg:p-4">
                             <div className=" border-b border-dotted lg:max-[1024px]:text-xs border-gray-200 py-1 mb-3 text-gray-400">Department</div>
                             <div className=" border-b border-dotted lg:max-[1024px]:text-xs border-gray-200 py-1 mb-3 text-gray-500 text-sm font-bold">IT Department</div>
                             <div className=" border-b border-dotted lg:max-[1024px]:text-xs border-gray-200 py-1 mb-3 text-gray-400">Work Schedule</div>
@@ -48,7 +48,7 @@ const AttendanceCard = () => {
                             <div className=" border-b border-dotted lg:max-[1024px]:text-xs border-gray-200 py-1 text-gray-500 text-sm font-bold"> - </div>
                         </div>
 
-                        <details className="collapse lg:max-[1024px]:flex lg:hidden md:hidden hidden">
+                        <details className="collapse lg:hidden md:hidden hidden">
                             <div className="collapse-content">
                                 <div className="lg:grid lg:grid-cols-2 lg:grid-rows-4 lg:[&_div:nth-child(even)]:text-right lg:mt-5 lg:max-[1024px]:mt-0 lg:p-4 lg:max-[1024px]:p-2 ">
                                     <div className="border-b lg:max-[1024px]:text-md md:max-[768px]:text-xs border-gray-200 py-1 mb-3 text-gray-400">Department</div>
